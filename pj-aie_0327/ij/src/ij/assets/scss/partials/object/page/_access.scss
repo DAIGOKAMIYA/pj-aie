@@ -1,0 +1,168 @@
+.access {
+	.p-title{
+		background-image: url(../img/access/access_title_bg_pc.png);
+		.title{
+			text-align:left;
+		}
+	}
+	.js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+}
+.access{
+	.content_wrap{
+		width:1100px;
+		margin:0 auto;
+		@include max768{
+			width:100%;
+			padding:0 20px;
+		}
+		.building{
+			margin-top:54px;
+			dl{
+				margin-top:20px;
+				dt{
+					border-bottom:1px solid #999999;
+					padding-bottom:20px;
+					margin-bottom:54px;
+					font-size:2.2rem;
+				}
+				dd{
+					ul{
+						display:flex;
+						justify-content:space-between;
+						@include max768{
+							display:block;
+						}
+						li{
+							display:table;
+							width:530px;
+							border:8px solid #b3e2ea;
+							@include max768{
+								width:100%;
+								border:5px solid #b3e2ea;
+							}
+							div{
+								display:table-cell;
+								width:40%;
+								padding:24px 0;
+								img{
+									max-width:200px;
+								}
+								@include max768{
+									vertical-align:middle;
+								}
+							}
+							p{
+								display:table-cell;
+								width:57%;
+								vertical-align:middle;
+								@include max768{
+									font-size:1.2rem;
+									line-height:1.8rem;
+								}
+								span{
+									display:block;
+									margin-bottom:16px;
+									font-size:1.8rem;
+									font-weight:bold;
+									line-height:3.2rem;
+									@include max768{
+										font-size:1.2rem;
+										line-height:2rem;
+									}
+								}
+							}
+							&:nth-child(2){
+								border-color:#c91420;
+								@include max768{
+									margin-top:20px;
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.access_img03{
+			margin-top:54px;
+		}
+		.access_img04{
+			margin-top:67px;
+		}
+		.gmap_area{
+			margin-top:80px;
+			position:relative;
+			padding-bottom:50%;
+			height:0;
+			overflow:hidden;
+			iframe{
+				position:absolute;
+				left:0;
+				top:0;
+				width:100%;
+				height:100%;
+			}
+		}
+		.movie_area{
+			margin-top:80px;
+			dl{
+				dt{
+					border-bottom:1px solid #999999;
+					padding-bottom:20px;
+					margin-bottom:40px;
+					font-size:2.2rem;
+				}
+				dd{
+					position:relative;
+					padding-bottom:56%;
+					height:0;
+					overflow:hidden;
+					iframe{
+						position:absolute;
+						left:0;
+						top:0;
+						width:100%;
+						height:100%;
+					}
+				}
+			}
+		}
+		.way_to_school{
+			margin-top:80px;
+			dl{
+				dt{
+					border-bottom:1px solid #999999;
+					padding-bottom:20px;
+					margin-bottom:40px;
+					font-size:2.2rem;
+				}
+				dd{
+					p{
+						font-size:1.8rem;
+						font-weight:bold;
+					}
+					ul{
+						display:flex;
+						flex-wrap:wrap;
+						justify-content:space-between;
+						li{
+							width:329px;
+							margin-bottom:50px;
+							font-size:1.5rem;
+							line-height:2.6rem;
+							img{
+								margin-bottom:12px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

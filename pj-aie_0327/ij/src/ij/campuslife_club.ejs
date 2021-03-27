@@ -1,0 +1,125 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "クラブ・サークル"; %>
+<% body_class = "campuslife_club"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span>クラブ・サークル</span>
+                </div>
+            </div>
+        </div>
+        <div class="campuslife_club__container">
+            <div class="c-wrapper">
+                <div class="c-inner">
+                    <div class="campuslife_club__box">
+                        <div class="intro">
+                            <div class="intro__img"><img src="./assets/img/campuslife/campuslife_club_img.png" alt=""></div>
+                            <div class="intro__txt">
+                                <div class="logo"><img src="./assets/img/campuslife/campuslife_club_logo.png" alt=""></div>
+                                <h1 class="title">
+                                    <span class="title__small">中村学園グループ</span><br>
+                                    <span class="title__large">５校合同の<br class="u-block--768">クラブ活動</span>
+                                </h1>
+                                <p>
+                                    中村学園のクラブ活動だから、メンバーもさまざま！<br>ぴったりのクラブ・サークルを探して、<br class="u-none--768">たくさんの友人を作って学校生活を楽しもう！
+                                </p>
+                            </div>
+                        </div>
+                        <section class="section">
+                            <div class="section__head">
+                                <div class="c-application_titleA">
+                                    <div class="c-application_titleA_inner -aie">
+                                        <h2 class="text">体を動かすのが大好きなキミに</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__img">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_sport1.png" alt=""></div>
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_sport2.png" alt=""></div>
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_sport3.png" alt=""></div>
+                            </div>
+                            <div class="section__list">
+                                <ul>
+                                    <li>マラソンクラブ</li>
+                                    <li>野球部</li>
+                                    <li>男女バスケットボール部</li>
+                                    <li>テニス部</li>
+                                    <li>サッカー部</li>
+                                    <li>屋内球技クラブ</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="section">
+                            <div class="section__head">
+                                <div class="c-application_titleA">
+                                    <div class="c-application_titleA_inner -aie">
+                                        <h2 class="text">好奇心旺盛なアナタに</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__img">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_curiosity1.png" alt=""></div>
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_curiosity2.png" alt=""></div>
+                            </div>
+                            <div class="section__list">
+                                <ul>
+                                    <li>カクテルクラブ</li>
+                                    <li>ビューティクラブ</li>
+                                    <li>ゴルフクラブ</li>
+                                    <li>動物里親クラブ</li>
+                                    <li>ラーメン部</li>
+                                    <li>chef'sクラブ</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="section">
+                            <div class="section__head">
+                                <div class="c-application_titleA">
+                                    <div class="c-application_titleA_inner -aie">
+                                        <h2 class="text">ワイワイ楽しみたい人は</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__img">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_fun1.png" alt=""></div>
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_fun2.png" alt=""></div>
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_club_fun2.png" alt=""></div>
+                            </div>
+                            <div class="section__list">
+                                <ul>
+                                    <li>ダンス部</li>
+                                    <li>軽音楽部</li>
+                                    <li>ドッグスポーツクラブ</li>
+                                    <li>アウトドアクラブ</li>
+                                    <li>Cool Japan</li>
+                                    <li>ラーメン部</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

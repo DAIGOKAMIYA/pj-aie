@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+
+/* foundation--------------------------------------------------------- */
+@import "partials/foundation/00_config/_breakpoint";
+@import "partials/foundation/00_config/_font";
+@import "partials/foundation/00_config/_variable";
+@import "partials/foundation/01_reset/_destyle";
+// @import "partials/foundation/02_mixin/";
+// @import "partials/foundation/03_keyframe/";
+@import "partials/foundation/04_base/_base";
+
+/* layout------------------------------------------------------------ */
+@import "partials/layout/_layout";
+
+/* object------------------------------------------------------------ */
+/* object/component ボタンなど、再利用できる小さな単位のモジュールを定義します ---------------------------- */
+@import "partials/object/component/_col";
+@import "partials/object/component/_container";
+@import "partials/object/component/_wrapper";
+@import "partials/object/component/_inner";
+@import "partials/object/component/_btn";
+@import "partials/object/component/_relative";
+@import "partials/object/component/_application_bg";
+@import "partials/object/component/_application_title";
+@import "partials/object/component/_application_table";
+@import "partials/object/component/_burger";
+@import "partials/object/component/_schoolname";
+@import "partials/object/component/_others";
+
+/* object/project 記事一覧や、ユーザープロフィール、画像ギャラリーなど、繰り返し登場するコンテンツを構成する要素 ------------------------------ */
+@import "partials/object/project/_application_block";
+@import "partials/object/project/_footer";
+@import "partials/object/project/_header";
+@import "partials/object/project/_title";
+@import "partials/object/project/_breadcrumb";
+@import "partials/object/project/_cta";
+@import "partials/object/project/_sitemap";
+@import "partials/object/project/_address";
+@import "partials/object/project/_logo-sns";
+@import "partials/object/project/_information";
+@import "partials/object/project/_drawer";
+
+/* object/page 各ページ固有のクラスなど------------------------------ */
+@import "partials/object/page/_home";
+@import "partials/object/page/_feature_j-hm-about_stylistdebut";
+@import "partials/object/page/_application_aie_flow";
+@import "partials/object/page/_application_aieopnecampus";
+@import "partials/object/page/_aie-top";
+@import "partials/object/page/_application_aie_outline";
+@import "partials/object/page/_application_aie_selection";
+@import "partials/object/page/_application_aie_fees";
+@import "partials/object/page/_application_aie_scholaship";
+@import "partials/object/page/_application_aie_support";
+@import "partials/object/page/_application_aie_support";
+@import "partials/object/page/_application_aie_flow";
+@import "partials/object/page/_application_aie_ao";
+@import "partials/object/page/_application_j_outline";
+@import "partials/object/page/_application_j_selection";
+@import "partials/object/page/_application_j_ao";
+@import "partials/object/page/_application_j_scholaship";
+@import "partials/object/page/_application_j_fees";
+@import "partials/object/page/_application_j_support";
+@import "partials/object/page/_application_j_flow";
+@import "partials/object/page/_j-top";
+@import "partials/object/page/_facility_aie-about";
+@import "partials/object/page/_feature";
+@import "partials/object/page/_course_aie-course_esthe";
+@import "partials/object/page/_campuslife_schedule";
+@import "partials/object/page/_campuslife_club";
+@import "partials/object/page/_campuslife_voice";
+@import "partials/object/page/_campuslife_oneday";
+@import "partials/object/page/_employment_job_graduate";
+@import "partials/object/page/_employment_job_faq";
+@import "partials/object/page/_employment_job_license";
+@import "partials/object/page/_information";
+@import "partials/object/page/_facility_aie-about_salon";
+@import "partials/object/page/_jopnecampus";
+@import "partials/object/page/_jwebopnecampus";
+@import "partials/object/page/_aieopnecampus";
+@import "partials/object/page/_aiewebopnecampus";
+@import "partials/object/page/_blog";
+@import "partials/object/page/_news";
+@import "partials/object/page/_course_aie-course_aroma";
+@import "partials/object/page/_solo";
+
+/* object/utility わずかなスタイルの調整のための便利クラスなど ------------------------------ */
+@import "partials/object/utility/_display";

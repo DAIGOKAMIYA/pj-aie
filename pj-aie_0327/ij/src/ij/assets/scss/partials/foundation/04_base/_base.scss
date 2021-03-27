@@ -1,0 +1,86 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    // 古いスマホの横向き表示対策
+    // -webkit-text-size-adjust: 100%; // destyleで指定済みのためコメントアウト
+    
+    color: $color_base;
+    font-size: 1.6rem;
+    font-family: $sh_sans;
+    // font-feature-settings: "palt 1";
+    min-width: 1024px;
+    overflow: visible;
+    @include max768{
+        min-width: none;
+        min-width: initial;
+        min-width: auto;
+    }
+    &.have_curtain{
+        // position: fixed;
+        // width: 100%;
+        overflow: hidden;
+    }
+}
+_:-ms-lang(x)::-ms-backdrop, body{
+    // font-family: $ie;
+}
+
+h1,h2,h3,h4,h5,h6{
+    // letter-spacing: .1em;
+}
+
+p{
+    margin: 0 0 2rem;
+    line-height: 1.875;
+    letter-spacing: .08em;
+}
+
+a{
+    color: $color_base;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    transition-property: color,opacity;
+
+    &:hover{
+        transition: .5s;
+        transition-property: color,opacity;
+        opacity: .6;
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+
+    // transformのアニメーションでちらつき防止(-webkit-font-smoothingを使っているとフォントレンタリングに影響与えるので注意)
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    // 上記だけで解決されないときに指定
+    // overflow: hidden;
+}
+
+// floatを指定している要素の親要素に使用
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    // iphoneのsafariでボタンがカスタマイズできるようにする
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}

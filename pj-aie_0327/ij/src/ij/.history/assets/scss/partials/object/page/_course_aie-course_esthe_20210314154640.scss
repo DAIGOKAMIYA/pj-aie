@@ -1,0 +1,77 @@
+.course_aie-course_esthe{
+
+
+
+}
+
+
+.esthe_bg{
+    background-color: #f8b861;
+}
+.esthe_bg_d{
+    background-color: #f9a534;
+}
+.esthe_bg_p{
+    background-color: #afd8e4;
+}
+
+
+
+.aie-c-fv{
+    width: 92%;
+    margin-left:auto ;
+    position: relative;
+    .aie-c-title{
+        width: 580px;
+        padding: 40px 35px 20px 0;
+        position: absolute;
+        top: 40%;
+        left: -134px;
+        color: white;
+        &>div{
+            width: 66%;
+            margin-left:auto ;
+        }
+        h2{
+            font-size: 3.6rem;
+            font-weight: bold;
+            margin: 0 0 25px 0;
+        }
+        img{
+            position: absolute;
+            width: 200px;
+            top: -25px;
+            left: 140px;
+        }
+    }
+    .aie-c-course{
+        border: 2px solid white;
+        padding: 10px;
+        width: 200px;
+    }
+}
+.aie-c-info{
+    display: flex;
+    .aie-c-info__txt,.aie-c-info__pic{
+        width: 50%;
+    }
+    .aie-c-info__pic{text-align: center;}
+    img{
+        width: 75%;
+        transform: translate(-20px,-100px);
+    }
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+    }
+    span{
+        font-size: 70px;
+        font-weight: bold;
+        color: #e5e5e5;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

@@ -1,0 +1,92 @@
+.p-header{
+    padding-top: 2rem;
+    position: relative;
+    background-color: #fff;
+    @include max768{
+        padding: 0;
+    }
+    
+    &__inner{
+        padding: 0 30px;
+        @include max768{
+            height: 65px;
+            padding: 0 5.333%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__logo{
+        max-width: 100%;
+        width: 596.66px;
+        @include max768{
+            width: 174.87px;
+        }
+    }
+    &__nav{
+        margin-top: 2.5rem;
+        @include max768{
+            display: none;
+        }
+        ul{
+            display: flex;
+            li{
+                margin-right: 4rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    display: block;
+                    padding-bottom: 1.7rem;
+                    font-weight: $bold;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        display: block;
+                        margin: 0 auto;
+                        width: 2rem;
+                        height: 0;
+                        background-color: #000;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        margin-left: -1rem;
+                    }
+                    &.is-active::after{
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+    &__nav2{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        @include max768{
+            display: none;
+        }
+        ul{
+            display: flex;
+            li{
+                margin-left: 2rem;
+                &:first-child{
+                    margin-left: 0;
+                }
+                a{
+                    color: #4d4d4d;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    &__burger{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include max768{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.c-application_tableA {
+    overflow-x: scroll;
+    margin: 0 0 7rem;
+    .table {
+        width: 100%;
+        min-width: 900px;
+        .head {
+            div {
+                font-weight: bold;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+    .center {
+        text-align: center;
+    }
+    .table.-aie {
+        width: 100%;
+        .head {
+            text-align: center;
+            background-color: $gold;
+            td {
+                border: unset;
+                div {
+                    padding: 1.2rem 0;
+                    color: #fff;
+                    letter-spacing: .2rem;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child {
+                    text-align: center;
+                }
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .table.-j {
+        width: 100%;
+        .head {
+            text-align: center;
+            background-color: #d8d8d8;
+            td {
+                div {
+                    padding: 1.2rem 0;
+                    color: #000;
+                    letter-spacing: .2rem;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child {
+                    text-align: center;
+                }
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    table ,td ,th {
+        border-collapse: collapse;
+        border:1px solid #ccc;
+    }
+}
+
+.c-application_tableB {
+    margin: 0 0 7rem;
+    table ,td ,th {
+        border-collapse: collapse;
+        border:1px solid #ccc;
+    }
+    .table.-aie {
+        width: 100%;
+        tbody {
+            .notbeige {
+                td {
+                    &:first-child {
+                        background-color: white;
+                        width: auto;
+                        text-align: unset;
+                    }
+                }
+            }
+            tr {
+                td {
+                    vertical-align: middle;
+                    &:first-child {
+                        background-color: #f7f2e7;
+                        width: 22%;
+                        text-align: center;
+                        @include max768 {
+                            display: block;
+                            width: 100%;
+                            padding: 2rem 0;
+                        }
+                        @include max480 {
+                            padding: 4px 0px;
+                        }
+                    }
+                    div {
+                        padding: 24px 32px;
+                        letter-spacing: .08rem;
+                        line-height: 2;
+                        @include max768 {
+                            padding: 8px 32px;
+                        }
+                        @include max480 {
+                            padding: 8px 10px;
+                            font-size: 1.4rem;
+                        }
+                        .link {
+                            padding: 0 0 5px;
+                            border-bottom: solid 1px #000;
+                        }
+                    }
+                    @include max768 {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .table.-j {
+        width: 100%;
+        tbody {
+            .notbeige {
+                td {
+                    &:first-child {
+                        background-color: white;
+                        width: auto;
+                        text-align: unset;
+                    }
+                }
+            }
+            tr {
+                td {
+                    vertical-align: middle;
+                    &:first-child {
+                        background-color: #efefef;
+                        width: 22%;
+                        text-align: center;
+                        @include max768 {
+                            display: block;
+                            width: 100%;
+                            padding: 2rem 0;
+                        }
+                        @include max480 {
+                            padding: 4px 0px;
+                        }
+                    }
+                    div {
+                        padding: 24px 32px;
+                        letter-spacing: .08rem;
+                        line-height: 2;
+                        @include max768 {
+                            padding: 8px 32px;
+                        }
+                        @include max480 {
+                            padding: 8px 10px;
+                            font-size: 1.4rem;
+                        }
+                        .link {
+                            padding: 0 0 5px;
+                            border-bottom: solid 1px #000;
+                        }
+                    }
+                    @include max768 {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

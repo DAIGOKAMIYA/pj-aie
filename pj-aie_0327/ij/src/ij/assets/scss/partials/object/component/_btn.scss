@@ -1,0 +1,155 @@
+.c-btn{
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    height: 6.4rem;
+    & &__inner{
+        height: 100%;
+        border-radius: 40px;
+        display: block;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 6.2rem;
+        text-align: center;
+        position: relative;
+        @include max480 {
+            font-size: 1.4rem;
+        }
+        .btn__arrow {
+            position: absolute;
+            width: 20px;
+            height: 15px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-image: url(../../../ij/assets/img/arrow_white@3x.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include max480 {
+                width: 18px;
+                height: 13px;
+            }
+        }
+    }
+    & &__inner.-black {
+        .btn__arrow {
+            background-image: url(../../../ij/assets/img/arrow_black@3x.png);
+        }
+    }
+    &.-gold &__inner{
+        background-color: $gold;
+        border: 1px solid $gold;
+    }
+    &.-red &__inner{
+        background-color: $red;
+        border: 1px solid $red;
+    }
+    &.-blue &__inner{
+        background-color: $blue;
+        border: 1px solid $blue;
+    }
+
+    &.-white &__inner{
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #000;
+    }
+    &.-black &__inner{
+        background-color: #262626;
+        border: 1px solid #262626;
+    }
+}
+
+.c-app_btn {
+    text-align: center;
+    &__inner {
+        .btn_wrap {
+            max-width: 500px;
+            min-width: 240px;
+            margin: 0 auto;
+            .btn {
+                color: #fff;
+                padding: 2.4rem 0;
+                display: block;
+                font-weight: bold;
+                position: relative;
+                @include max480 {
+                    font-size: 1.4rem;
+                }
+                @include max360 {
+                    font-size: 1.2rem;
+                }
+                .btn__arrow {
+                    position: absolute;
+                    width: 22px;
+                    height: 10px;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    background-image: url(../img/application/aie/arrow.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    @include max480 {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        .btn_wrap.-aie{
+            background-color: $blue;
+        }
+        .btn_wrap.-j{
+            background-color: $red;
+        }
+    }
+}
+
+.c-course_btn {
+    text-align: center;
+    .btn {
+        &_inner {
+            padding: 2.2rem 2.6rem;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                width: 12px;
+                height: 16px;
+                background-image: url(../img/course/j/arrow.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .text {
+                color: #fff;
+            }
+            &.-black {
+                background-color: #000;
+            }
+            &.-black {
+                background-color: #000;
+            }
+            &.-green {
+                background-color: #67be8d;
+            }
+            &.-yellow {
+                background-color: #f8b861;
+            }
+            &.-red {
+                background-color: #ed7980;
+            }
+            &.-bule {
+                background-color: #6fc8d8;
+            }
+            &.-purple {
+                background-color: #aa89bd;
+            }
+            &.-gold {
+                background-color: $gold;
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+.p-title{
+    $this: &;
+    .campuslife_club &{
+        background-image: url(../img/campuslife/campuslife_club_title_bg.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+
+.p-breadcrumb{
+    $this: &;
+    .campuslife_club &{
+        padding-bottom: 0;
+    }
+}
+
+.intro{
+    $this: &;
+    .campuslife_club &{
+        padding-bottom: 6rem;
+        display: flex;
+        justify-content: space-between;
+        background: no-repeat url(../img/campuslife/have_fun_everyday.png) right bottom 2rem / 517px;
+        @include max768{
+            background: no-repeat url(../img/campuslife/have_fun_everyday.png) right bottom 2rem / 80%;
+            display: block;
+        }
+        .logo{
+            width: 100%;
+            max-width: 338px;
+            margin-left: -1.5rem;
+            margin-bottom: 2rem;
+        }
+        .title{
+            margin-bottom: 3rem;
+            line-height: 1.4;
+            &__small{
+                font-size: 2.4rem;
+                font-weight: $bold;
+                @include max768{
+                    font-size: 2rem;
+                }
+            }
+            &__large{
+                font-size: 5rem;
+                font-weight: $bold;
+                background: linear-gradient(180deg, transparent, transparent 60%, #ff0 60%, #ff0);
+                @include max768{
+                    font-size: 4rem;
+                }
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: $bold;
+            line-height: 2.1;
+        }
+        &__img{
+            width: 50%;
+            @include max768{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+        &__txt{
+            width: 47%;
+            position: relative;
+            padding-left: 1.5rem;
+            @include max768{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section{
+    $this: &;
+    .campuslife_club &{
+        padding: 6rem 0;
+        position: relative;
+        @include max768{
+            padding: 4rem 0 2rem;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 5px;
+            background: url(../img/border_shimashima.png) center center / contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__head{
+            .c-application_titleA{
+                font-weight: $bold;
+                @include max768{
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        &__img{
+            display: flex;
+            justify-content: space-between;
+            @include max768{
+                display: block;
+            }
+            .img{
+                width: 31%;
+                @include max768{
+                    margin-bottom: 2rem;
+                    width: 100%;
+                }
+            }
+        }
+        &:nth-of-type(2) .section__img{
+            .img{
+                width: 48.5%;
+                @include max768{
+                    width: 100%;
+                }
+            }
+        }
+        &__list{
+            margin: 4rem 0;
+            @include max768{
+                margin: 2rem 0;
+            }
+            ul{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 956px;
+                padding: 3.5rem 4rem 1.5rem;
+                background: #f4f4f4;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @include max768{
+                    padding: 3rem 3rem 1rem;
+                    display: block;
+                }
+                li{
+                    width: 30%;
+                    margin-bottom: 2rem;
+                    @include max768{
+                        width: 100%;
+                    }
+                    &::before{
+                        content: '●';
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// body class
+.campuslife_club{
+    &__container{
+        padding: 3rem 0;
+    }
+    &__box{
+        padding: 5rem 4rem;
+        box-shadow: 0 0 20px rgba(0,0,0,.09);
+        @include max768{
+            padding: 3rem 2rem 0;
+        }
+    }
+}

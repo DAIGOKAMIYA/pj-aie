@@ -1,0 +1,411 @@
+.j-support {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/j/support_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .sub_explain {
+        p {
+            margin: 0 0 4.8rem;
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .c-application_tableA {
+        table ,td ,th {
+            border-collapse: collapse;
+            border:1px solid #000;
+        }
+        .table.-j {
+            text-align: center;
+            line-height: 1.7;
+            .head {
+                td {
+                    padding: 1.6rem 0;
+                    width: 10%;
+                    text-align: center;
+                    @include max768 {
+                        display: table-cell;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        padding: 2.4rem 0;
+                        @include max768 {
+                            display: table-cell;
+                        }
+                        &:nth-child(1){
+                            background-color: #efefef;
+                            text-align: center;
+                        }
+                        li {
+                            line-height: 2;
+                        }
+                    }
+                }
+                .notbeige {
+                    background-color: white!important;
+                }
+                .beige {
+                    background-color: #efefef;
+                }
+            }
+        }
+        .table.-j.repayment {
+            .head {
+                td {
+                    padding: 1.6rem 0;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            &:first-child {
+                                width: 140px;
+                            }
+                            &:nth-child(2) {
+                                width: 28%;
+                            }
+                            &:nth-child(3) {
+                                width: 35%
+                            }
+                            &:last-child {
+                                width: 240px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table.-j.flow {
+            .head {
+                td {
+                    padding: 1.6rem 0;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+            tbody {
+                tr {
+                    line-height: 1.7;
+                    &:first-child {
+                        td {
+                            &:first-child {
+                                width: 140px;
+                            }
+
+                            &:last-child {
+                                width: 240px;
+                            }
+                            &:nth-child(3), &:nth-child(5) {
+                                text-align: left;
+                                padding: 2.4rem 1.8rem;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        td {
+                            &:nth-child(2), &:nth-child(4) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                    &:not(:first-child) {
+                        td {
+                            &:first-child , &:nth-child(3) {
+                                background-color: #fff;
+                                width: 100px;
+                            }
+                            &:nth-child(2) ,&:nth-child(4) {
+                                width: 35%;
+                                text-align: left;
+                                padding: 2.4rem 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table.-j.simulation {
+            tr {
+                td {
+                    &:first-child {
+                        width: 240px;
+                    }
+                    &:nth-child(2) {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    .contact_link {
+        text-align: center;
+        margin: 4rem 0 10rem;
+        @include max480 {
+            margin: 4rem 0 6rem;
+        }
+        &_wrap {
+            display: inline-block;
+            max-width: 680px;
+            width: 80%;
+            @include max480 {
+                width: 100%;
+            }
+            .scholaship {
+                background-color: #efefef;
+                padding: 2.8rem 0;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    margin: 1.6rem 0 0 0;
+                    @include max480 {
+                        display: block;
+                    }
+                    li {
+                        @include max480 {
+                            margin: 0 0 1rem;
+                        }
+                        span {
+                            padding: 0 2rem;
+                            @include max480 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .c-application_tableB {
+        table ,td ,th {
+            border-collapse: collapse;
+            border:1px solid #000;
+        }
+        .table.-j {
+            table-layout: fixed;
+            tbody {
+                .check {
+                    background-color: #fefeb9;
+                    margin: 2rem 0;
+                    padding: 2.4rem 2rem;
+                    p {
+                        margin: 0;
+                    }
+                }
+                tr {
+                    td {
+                        .c-application_tableA {
+                            table-layout: fixed;
+                            margin: 4rem 0;
+                            .table.-j {
+                                thead {
+                                    tr {
+                                        &:first-child {
+                                            td {
+                                                &:first-child {
+                                                    width: 190px;
+                                                }
+                                                &:nth-child(2), &:nth-child(4) {
+                                                    width: 100px;
+                                                }
+                                                &:nth-child(3) {
+                                                    width: 290px;
+                                                    padding: 1.2rem 0;
+                                                    div {
+                                                        padding: 0;
+                                                    }
+                                                }
+                                                &:nth-child(5) {
+                                                    width: 150px;
+                                                    div {
+                                                        line-height: 1.2;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                            td {
+                                                padding: 0;
+                                                width: 140px;
+                                                div {
+                                                    padding: .3rem 0;
+                                                }
+                                            }
+                                        }
+                                        td {
+                                            background-color: #d8d8d8;
+                                            border: 1px solid #000;
+                                        }
+                                    }
+                                }
+                                tbody {
+                                    tr {
+                                        &:nth-child(2n) {
+                                            td {
+                                                &:first-child {
+                                                    width: 100px;
+                                                    background-color: #fff;
+                                                }
+                                            }
+                                        }
+                                        td {
+                                            div {
+                                                padding: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table.-j.loantel {
+            tbody {
+                tr {
+                    td {
+                        div {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                height: 18px;
+                                padding: 0 2rem 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table.-j.alone {
+            margin: 0 0 4rem;
+        }
+    }
+    .loan {
+        div {
+            .list {
+                margin: 0 0 6rem;
+                li {
+                    line-height: 2;
+                }
+            }
+        }
+    }
+    .available {
+        margin:  0 0 4rem;
+        &_inner {
+            background-color: #efefef;
+            padding: 4rem 2.5rem;
+            &_title {
+                margin: 0 0 2.4rem;
+                font-weight: bold;
+            }
+            .c-application_tableA {
+                margin: 0 0 2rem;
+                table ,td ,th {
+                    border-collapse: collapse;
+                    border:1px solid #000;
+                }
+                .table {
+                    thead {
+                        tr {
+                            td {
+                                width: 190px;
+                                div {
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            background-color: #fff;
+                            td {
+                                span {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &_content {
+                p {
+                   .note_red{
+                        color: #fe0000;
+                    }
+                }
+                .upper_list {
+                    h4 {
+                        font-weight: bold;
+                        margin: 0 0 3rem;
+                    }
+                    ul {
+                        li {
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .support_flow {
+        &_note {
+            .red {
+                color: #fe0000;
+            }
+        }
+        .flow_img {
+            text-align: center;
+            margin: 4rem 0 ;
+            .img {
+                display: inline-block;
+            }
+        }
+    }
+    .alone_scholaship{
+        &_title {
+            font-weight: bold;
+            margin: 0 0 2rem;
+        }
+        &_flow {
+            margin: 0 0 6rem;
+            dl {
+                border-bottom: #eee solid 1px;
+                padding: 3rem 2rem;
+                display: flex;
+                align-items: center;
+                &:first-child {
+                    border-top:  #eee solid 1px;
+                }
+                dt {
+                    font-family: $time;
+                    font-size: 5rem;
+                    color: $red;
+                    margin: 0 6rem 0 0;
+                    @include max480 {
+                        font-size: 4rem;
+                        margin: 0 2rem 0 0;
+                    }
+                }
+                dd {
+                    line-height: 1.8;
+                    span {
+                        color: #fe0000;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

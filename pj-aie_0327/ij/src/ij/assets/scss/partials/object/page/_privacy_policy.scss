@@ -1,0 +1,57 @@
+.privacy_policy {
+  .p-title{
+    background-image: url("../img/sitemap/com_bg.jpg");
+		.title{
+			text-align:left;
+		}
+	}
+
+  .js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+
+  .pp_wrap {
+    max-width: 1180px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+
+    h3 {
+      font-size: 2.2rem;
+      padding-bottom: 20px;
+      border-bottom: solid 1px #888;
+      margin-bottom: 40px;
+
+      @include max480 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    ul {
+
+      li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 20px;
+        line-height: 1.8;
+
+        &::before {
+          content: "・";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    strong {
+      font-size: 1.8rem;
+    }
+  }
+}

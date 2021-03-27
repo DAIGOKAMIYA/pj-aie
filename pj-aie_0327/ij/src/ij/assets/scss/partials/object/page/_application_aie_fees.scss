@@ -1,0 +1,103 @@
+.aie-fees {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/aie/fees_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .c-application_tableA {
+        .table.-aie {
+            text-align: center;
+            .head {
+                td {
+                    padding: 2.4rem 0;
+                    width: 10%;
+                    &:nth-child(2) {
+                        width: 8%;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            padding: 2.4rem 0;
+                            &:first-child {
+                                width: 13%;
+                            }
+                            &:nth-child(2) {
+                                width: 8%;
+                            }
+                        }
+                    }
+                    td {
+                        padding: 2.4rem 0;
+                        &:nth-child(1),&:nth-child(2) {
+                            background-color: #f7f2e7;
+                        }
+                        .major {
+                            padding: 2rem 0 2rem 2.5rem;
+                        }
+                    }
+                }
+                .notbeige {
+                    background-color: white!important;
+                }
+                .beige {
+                    background-color: #f7f2e7;;
+                }
+            }
+        }
+        .other_fees {
+            position: relative;
+            .head {
+                tr {
+                    td {
+                        vertical-align: middle;
+                        padding: 1rem 0!important;
+                        div {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        &:nth-child(3) {
+                            width: 6%;
+                        }
+                        &:nth-child(4),
+                        &:nth-child(5),
+                        &:nth-child(6),
+                        &:nth-child(7),
+                        &:nth-child(8),
+                        &:nth-child(9) {
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .p-app_block {
+        &__inner {
+            .center {
+                text-align: center;
+            }
+        }
+    }
+    .note {
+        margin: 0 0 8rem;
+    }
+    .list {
+        &_wrap {
+            &__item {
+                margin: 0 0 2rem;
+                line-height: 30px;
+            }
+        }
+    }
+}

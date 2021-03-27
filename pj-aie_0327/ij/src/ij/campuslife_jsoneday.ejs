@@ -1,0 +1,51 @@
+
+<%- include('./_config.ejs'); %>
+
+<% title = "J's ONEDAY"; %>
+<% body_class = "campuslife_jsoneday"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+        <div class="c-schoolname -j">
+            <div class="name">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                </picture>
+            </div>
+        </div>
+        <div class="oneday">
+            <div class="c-wrapper">
+                <div class="c-inner">
+                    <div class="oneday__img">
+                        <img src="./assets/img/campuslife/campuslife_jsoneday_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

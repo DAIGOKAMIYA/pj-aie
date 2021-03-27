@@ -1,0 +1,17 @@
+.c-col2{
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        width: 50%;
+    }
+    &.-pconly &__item{
+        @include max1024{
+            width: 100%;
+        }
+    }
+    &.-min769 &__item{
+        @include max768{
+            width: 100%;
+        }
+    }
+}

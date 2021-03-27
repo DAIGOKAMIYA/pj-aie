@@ -1,0 +1,88 @@
+.course_aie-course_bridal{
+
+    .esthe_bg{
+        background-color: #91cbd9;
+    }
+    .esthe_bg_d{
+        background-color: #20a5c5;
+    }
+    .esthe_bg_dd{
+        background-color: #ff99cc;
+    }
+    .esthe_bg_r{
+        background-color: #ec6941;
+    }
+    .esthe_bg_b{
+        background-color: #91c8d8;
+    }
+    .esthe_bg_db{
+        background-color: #5abad6;
+    }
+    .esthe-schedule span{
+        color: #bddde5!important;
+    }
+    .p-title{background-image: url(../img/course_aie-course_bridal/mv_bg@3x.jpg);}
+    .aie-c-features{background-image: url(../img/course_aie-course_bridal/aie-c-features@3x.png)}
+    
+    .aie-c-fv{
+        .aie-c-title{
+            div{
+                width: 57%!important;
+            }
+            h2{
+                text-align: left!important;
+            }
+        }
+    }
+    .aie-c-schedule{
+        .aie-c-schedule__curriculum{
+            border: 2px solid #20a5c5;
+        }
+    }
+    .aie-c-info{
+        .aie-c-info__txt{
+            .aie-c-info__wp{
+                border-bottom : 7px dotted #20a5c5;
+            }
+        }
+    }
+    .aie-c-supplement__contents{
+        background-color: #f4d9e6;
+        flex-direction:column;
+        .aie-c-supplement__contents__wrapper{
+            display: flex;
+            .aie-c-supplement__contents__txt{
+                h3{margin-bottom:0!important;}
+                span{
+                    display: inline-block;
+                    color: white;
+                    padding: 10px 20px;
+                    background-color: #91cbd9;
+                    border-radius: 30px;
+                    margin:20px 0;
+                    font-weight: bold;
+                }
+            }
+        }
+        .aie-c-supplement__contents__info{
+            text-align: left;
+            background-color: #fbf8f1;
+            padding: 25px;
+            margin-right: auto;
+            h4{
+                font-size: 2.4rem;
+                margin: 0 0 20px 0;
+            }
+            p{font-size: 1.2rem;}
+            dl{
+                font-size: 1.4rem;
+                display: flex;
+                dt{
+                    background-color: #c5a06f;
+                    color: white;
+
+                }
+            }
+        }
+    }
+}

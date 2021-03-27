@@ -1,0 +1,44 @@
+.p-title{
+    $this: &;
+    .campuslife_aiesoneday &{
+        background-image: url(../img/campuslife/campuslife_aiesoneday_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+    .campuslife_jsoneday &{
+        background-image: url(../img/campuslife/campuslife_jsoneday_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+.oneday{
+    $this: &;
+    .campuslife_aiesoneday &,
+    .campuslife_jsoneday &{
+        padding: 6rem 0;
+        @include max768{
+            padding: 3rem 0;
+            // margin-bottom: 15rem;
+        }
+        .c-inner{
+            @include max768{
+                padding: 0 2.666%;
+            }
+        }
+        &__img{
+            background-color: #fff;
+            padding: 4rem;
+            @include max768{
+                padding: 1rem;
+            }
+        }
+    }
+}

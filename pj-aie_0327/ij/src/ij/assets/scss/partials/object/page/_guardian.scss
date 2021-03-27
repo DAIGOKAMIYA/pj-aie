@@ -1,0 +1,646 @@
+.guardian {
+	.p-title{
+		background-image: url(../img/guardian/guardian_title_bg_pc.png);
+		.title{
+			text-align:left;
+		}
+	}
+	.js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+}
+
+.guardian{
+	.introduction{
+		width:1100px;
+		margin:40px auto;
+		@include max768{
+			width:auto;
+			margin:40px 20px;
+		}
+		dl{
+			margin-bottom:64px;
+		}
+		dt{
+			border-bottom:1px solid #999999;
+			font-size:2.2rem;
+			padding-bottom:18px;
+			margin-bottom:44px;
+			@include max768{
+				margin-bottom:16px;
+			}
+		}
+		dd{
+			&.text{
+				line-height:3.2rem;
+				width:641px;
+				float:left;
+				@include max768{
+					width:100%;
+					float:none;
+					margin-bottom:20px;
+				}
+			}
+			&.img{
+				width:400px;
+				float:right;
+				text-align:center;
+				img{
+					max-width:400px;
+				}
+				@include max768{
+					width:100%;
+					float:none;
+				}
+			}
+		}
+		.button_list{
+			width:806px;
+			margin:0 auto;
+			@include max768{
+				width:100%;
+			}
+			li{
+				margin:0 20px 40px 20px;
+				float:left;
+				width:363px;
+				@include max768{
+					float:none;
+					width:100%;
+					margin:0;
+					margin-bottom:20px;
+					text-align:center;
+				}
+				a{
+					display:inline-block;
+					width:100%;
+					line-height:60px;
+					text-align:center;
+					font-weight:bold;
+					color:#fff;
+					background:url("../img/guardian/guardian_ic_arrow_right_ffffff.png") no-repeat right 11px center #999;
+				}
+				&:nth-child(3) a{background-color:#82ccd5;}
+				&:nth-child(4) a{background-color:#c91420;}
+			}
+		}
+	}
+	&-tabs{
+		@include max768{
+			margin-top: 3rem;
+		}
+		li{
+			a{
+				.c-schoolname{
+					position: relative;
+					&::after{
+						content: '';
+						width: 0;
+						height: 0;
+						border: 9px solid transparent;
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						margin-left: -9px;
+						display: none;
+					}
+					&.-i::after{
+						border-top: 8px solid $gold;
+					}
+					&.-j::after{
+						border-top: 8px solid $red;
+						z-index:1;
+					}
+				}
+				&.is-active .c-schoolname{
+					&::after{
+						@include max768{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-intro{
+		position: relative;
+		&.-i{
+			dl{
+				text-align:center;
+				padding:52px 40px 0 30px;
+			}
+			dt:nth-child(1){
+				display:inline-block;
+				line-height:32px;
+				padding:0 2rem;
+				margin-bottom:20px;
+				background:#cfb283;
+				border-radius:20px;
+				color:#fff;
+				font-size:1.6rem;
+				@include max768{
+					font-size:1.4rem;
+				}
+			}
+			dt:nth-child(2){
+				color:#c5a06f;
+				font-size:2.4rem;
+				line-height:3.6rem;
+				margin-bottom:20px;
+			}
+			dd{
+				text-align:left;
+				font-size:1.4rem;
+				line-height:2.8rem;
+			}
+		}
+		&.-j{
+			background-color: #1a1a1a;
+			color: #fff;
+			dl{
+				text-align:center;
+				padding:52px 30px 0 40px;
+				@include max768{
+					padding:40px 20px 0 20px;
+				}
+			}
+			dt:nth-child(1){
+				display:inline-block;
+				line-height:32px;
+				padding:0 2rem;
+				margin-bottom:20px;
+				background:#c91420;
+				color:#fff;
+				font-size:1.6rem;
+				@include max768{
+					font-size:1.4rem;
+				}
+			}
+			dt:nth-child(2){
+				color:#fff;
+				font-size:2.4rem;
+				line-height:3.6rem;
+				margin-bottom:20px;
+			}
+			dd{
+				text-align:left;
+				font-size:1.4rem;
+				line-height:2.8rem;
+			}
+		}
+	}
+	&-content{
+		&.-i{
+		}
+		.content_label{
+			margin:30px 40px 36px 30px;
+			@include max768{
+				margin:20px 20px 36px 20px;
+			}
+			p{
+				border-bottom:1px solid #b9b9b9;
+				padding-bottom:10px;
+				margin-bottom:25px;
+				font-weight:bold;
+			}
+			.img01{
+				text-align:center;
+				img{
+					max-width:366px;
+				}
+			}
+		}
+		.content_list{
+			margin:0 40px 0 30px;
+			@include max768{
+				margin:0 20px;
+			}
+			li{
+				dl{
+					margin-bottom:40px;
+					dt{
+						color:#fff;
+						padding:0 2rem;
+						line-height:3rem;
+						font-size:1.4rem;
+						margin-bottom:20px;
+					}
+					dd{
+						font-size:1.2rem;
+						line-height:2.4rem;
+						span{
+							font-weight:bold;
+						}
+					}
+				}
+				&:nth-child(1) dt{background:#ffb756;}
+				&:nth-child(2) dt{background:#67be8d;}
+				&:nth-child(3) dt{background:#ed7980;}
+				&:nth-child(4) dt{background:#6fc8d8;}
+				&:nth-child(4) dd{line-height:2.2rem;}
+				&:nth-child(5) dt{background:#b194c4;}
+			}
+			&.col3{
+				li{
+					width:32%;
+					float:left;
+					margin-right:2%;
+					text-align:center;
+					@include max768{
+						width:100%;
+					}
+					dt{
+						font-size:1.2rem;
+						line-height:1.8rem;
+						padding:7px 0;
+					}
+					dd{
+						font-size:1rem;
+						line-height:1.6rem;
+						text-align:center;
+						@include max768{
+							font-size:1.2rem;
+							line-height:1.8rem;
+						}
+					}
+					img{
+						max-width:180px;
+						margin-bottom:12px;
+					}
+					&:nth-child(3n){
+						margin-right:0;
+					}
+				}
+			}
+		}
+		.button_list01{
+			margin:0 40px 0 30px;
+			padding-bottom:30px;
+			border-bottom:1px solid #ccc;
+			@include max768{
+				margin:0 20px;
+			}
+			li{
+				float:left;
+				width:48%;
+				margin-right:4%;
+				margin-bottom:22px;
+				@include max768{
+					float:none;
+					width:100%;
+					margin-right:0;
+				}
+				a{
+					display:inline-block;
+					width:100%;
+					line-height:60px;
+					text-align:center;
+					font-weight:bold;
+					color:#fff;
+					background:url("../img/guardian/guardian_ic_arrow_right_ffffff.png") no-repeat right 11px center #82ccd5;
+				}
+				&:nth-child(2n){margin-right:0;}
+			}
+			&.border_none{
+				border-bottom:0;
+			}
+		}
+		.button_list02{
+			margin:0 40px 0 30px;
+			padding-bottom:10px;
+			padding-top:30px;
+			@include max768{
+				margin:0 20px;
+			}
+			li{
+				float:left;
+				width:48%;
+				margin-right:4%;
+				margin-bottom:22px;
+				@include max768{
+					float:none;
+					width:100%;
+					margin-right:0;
+				}
+				a{
+					display:inline-block;
+					width:100%;
+					line-height:60px;
+					text-align:center;
+					font-size:1.3rem;
+					font-weight:bold;
+					color:#fff;
+					border-radius:10px;
+					&::before{
+						content:url("../img/guardian/guardian_ic_arrow_bottom_ffffff.png");
+						line-height:24px;
+						position:relative;
+						top:7px;
+						left:-10px;
+					}
+				}
+				&:nth-child(1) a{background-color:#ffb756;}
+				&:nth-child(2) a{background-color:#67be8d;}
+				&:nth-child(3) a{background-color:#ed7980;}
+				&:nth-child(4) a{background-color:#6fc8d8;}
+				&:nth-child(5) a{background-color:#b194c4;}
+				&:nth-child(2n){margin-right:0;}
+			}
+		}
+		.text01{
+			margin:0 40px 0 30px;
+			text-align:left;
+			font-size:1.4rem;
+			line-height:2.8rem;
+			@include max768{
+				margin:0 20px;
+			}
+		}
+		.image_list01{
+			margin:0 40px 30px 30px;
+			padding-top:30px;
+			text-align:center;
+			@include max768{
+				margin:0 20px 30px 20px;
+			}
+			li{
+				display:inline-block;
+				position:relative;
+				width:149px;
+				margin-bottom:28px;
+				img{
+					max-width:135px;
+				}
+				span{
+					display:inline-block;
+					position:absolute;
+					bottom:0;
+					left:50%;
+					transform:translate(-50%,0);
+					font-size:1rem;
+					line-height:2.2rem;
+					padding:0 1rem;
+					color:#fff;
+					background:#888;
+					border-radius:5px;
+					white-space:nowrap;
+				}
+				&.color01 span{background-color:#ffb756;}
+				&.color02 span{background-color:#67be8d;}
+				&.color03 span{background-color:#ed7980;}
+				&.color04 span{background-color:#6fc8d8;}
+				&.color05 span{background-color:#b194c4;}
+				&.color06 span{background-color:#cfb283;}
+			}
+		}
+		.button_list03{
+			margin:0 40px 0 30px;
+			padding-bottom:50px;
+			border-bottom:1px solid #ccc;
+			text-align:center;
+			@include max768{
+				margin:0 20px;
+			}
+			a{
+				display:inline-block;
+				width:48%;
+				line-height:60px;
+				text-align:center;
+				font-weight:bold;
+				color:#fff;
+				background:url("../img/guardian/guardian_ic_arrow_right_ffffff.png") no-repeat right 11px center #82ccd5;
+				@include max768{
+					width:100%;
+				}
+			}
+		}
+	}
+	.flex_wrap{
+		margin:16px 40px 16px 30px;
+		padding-top:16px;
+		@include max768{
+			margin:16px 20px;
+		}
+		ul{
+			display:flex;
+			flex-wrap:wrap;
+			width:100%;
+			li{
+				width:52%;
+				margin-bottom:2.4rem;
+				font-size:1.4rem;
+				line-height:2.4rem;
+				span{
+					color:#cfb283;
+					margin-right:0.4rem;
+				}
+				&:nth-child(2n){width:48%;}
+				@include max768{
+					width:100%!important;
+					margin-bottom:1.4rem;
+				}
+			}
+		}
+	}
+	#tab_content_2{
+		background-color:#1a1a1a;
+	}
+
+	&-content{
+		&.-j{
+			background-color: #1a1a1a;
+			.content_wrap01{
+				margin:40px 30px 50px 40px;
+				padding-bottom:26px;
+				background:#fff;
+				ul{
+					padding:30px 20px 0 20px;
+					&.flex01{
+						display:flex;
+						li{
+							font-size:1.2rem;
+							line-height:1.8rem;
+							width:50%;
+							img{
+								margin-bottom:24px;
+							}
+							.j_img01{max-width:234px;}
+							.j_img02{max-width:259px;}
+							&:nth-child(1){
+								margin-right:25px;
+							}
+						}
+					}
+					&.flex02{
+						display:flex;
+						li{
+							background:#efefef;
+							font-size:1.2rem;
+							line-height:2.4rem;
+							padding:20px;
+							width:50%;
+							span{
+								font-size:1.4rem;
+								font-weight:bold;
+							}
+							&:nth-child(1){
+								margin-right:25px;
+							}
+						}
+					}
+				}
+			}
+			.content_wrap01_sp {
+				margin:40px 20px 50px 20px;
+				padding:20px;
+				background:#fff;
+				font-size:1.2rem;
+				line-height:1.8rem;
+				img{
+					margin-bottom:20px;
+				}
+				li:nth-child(2){
+					margin-top:40px;
+				}
+				p{
+					background:#efefef;
+					font-size:1.2rem;
+					line-height:2.4rem;
+					padding:20px;
+					margin-top:20px;
+					margin-bottom:0;
+					span{
+						font-size:1.4rem;
+						font-weight:bold;
+					}
+				}
+				.j_img01{max-width:234px;}
+				.j_img02{max-width:259px;}
+			}
+			.content_button01{
+				padding-bottom:30px;
+				margin:0 30px 0 40px;
+				border-bottom:1px solid #676767;
+				@include max768{
+					margin:0 20px;
+				}
+				li{
+					float:left;
+					width:48%;
+					margin-right:4%;
+					margin-bottom:22px;
+					@include max768{
+						float:none;
+						width:100%;
+						margin-right:0;
+					}
+					a{
+						display:inline-block;
+						width:100%;
+						line-height:60px;
+						text-align:center;
+						font-weight:bold;
+						color:#fff;
+						background:url("../img/guardian/guardian_ic_arrow_right_ffffff.png") no-repeat right 11px center #c91420;
+					}
+					&:nth-child(2n){margin-right:0;}
+				}
+			}
+			.content_button02{
+				padding-bottom:30px;
+				margin:30px 30px 0 40px;
+				@include max768{
+					margin:0 20px;
+				}
+				li{
+					a{
+						display:inline-block;
+						width:100%;
+						line-height:134px;
+						text-align:center;
+						font-weight:bold;
+						color:#fff;
+						span{
+							background-color:rgba(0,0,0,0.45);
+							padding:3px 5px;
+						}
+					}
+					&:nth-child(1){
+						width:49%;
+						float:left;
+						a{
+							background:url("../img/guardian/guardian-j_img03.png") no-repeat right center;
+						}
+						@include max768{
+							float:none;
+							width:100%;
+							max-width:291px;
+							margin:30px auto 0 auto;
+						}
+					}
+					&:nth-child(2){
+						width:50%;
+						float:right;
+						a{
+							background:url("../img/guardian/guardian-j_img04.png") no-repeat right center;
+						}
+						@include max768{
+							float:none;
+							width:100%;
+							max-width:294px;
+							margin:20px auto 0 auto;
+						}
+					}
+				}
+			}
+			.content_text01{
+				font-size:1.4rem;
+				line-height:2.8rem;
+				color:#fff;
+				margin:0 30px 36px 40px;
+				@include max768{
+					margin:0 20px 24px 20px;
+				}
+			}
+			.j_img05 {
+				padding:36px 30px 36px 40px;
+				@include max768{
+					padding:24px 20px;
+				}
+			}
+			.content_text02{
+				margin:26px 30px 16px 40px;
+				padding-top:16px;
+				background:#efefef;
+				@include max768{
+					margin:26px 20px 40px 20px;
+				}
+				ul{
+					display:flex;
+					flex-wrap:wrap;
+					width:100%;
+					padding-left:20px;
+					li{
+						width:52%;
+						margin-bottom:2.4rem;
+						font-size:1.4rem;
+						line-height:2.4rem;
+						span{
+							color:#cfb283;
+							margin-right:0.4rem;
+						}
+						&:nth-child(2n){width:48%;}
+						@include max768{
+							width:100%!important;
+							margin-bottom:1.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

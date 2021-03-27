@@ -1,0 +1,72 @@
+.p-title{
+    $this: &;
+    .employment_job_graduate &{
+        background-image: url(../img/campuslife/campuslife_schedule_title_bg.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+
+.profile{
+    $this: &;
+    .employment_job_graduate &{
+        &__intro{
+            padding: 4rem 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+                margin-bottom: 0;
+                text-align: center;
+                font-weight: $medium;
+            }
+        }
+        &__list{
+            padding: 0 40px;
+            @include max768{
+                padding: 0 5.333%;
+            }
+            > div{
+                margin-bottom: 4rem;
+            }
+        }
+        &.-i{
+            #{$this}__intro{
+                p{
+                    font-size: 1.8rem;
+                    white-space: nowrap;
+                    @include max768{
+                        font-size: 1.5rem;
+                    }
+                    mark{
+                        display: inline-block;
+                        padding: 0 0 0 1rem;
+                        background: linear-gradient(180deg, transparent, transparent 65%, #c8eaf0 65%, #c8eaf0 100%);
+                    }
+                }
+            }
+        }
+        &.-j{
+            #{$this}__intro{
+                p{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    @include max768{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            #{$this}__list{
+                > div{
+                    padding-top: .6rem;
+                    // margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}

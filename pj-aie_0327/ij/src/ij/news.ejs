@@ -1,0 +1,94 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "NEWS"; %>
+<% body_class = "news"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title align-l"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-wrapper -w1084">
+
+            <section class="news">
+                <div class="news__inner">
+                    <article class="news__item">
+                        <a href="#">
+                            <time class="news__date">2021.03.01</time>
+                            <div class="news__category common">両校共通</div>
+                            <h2 class="news__title">新型コロナウイルス感染症の拡大に伴う一部業務縮小について</h2>
+                        </a>
+                    </article>
+                    <article class="news__item">
+                        <a href="#">
+                            <time class="news__date">2021.03.01</time>
+                            <div class="news__category aie">アイエステ</div>
+                            <h2 class="news__title">AOエントリーが締切間近となっております</h2>
+                        </a>
+                    </article>
+                    <article class="news__item">
+                        <a href="#">
+                            <time class="news__date">2021.03.01</time>
+                            <div class="news__category j">ジェイヘアメイク</div>
+                            <h2 class="news__title">受験生の皆様へ</h2>
+                        </a>
+                    </article>
+                    <article class="news__item">
+                        <a href="#">
+                            <time class="news__date">2021.03.01</time>
+                            <div class="news__category aie">アイエステ</div>
+                            <h2 class="news__title">テキストが入りますテキストが入りますテキストが入ります</h2>
+                        </a>
+                    </article>
+                    <article class="news__item">
+                        <a href="#">
+                            <time class="news__date">2021.03.01</time>
+                            <div class="news__category j">ジェイヘアメイク</div>
+                            <h2 class="news__title">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</h2>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="pagenavi">
+                <div class="pagenavi__list">
+                    <a href="#">&lt;&lt;</a>
+                    <a href="#">&lt;</a>
+                    <span class="current">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    ...
+                    <a href="#">15</a>
+                    <a href="#">&gt;</a>
+                    <a href="#">&gt;&gt;</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

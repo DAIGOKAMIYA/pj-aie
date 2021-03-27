@@ -1,0 +1,47 @@
+.course_aie-course_bridal{
+
+    .esthe_bg{
+        background-color: #67bd8c;
+    }
+    .esthe_bg_d{
+        background-color: #20a5c5;
+    }
+    .esthe_bg_dd{
+        background-color: #eba642;
+    }
+    .esthe_bg_r{
+        background-color: #ec6941;
+    }
+    .esthe_bg_b{
+        background-color: #91c8d8;
+    }
+    .esthe_bg_db{
+        background-color: #5abad6;
+    }
+    .esthe-schedule span{
+        color: #acd8be!important;
+    }
+    .p-title{background-image: url(../img/course_aie-course_aroma/aroma_bg@3x.jpg);}
+    .aie-c-features{background-image: url(../img/course_aie-course_aroma/aie-c-features@3x.png)}
+    
+    .aie-c-fv{
+        .aie-c-title{
+            &>div{
+                width: 57%!important;
+                margin-left:auto;
+            }
+        }
+    }
+    .aie-c-schedule{
+        .aie-c-schedule__curriculum{
+            border: 2px solid #46a06d;
+        }
+    }
+    .aie-c-info{
+        .aie-c-info__txt{
+            .aie-c-info__wp{
+                border-bottom : 7px dotted #46a06d;
+            }
+        }
+    }
+}

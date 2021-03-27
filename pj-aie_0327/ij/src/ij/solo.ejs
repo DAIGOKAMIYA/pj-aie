@@ -1,0 +1,226 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "ひとり暮らしをお考えの方へ"; %>
+<% body_class = "solo"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-wrapper -w1200">
+
+            <section class="message">
+                <div class="message__inner">
+                    <div class="message__text">
+                        <p>地元を離れて専門学校へ進学したいけど……<br>
+                        上京、進学、ひとり暮らし……<br>
+                        生活のこと、お金のことなど、不安なことが一杯ですよね。<br>
+                        そんな皆さんの不安を解消する<span>サポート制度が充実するサポート制度が</span><br>
+                        アイエステティック専門学校とジェイヘアメイク美容専門学校には<br>
+                        さまざまなエリアから進学した学生がいるのでご安心ください！</p>
+                    </div>
+                    <div class="message__image"><img src="<%- dir %>assets/img/solo/image_intro_01.png"></div>
+                </div>
+            </section>
+
+            <section class="reason shadow">
+                <div class="reason__inner">
+                    <h2 class="heading_lv1"><span>千葉県外の私たちが千葉を選んだ理由</span></h2>
+                    <div class="entertainment">
+                        <h3 class="heading_lv2">エンタメ編</h3>
+                        <div class="reason__wrap">
+                            <div class="reason__text">
+                                <h4 class="heading_lv3">東京と同じくらい買い物が楽しめるから！</h4>
+                                <p>千葉駅周辺にはぐっと賑やかで数多くの飲食店やそごうをはじめとしたデパート。<br>
+                                オーロラモールjunnuやc-oneといった若い女性がショッピングできるお店が沢山！<br>
+                                足を伸ばせば見ているだけでも楽しいオシャレなスポットが沢山あります。</p>
+                                <h4 class="heading_lv3">遊ぶところも充実してるから！</h4>
+                                <p>学校周辺にはお友達とおしゃべりが楽しめるカフェやファーストフード、ワイワイ騒げるカラオケボックスなど沢山のお店があります。学校帰りに立ち寄ってみてもいいかも！？<br>
+                                ディズニーリゾートや葛西臨海公園、幕張メッセなど、有名なスポットがたくさん！イベントや季節に合わせて楽しめます！</p>
+                            </div>
+                            <div class="reason__image"><img src="<%- dir %>assets/img/solo/image_reason_01.png"></div>
+                        </div>
+                    </div>
+                    <div class="life">
+                        <h3 class="heading_lv2">生活編</h3>
+                        <div class="reason__wrap reverse">
+                            <div class="reason__text">
+                                <h4 class="heading_lv3">東京に比べて物価が安いから！</h4>
+                                <p>東京の物価が高いのは世界的にも有名。平成14年の総務省の調査では47都道府県の中で最も物価が高いのは東京でした。たとえば千葉県の物価指数を100とした場合、東京都は109.1ポイント。つまり単純に言えば、千葉で1,000円のものが東京では約1,100円するということです。</p>
+
+                                <h4 class="heading_lv3">東京に比べて治安がいいから！</h4>
+                                <p>治安は本人だけでなく親御さんももちろん気になるポイント。千葉は東京と比べてどうなのでしょうか？2012年5月に警察庁が発表した資料によると、千葉県はワースト8位。しかし、東京はワースト5位、同じく関東圏の埼玉はワースト7位です。</p>
+                            </div>
+                            <div class="reason__image"><img src="<%- dir %>assets/img/solo/image_reason_02.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="geography">
+                        <h3 class="heading_lv2">地理編</h3>
+                        <div class="reason__wrap">
+                            <div class="reason__text">
+                                <h4 class="heading_lv3">東京に比べて家賃が安いから！</h4>
+                                <p>都内であれば、治安や建物の築年数、設備などを踏まえると平均家賃は7万円以上はするでしょう。一方で千葉であれば1R・1Kの家賃相場は平均5万円～5万5千円です。</p>
+                            </div>
+                            <div class="reason__image"><img src="<%- dir %>assets/img/solo/image_reason_03.png"></div>
+                        </div>
+                        <div class="reason__wrap">
+                            <div class="reason__text">
+                                <h4 class="heading_lv3">千葉に住めば通学が楽だから！</h4>
+                                <p>学校は都内で住む場所は都外！という選択肢もひとつありますが、学校付近に住めばオトクなことも☆</p>
+                            </div>
+                            <div class="reason__image"><img src="<%- dir %>assets/img/solo/image_reason_04.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="voice">
+                        <h5 class="heading_lv4"><span>こんな意見もありました</span></h5>
+                        <ul class="voice__list">
+                            <li>東京よりもコンパクトで便利！（新潟県出身 N.Aさん）</li>
+                            <li>人混みが嫌いだから千葉がちょうどいい♪（宮城県出身 E.Uさん）</li>
+                            <li>地元に似ていて安心した（茨城県出身 M.Nさん）</li>
+                            <li>初めてのひとり暮らしを東京でするのは不安だった（岩手県出身 E.Sさん）</li>
+                            <li>空港や主要駅からもアクセスがよかった（山形県出身 H.Fさん）</li>
+                        </ul>
+                    </div>
+
+                    <div class="introduce">
+                        <h5 class="heading_lv4"><span>在校生が多く利用する賃貸関連業社をご紹介しています！</span></h5>
+                        <div class="introduce__inner">
+                            <div class="introduce__text">
+                                <p>親元を離れて進学する方を対象に提携の学生寮、<br>
+                                学生専用マンションなどのご紹介も行っております。</p>
+                                <table class="table">
+                                    <caption>提携業者（例）：nasic（学生マンション）ソアラプラザ千葉</caption>
+                                    <tr>
+                                        <th>立地</th>
+                                        <td>JR総武線「千葉」駅徒歩約6分</td>
+                                    </tr>
+                                    <tr>
+                                        <th>賃料</th>
+                                        <td>Atype 月額賃料 44,500円～</td>
+                                    </tr>
+                                    <tr>
+                                        <th>仕様</th>
+                                        <td>専有面積 22.18㎡／居室 7.9帖<br>
+                                            管理人（火～土・8:00～実働4時間）、浴室暖房乾燥機、<br>
+                                            エアコン、フローリング調硬質フロア、駐輪場…etc</td>
+                                    </tr>
+                                </table>
+                                <p>nasicお問合せURL：<a href="http://school.749.jp/aie/" target="_blank">http://school.749.jp/aie/</a></p>
+                            </div>
+                            <div class="introduce__image"><img src="<%- dir %>assets/img/solo/image_introduction_01.jpg"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="support shadow">
+                <div class="support__inner">
+                    <div class="support__head">
+                        <h2 class="heading_lv1"><span>学費サポート</span></h2>
+                        <p>学費の負担を軽減！独自の学費サポート</p>
+                    </div>
+
+                    <div class="support__body">
+                        <div class="support__item sec_01">
+                            <div class="support__item__title">
+                                <div class="support__item__title__inner">
+                                    <h4>ひとり暮らし<br>
+                                    応援制度</h4>
+                                </div>
+                            </div>
+                            <div class="support__item__body">
+                                <strong>家賃の一部として<b>12万円</b>を補助</strong>
+                                <p>親元を離れてひとり暮らしをする学生に対し、２年進級時に家賃の一部として補助金を支給する制度です。</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>申請条件</th>
+                                        <td>自宅からの通学に、120分以上かかり、親元を離れて一人暮らしをする方</td>
+                                    </tr>
+                                    <tr>
+                                        <th>第2期</th>
+                                        <td>120,000円 ※2年進級時</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="support__item sec_02">
+                            <div class="support__item__title">
+                                <div class="support__item__title__inner">
+                                    <h4>学費<br>
+                                    分納制度</h4>
+                                </div>
+                            </div>
+                            <div class="support__item__body">
+                                <strong>授業料を<b>分割納入</b>できます</strong>
+                                <p>各年次の授業料を月々貸与された奨学金で支払う制度です。<br>
+                                各年次の授業料を月々貸与された奨学金で支払う分割納入制度。<br>
+                                入学金とその他費用を入学前までに納入していただき、授業料と施設費を在学期間中に奨学金を利用し、分割払いしていただきます。</p>
+                            </div>
+                        </div>
+                        <div class="support__item sec_03">
+                            <div class="support__item__title">
+                                <div class="support__item__title__inner">
+                                    <h4>特待生制度</h4>
+                                </div>
+                            </div>
+                            <div class="support__item__body">
+                                <strong>学費の<b>一部を免除</b>します</strong>
+                                <p>美容関連業界で働く事を目指し、本校への入学を希望する方に対して年間授業料の一部を免除する制度です。</p>
+
+                                <table class="table">
+                                    <tr>
+                                        <th rowspan="2">学費免除額 （年間）</th>
+                                        <td>特待生Ａ</td>
+                                        <td>100,000円</td>
+                                        <td rowspan="2">最大15名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>特待生Ｂ</td>
+                                        <td>50,000円</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support__foot">
+                        <p>学費サポートの詳細はこちらからご覧いただけます。</p>
+                        <div class="btn c-btn -black">
+                            <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">学費サポート</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

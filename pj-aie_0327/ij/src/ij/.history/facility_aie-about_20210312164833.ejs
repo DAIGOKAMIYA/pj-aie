@@ -1,0 +1,170 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "施設紹介"; %>
+<% body_class = "facility_aie-about"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+    <div class="p-title">
+        <div class="c-inner">
+            <div class="title"><%- title; %></div>
+        </div>
+    </div>
+    <div class="p-breadcrumb">
+        <div class="c-inner -w1084">
+            <div class="breadcrumb">
+                <a href="">トップ</a><span>&gt;</span><span>施設紹介</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="l-contents">
+    <main class="l-main">
+        <div class="faiab-fv site-width">
+            <img class="faiab-pc-pic" src="<%- dir %>assets/img/facility_aie-about/faiab-fv@3x.png" alt="全国トップクラスの施設・設備">
+            <img class="faiab-sp-pic" src="<%- dir %>assets/img/facility_aie-about/faiab-fv_sp@3x.png" alt="全国トップクラスの施設・設備">
+            <div class="faiab-fv-banner">
+                <a href=""><img src="<%- dir %>assets/img/facility_aie-about/faiab-fv-banner@3x.png" alt="校内360°パノラマ大公開!!"></a>
+            </div>
+        </div>
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item" style="background-color: #f7f7f7;">
+                <div class="c-wrapper -half -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper -half -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769 flex-between-str">
+            
+                <section class="faiab-ai c-col2__item js-tab-content is-active site-width" id="tab_content_1">
+                    <h2><span class="txt26 medium marker-skyblue">最新設備を備えた<br>
+                        サロン仕様の教室で学ぶ！</span></h2>
+                    <div class="faiab-ai__list flex-between-start">
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-spam@3x.jpg" alt="人気のハワイスタイルのエステルーム">
+                                <span>Inner Beauty SpaM</span>
+                            </div>
+                            <h3>人気のハワイスタイルの<br>
+                                エステルーム</h3>
+                            <p>人気のハワイ・リラクゼーションの最新スタイルをとりいれたSpa Mで、ワイキキビーチの サロンに負けない上質な癒やしの技術を学びます。</p>
+                        </div>
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-weddingS@3x.jpg" alt="本物に近いウエディングルーム">
+                                <span>Wedding Room S</span>
+                            </div>
+                            <h3>本物に近い<br>
+                                ウエディングルーム</h3>
+                            <p>ウエディングドレスのフィッティングルーム。着付けの基礎の授業や、写真の撮り方などを学びます。</p>
+                        </div>
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-weddingC@3x.jpg" alt="挙式を行う学内チャペル">
+                                <span>Wedding Room C</span>
+                            </div>
+                            <h3>挙式を行う学内チャペル</h3>
+                            <p>ヨーロッパのお姫様が家族だけで行うプリンセスルームでのウエディング。 そのお部屋がそのまま教室になりました。
+                                ウエディングの流行を先取りです。</p>
+                        </div>
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-studio@3x.jpg" alt="ネイルサロン“スタジオAIE”">
+                                <span>Studio AIE</span>
+                            </div>
+                            <h3>ネイルサロン“スタジオAIE”</h3>
+                            <p>Nタワーのシンボルでもある、通りに面したオープンスタジオです。ネイルの授業はもちろん、学外に向けたビューティ・イベントも実施します。</p>
+                        </div>
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-spas@3x.jpg" alt="最新鋭のマシンが完備されているスパS">
+                                <span>Inner Beauty Spa S</span>
+                            </div>
+                            <h3>最新鋭のマシンが<br>
+                                完備されているスパS</h3>
+                            <p>フランス式のスキンセラピーとアイのインナービューティ セオリーが融合した効果の高い技術を身に付けます。</p>
+                        </div>
+                        <div class="faiab-ai__list__item">
+                            <div class="faiab-ai__list__item__pic">
+                                <img src="<%- dir %>assets/img/facility_aie-about/faiab-ai-makelab@3x.jpg" alt="Make-up Lab">
+                                <span>Make-up Lab</span>
+                            </div>
+                            <h3>Make-up Lab</h3>
+                            <p>自然の光をふんだんにとりいれ、色やディティールのセンス を磨けるメイクラボです。学内ショーでは、 モデルさんのメイクアップルームとしても使います。</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="faiab-j c-col2__item js-tab-content is-active site-width " id="tab_content_2">
+                    <h2>
+                        <img src="<%- dir %>assets/img/facility_aie-about/faiab-j-title@3x.png" alt="">
+                    </h2>
+                        <div>
+                            <img src="<%- dir %>assets/img/facility_aie-about/faiab-j-backshampoo@3x.jpg" alt="">
+                            <h3>ヘアサロン現場を想定した<br>
+                                バックシャンプー台20台</h3>
+                            <p class="backshampoo-box">実際にサロンで使われるバックシャンプー台を完備し、シャンプーやヘッドスパだけではなく、カット・スタイリングなど、トータルでサロンワークを学ぶことができます。</p>
+                            <img src="<%- dir %>assets/img/facility_aie-about/faiab-j-sideshampoo@3x.jpg" alt="">
+                            <h3>サイドシャンプー台も20台完備</h3>
+                            <p>実際のサロンを想定し、サイドシャンプーを使用した、モノトーンで落ち着いた雰囲気の実習室です。</p>
+                        </div>
+                </section>
+            
+        </div>
+        <section class="faiab-common site-width">
+            <div class="contents-width">
+                <h2><img src="<%- dir %>assets/img/facility_aie-about/faiab-common-title@3x.png" alt="パソコンスキルも身につくITルーム"></h2>
+                <div class="faiab-common__list flex-between-start">
+                    <div class="faiab-common__list__item">
+                        <img src="<%- dir %>assets/img/facility_aie-about/faiab-lunch@3x.png" alt="ランチは人気のテラスカフェ">
+                        <h3>ランチは人気のテラスカフェ</h3>
+                        <p>専門学校では珍しい学内にある食堂のテラスカフェ。 ガラス張りで、オープンスペースなカフェは屋外でも食事を楽しめます。</p>
+                    </div>
+                    <div class="faiab-common__list__item">
+                        <img src="<%- dir %>assets/img/facility_aie-about/faiab-hall@3x.png" alt="200人収容できるイベントホール">
+                        <h3>200人収容できるイベントホール</h3>
+                        <p>中村学園の多目的大ホールです。ショーやイベントなどで使用します。</p>
+                    </div>
+                    <div class="faiab-common__list__item">
+                        <img src="<%- dir %>assets/img/facility_aie-about/faiab-pc@3x.png" alt="パソコンスキルも身につくITルーム">
+                        <h3>パソコンスキルも身につくITルーム</h3>
+                        <p>パソコンのスキルアップの他に、就職活動でも使用します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

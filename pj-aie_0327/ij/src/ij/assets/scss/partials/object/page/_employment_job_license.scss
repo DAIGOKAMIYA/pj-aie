@@ -1,0 +1,408 @@
+.employment_job_aie_license{
+    .p-title{
+        background-image: url(../img/employment_job/i_license_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+
+    .license-contents{
+        padding: 5rem 0;
+        @include max768{
+            padding: 3rem 0;
+        }
+        &__head{
+            margin-bottom: 5rem;
+            @include max768{
+                margin-bottom: 2rem;
+            }
+            .title{
+                font-size: 3rem;
+                font-weight: $medium;
+                text-align: center;
+                @include max768{
+                    font-size: 2rem;
+                    line-height: 2;
+                }
+                span{
+                    padding: 0 0 5px;
+                    background: linear-gradient(180deg, transparent, transparent 75%, #cdebee 75%, #cdebee)
+                }
+            }
+        }
+        &__box{
+            padding: 6rem 0 3rem;
+            background-color: #fff;
+            @include max768{
+                padding: 3rem 0;
+            }
+        }
+        &__list{
+            padding: 50px 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include max768{
+                padding: 20px 20px 0;
+            }
+            .license-item{
+                width: 48.5%;
+                @include max768{
+                    width: 100%;
+                }
+                &:last-child{
+                    @include max768{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .license-item{
+        margin-bottom: 3rem;
+        background-color: #fff;
+        padding: 0 3rem;
+        border: 8px solid #d8f2f5;
+        @include max768{
+            padding: 0 2rem;
+            border-width: 6px;
+        }
+        &__head{
+            // height: 8.2rem;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 3rem 0 2rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: $bold;
+            line-height: 1.666;
+            .title{
+                &__sm{
+                    color: #666;
+                    font-size: 1.4rem;
+                    font-weight: $regular;
+                }
+                &__lg{
+                    font-size: 2rem;
+                    font-weight: $medium;
+                }
+            }
+        }
+        &__body{
+            padding: 2.5rem 0;
+            p{
+                letter-spacing: 0;
+                margin-bottom: 0;
+            }
+            .taglist{
+                margin-bottom: 2rem;
+                @include max768{
+                    margin-bottom: 1rem;
+                }
+                &-item{
+                    margin-right: .5rem;
+                    margin-bottom: .5rem;
+                    width: 8rem;
+                    height: 2.8rem;
+                    padding: .8rem 0 .7rem;
+                    font-size: 1.3rem;
+                    background-color: #000;
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: $bold;
+                    line-height: 1;
+                    text-align: center;
+                    white-space: nowrap;
+                    &.-red{
+                        background-color: #ed7980;
+                    }
+                    &.-blue{
+                        background-color: #82ccd5;
+                    }
+                    &.-yellow{
+                        background-color: #ffb756;
+                    }
+                    &.-purple{
+                        background-color: #b194c4;
+                    }
+                    &.-green{
+                        background-color: #67be8d;
+                    }
+                }
+            }
+        }
+        &.-j{
+            dl{
+                border: none;
+                padding: 0;
+            }
+            dt{
+                height: 9rem;
+                border: none;
+                padding-left: calc(5rem + 3rem);
+                padding-right: 3rem;
+                background-color: #ececec;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 3rem;
+                    height: 100%;
+                    background: no-repeat url(../img/q_red.png) center center / contain;
+                    position: absolute;
+                    left: 3rem;
+                }
+            }
+            dd{
+                padding: 2.5rem 3rem;
+                border-bottom: 8px solid #fff;
+            }
+        }
+        &.-common{
+            dl{
+                border: none;
+                padding: 0 5.5rem;
+            }
+            dt{
+                height: 9rem;
+                padding-left: 5rem;
+                padding-right: 3rem;
+                background-color: transparent;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 3rem;
+                    height: 100%;
+                    background: no-repeat url(../img/q_gray.png) center center / contain;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            dd{
+                border-bottom: 8px solid #fff;
+            }
+        }
+
+    }
+}
+
+
+
+.p-title{
+    $this: &;
+    .employment_job_j_license &{
+        background-image: url(../img/employment_job/j_license_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+
+.c-schoolname{
+    $this: &;
+    .employment_job_j_license &{
+        margin-bottom: 8rem;
+        @include max768{
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+
+.content{
+    $this: &;
+    .employment_job_j_license &{
+        margin-bottom: 10rem;
+        @include max768{
+            margin-bottom: 6rem;
+        }
+        &__head{
+            margin-bottom: 5rem;
+        }
+        h2{
+            margin-bottom: 5rem;
+            padding: 2rem 1rem;
+            background-color: #000;
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: $bold;
+            text-align: center;
+            @include max768{
+                margin-bottom: 3rem;
+            }
+        }
+        h3{
+            margin-bottom: 2.5rem;
+            padding: .9rem 0 .9rem 2.5rem;
+            border-left: 5px solid #c91420;
+            font-size: 2rem;
+            font-weight: $bold;
+            @include max768{
+                margin-bottom: 1.5rem;
+            }
+        }
+        h4{
+            margin-bottom: 1rem;
+            font-weight: $bold;
+        }
+        table{
+            margin-bottom: 5rem;
+            width: 100%;
+            table-layout: fixed;
+            th,td{
+                padding: 2rem 0;
+                border-collapse: collapse;
+                border: 1px solid #000;
+                font-size: 1.8rem;
+                text-align: center;
+                vertical-align: middle;
+                @include max768{
+                    font-size: 1.3rem;
+                }
+            }
+            th{
+                background-color: #ccc;
+            }
+            td{
+                strong{
+                    color: $red;
+                    font-weight: $bold;
+                    font-size: 3rem;
+                    @include max768{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            tbody{
+                th{
+                    width: 22.5%;
+                }
+            }
+        }
+        ul.process{
+            margin-bottom: 5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width: 17%;
+                height: 9.3rem;
+                background-color: $red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                text-align: center;
+                font-size: 1.8rem;
+                line-height: 1.666;
+                font-weight: $bold;
+                position: relative;
+                @include max768{
+                    width: 100%;
+                    height: 7.3rem;
+                    margin-bottom: 4rem;
+                    font-size: 1.4rem;
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 20px solid $red;
+                    border-right: 20px solid transparent;
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include max768{
+                        border-top: 20px solid $red;
+                        border-bottom: 20px solid transparent;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                &:last-child::after{
+                    content: none;
+                }
+            }
+        }
+    }
+    &-section{
+        $this: &;
+        &-item{
+            $this: &;
+            .employment_job_j_license &{
+                &.-exam{
+                    margin-bottom: 3rem;
+                    padding: 4rem 6rem;
+                    background-color: #f2f2f2;
+                    @include max768{
+                        padding: 4rem 3rem;
+                    }
+                    h4{
+                        margin-bottom: 3rem;
+                        color: $red;
+                        font-size: 2rem;
+                        @include max768{
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    p{
+                        line-height: 2.25;
+                    }
+                    #{$this}__col2{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                    #{$this}__img{
+                        width: 35%;
+                        @include max768{
+                            width: 100%;
+                        }
+                    }
+                    #{$this}__txt{
+                        width: 60%;
+                        @include max768{
+                            width: 100%;
+                        }
+                    }
+                    #{$this}__col2B{
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                    }
+
+                    #{$this}-child{
+                        width: 40%;
+                        @include max768{
+                            width: 100%;
+                            margin-bottom: 3rem;
+                        }
+                        .img{
+                            margin-bottom: 3rem;
+                        }
+                        h5{
+                            margin-bottom: 2rem;
+                            font-size: 2rem;
+                            font-weight: $bold;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

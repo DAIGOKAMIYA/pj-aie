@@ -1,0 +1,460 @@
+.aieopnecampus {
+    .p-title{
+        background-image: url(../img/aieopnecampus/bg_kv_01.jpg);
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    & {
+
+        .salon {
+            &-name {
+                background-color: $red;
+                text-align: center;
+                padding: 10px 0;
+
+                img {
+                    width: 176px;
+                }
+            }
+        }
+
+        .title {
+            font-size: 3.0rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 60px;
+
+            @include max768{
+                font-size: 2.0rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        .bg {
+            background-color: #eee;
+            padding: 30px 0 45px;
+            background-image: url(../img/aieopnecampus/bg_01.png);
+            background-size: 100% auto;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .mainvisual {
+            &__lead {
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 100px;
+                margin-top: 25px;
+                font-size: 2.6rem;
+                padding: 15px 0;
+                display: block;
+                margin-bottom: 40px;
+
+                @include max768{
+                    font-size: 1.5rem;
+                    padding: 15px 20px;
+                    margin: 20px;
+                }
+            }
+        }
+
+        .belt {
+            background-color: #000;
+            color: #fff;
+            font-size: 3.0rem;
+            padding: 55px 0;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.8;
+            margin-bottom: 75px;
+
+            @include max768{
+                padding: 30px 20px;
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                min-width: 520px;
+
+                @include max768{
+                    min-width: 100%;
+                }
+
+                a {
+                    border-radius: 0;
+                    font-size: 2.0rem;
+
+                    @include max768{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        .merit {
+            border: $red 5px solid;
+            padding: 50px;
+            margin-bottom: 60px;
+            background-color: #fff;
+
+            @include max768{
+                padding: 30px;
+                margin: 0 20px 30px;
+            }
+            &__title {
+                font-size: 2.6rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 50px;
+
+                @include max768{
+                    font-size: 1.8rem;
+                    line-height: 1.8;
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    border-bottom: 1px solid #000;
+                    display: inline-block;
+                    padding-bottom: 10px;
+                }
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                @include max768{
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                width: 30%;
+                @include max768{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                &:last-of-type {
+                    @include max768{
+                        margin-bottom: 0;
+                    }
+                }
+                img {
+                    display: block;
+                    margin-bottom: 20px;
+
+                    @include max768{
+                        margin-bottom: 15px;
+                    }
+
+                }
+                figcaption {
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: center;
+
+                    @include max768{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        .videos {
+            margin-bottom: 60px;
+            @include max768{
+                margin: 0 20px 30px;
+            }
+            &__title {
+                + p {
+                    margin-bottom: 60px;
+                    @include max768{
+                        margin-bottom: 30px;
+                    }
+                    a {
+                        color: #f00;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+                @include max768{
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                width: 48%;
+                margin-bottom: 50px;
+
+                @include max768{
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                dt {
+                    background-color: $red;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    padding: 15px;
+
+                    @include max768{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }//videos
+
+        .features {
+            margin-bottom: 60px;
+
+            @include max768{
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                margin-bottom: 45px;
+
+                @include max768{
+                    margin-bottom: 20px;
+                }
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 0 30px;
+
+                @include max768{
+                    padding: 0 20px;
+                    flex-direction: column;
+                }
+            }
+
+            &__item {
+                width: 30%;
+
+                @include max768{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                figure {
+                    margin-bottom: 25px;
+
+                    @include max768{
+                        margin-bottom: 15px;
+                    }
+                }
+
+                dt {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+
+                    &::before {
+                        color: #fff;
+                        background-color: $red;
+                        text-align: center;
+                        display: block;
+                        width: 58px;
+                        height: 58px;
+                        line-height: 58px;
+                        font-size: 3.6rem;
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: bold;
+                        margin-right: 15px;
+                    }
+                }
+
+                &:nth-child(1) {
+                    dt {
+                        &::before {
+                            content: "01";
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    dt {
+                        &::before {
+                            content: "02";
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    dt {
+                        &::before {
+                            content: "03";
+                        }
+                    }
+                }
+
+                dd {
+                    font-size: 1.4rem;
+                    line-height: 1.8;
+                    font-weight: bold;
+                }
+            }
+        }//features
+
+        .introduction {
+            padding: 60px 0;
+            background-color: #f0f0f0;
+            position: relative;
+
+            @include max768{
+                padding: 25px 0;
+            }
+
+            .prev-arrow,
+            .next-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 36px;
+                cursor: pointer;
+            }
+
+            .prev-arrow {
+                left: -65px;
+            }
+
+            .next-arrow {
+                right: -65px;
+            }
+
+            &__slider {
+                &__item {
+                    padding: 30px 45px;
+                    background-color: #fff;
+
+                    @include max768{
+                        padding: 20px;
+                    }
+
+                    &__inner {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        @include max768{
+                            flex-direction: column-reverse;
+                        }
+                    }
+
+                    &__title {
+                        margin-bottom: 40px;
+                        background-color: $red;
+                        color: #fff;
+                        text-align: center;
+                        padding: 15px;
+                        font-size: 2.0rem;
+                        font-weight: bold;
+
+                        @include max768{
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &__lead {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        margin-bottom: 40px;
+                        line-height: 1.8;
+                        @include max768{
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &__text {
+                        width: 44%;
+
+                        @include max768{
+                            width: 100%;
+                        }
+
+                        &__title {
+                            border-bottom: 1px solid #d0d0d0;
+                            padding-bottom: 15px;
+                            margin-bottom: 20px;
+                            font-weight: bold;
+
+                            @include max768{
+                                padding-bottom: 10px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &__lead {
+                            font-size: 1.3rem;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    &__image {
+                        width: 51%;
+
+                        @include max768{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+
+        }//introduction
+
+        .logo_tel {
+            width: 890px;
+            margin: 0 auto 60px;
+
+            @include max768{
+                width: 90%;
+                margin: 0 auto 30px;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                @include max768{
+                    flex-direction: column;
+                }
+
+                li {
+                    @include max768{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

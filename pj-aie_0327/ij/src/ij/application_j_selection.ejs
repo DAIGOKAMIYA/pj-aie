@@ -1,0 +1,234 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "指定校推薦・学校推薦"; %>
+<% body_class = "j-selection"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a>
+                    <span>&gt;</span>
+                    <span>指定校推薦・学校推薦</span>
+                </div>
+            </div>
+        </div>
+        <div class="c-schoolname -j">
+            <div class="name">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                    <img src="./assets/img/name_j.png" alt="">
+                </picture>
+            </div>
+        </div>
+       <div class="c-application_bg -j">
+           <div class="c-application_bg_inner">
+                <section class="p-app_block">
+                    <div class="p-app_block_inner">
+                        <div class="c-application_titleA">
+                            <div class="c-application_titleA_inner -j">
+                                <h2 class="text">指定校推薦入学選考</h2>
+                            </div>
+                        </div>
+                        <div class="c-application_tableB">
+                            <table class="table -j">
+                                <tbody>
+                                    <tr>
+                                        <td>応募資格</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 本校の定める指定校に在籍している方</li>
+                                                    <li>2. 2022年3月高等学校卒業見込みの方</li>
+                                                    <li>3. 学校長の推薦を受けられる方</li>
+                                                    <li>4. 総合評定平均3.0以上で3年間の欠席が15日以内の方</li>
+                                                    <li>5. 本校のオープンキャンパス等に参加している方</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>提出書類</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 入学願書</li>
+                                                    <li>2. 推薦書（ダウンロードは<a class="link">こちら</a>）</li>
+                                                    <li>3. 調査書（証明書）</li>
+                                                    <li>4. 受験票</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>願書受付期間</td>
+                                        <td>
+                                            <div>
+                                                2021年10月01日（金）～2021年10月06日（水）
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>選考方法</td>
+                                        <td>
+                                            <div>
+                                                書類選考・面接試験
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>出願特典</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 選考料20,000円免除</li>
+                                                    <li>2. 特待生受験可能</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>選考日</td>
+                                        <td>
+                                            <div>
+                                                2021年10月09日（土）
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>合否通知</td>
+                                        <td>
+                                            <div>
+                                                2021年10月15日（金）書面にて発送
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="p-app_block">
+                    <div class="p-app_block_inner">
+                        <div class="c-application_titleA">
+                            <div class="c-application_titleA_inner -j">
+                                <h2 class="text">学校推薦入学選考</h2>
+                            </div>
+                        </div>
+                        <div class="c-application_tableB">
+                            <table class="table -j">
+                                <tbody>
+                                    <tr>
+                                        <td>応募資格</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 2022年3月高等学校卒業見込みの方</li>
+                                                    <li>2. 高等学校の推薦を受けられる方</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>提出書類</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 入学願書</li>
+                                                    <li>2. 推薦書（ダウンロードは<a class="link">こちら</a>）</li>
+                                                    <li>3. 調査書（証明書）</li>
+                                                    <li>4. 受験票</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>願書受付期間</td>
+                                        <td>
+                                            <div>
+                                                2021年10月01日（金）～2021年12月11日（土）
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>選考方法</td>
+                                        <td>
+                                            <div>
+                                                書類選考・面接試験
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>出願特典</td>
+                                        <td>
+                                            <div>
+                                                <ul>
+                                                    <li>1. 選考料20,000円免除</li>
+                                                    <li>2. 特待生受験可能</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>選考日</td>
+                                        <td>
+                                            <div>
+                                                2021年10月09日（土）※10月06日（水）までの出願者対象<br>以降は随時実施
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>合否通知</td>
+                                        <td>
+                                            <div>
+                                                2021年10月15日（金）書面にて発送<br>以降は選考後5日以内に発送いたします。
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="p-app_block">
+                    <div class="p-app_block__inner">
+                        <div class="c-application_titleA">
+                            <div class="c-application_titleA_inner -j">
+                                <h2 class="text">推薦書</h2>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <p>下記ボタンより推薦書をダウンロードしご記入の後、ご郵送下さい。</p>
+                        </div>
+                        <div class="c-app_btn">
+                            <div class="c-app_btn__inner">
+                                <div class="btn_wrap -j">
+                                    <a class="btn" href="">推薦書のダウンロードはコチラから<span class="btn__arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+           </div>
+       </div>
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

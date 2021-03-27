@@ -1,0 +1,197 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "アイエステBLOG"; %>
+<% body_class = "blog blog_aie"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-name">
+            <picture>
+                <source media="(max-width: 768px)" srcset="<%- dir %>assets/img/name_i_sp.png">
+                <img src="<%- dir %>assets/img/name_i.png" alt="アイエステ">
+            </picture>
+        </div>
+
+        <div class="c-wrapper -w1200">
+            <section class="category">
+                <ul class="category__list">
+                    <li><a href="#">オープンキャンパス</a></li>
+                    <li><a href="#">イベント</a></li>
+                    <li><a href="#">スクールライフ</a></li>
+                </ul>
+            </section>
+            <section class="post">
+                <div class="post__inner">
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_01.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_02.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_03.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_04.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_01.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_02.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_03.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_04.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post__item">
+                        <a href="#">
+                            <div class="post__thumb"><img src="<%- dir %>assets/img/blog_aie/image_post_01.jpg"></div>
+                            <div class="post__body">
+                                <div class="post__meta">
+                                    <ul class="post__category">
+                                        <li>オープンキャンパス</li>
+                                    </ul>
+                                    <time class="post__date">2021.03.01</time>
+                                </div>
+                                <h2 class="post__title">★2月27日　オープンキャンパス★</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="pagenavi">
+                <div class="pagenavi__list">
+                    <a href="#">&lt;&lt;</a>
+                    <a href="#">&lt;</a>
+                    <span class="current">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    ...
+                    <a href="#">15</a>
+                    <a href="#">&gt;</a>
+                    <a href="#">&gt;&gt;</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

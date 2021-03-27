@@ -1,0 +1,297 @@
+.aie-flow-page{
+
+    $tab1: 1200px;
+    $tab2: 900px;
+    $tab3: 770px;
+    $over-tab3:771px;
+    $over-sp: 501px;
+    $sp: 500px;
+    
+    @mixin tab1 {
+        @media (max-width: ($tab1)) {
+          @content;
+        }
+      }
+    @mixin tab2{
+        @media (max-width:($tab2)){
+            @content;
+        }
+    }
+    @mixin tab3 {
+        @media (max-width: ($tab3)) {
+          @content;
+        }
+    }
+    @mixin over-tab3 {
+        @media (min-width: ($over-tab3)) {
+          @content;
+        }
+    }
+    @mixin over-sp {
+        @media (min-width: ($over-sp)) {
+          @content;
+        }
+    }
+    @mixin sp {
+      @media (max-width: ($sp)) {
+        @content;
+      }
+    }
+    @include sp {
+        .spbr{display: block;}
+        .pcbr{display: none;}
+        .spimg{display: block;}
+        .pcimg{display: none;}
+    }
+    @include tab3 {
+        .spbr_tabnone{display: none;}
+    }
+    @include over-tab3 {
+        .spbr_tabnone{display: block;}
+    }
+    @include over-sp {
+        .spbr{display: none;}
+        .pcbr{display: block;}
+        .spimg{display: none;}
+        .pcimg{display: block;}
+    }
+    @include over-tab3 {
+        .tabbr{display: none;}
+    }
+
+    .aie-flow-contents{
+        background-color: #d8f2f5;
+        padding: 40px 0;
+        .aie-flow-list{
+            background-color: white;
+            padding: 50px 40px;
+            dl{
+                width: 100%;
+                margin: 0 0 55px 0;
+                &:last-child>dt::after{
+                    content:none;
+                }
+                &:last-child>dd::after{
+                    content:none;
+                }
+                dt{
+                    width: 10%;
+                    background-color:#cfb283;
+                    color: white;
+                    font-weight: bold;
+                    position: relative;
+                    text-align: center;
+                    .aie-flow-list__item__step{
+                        font-size: 2.4rem;
+                        font-family: 'Times New Roman', Times, serif;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                    }
+                    .aie-flow-list__item__number{
+                        font-size: 5rem;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    @include sp {
+                        .aie-flow-list__item__step{
+                            font-size: 2.4rem;
+                        }
+                        .aie-flow-list__item__number{
+                            font-size: 4rem;
+                        }
+                    }
+                    &::after{
+                        content:"";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 30px 16.5px 0 16.5px;
+                        border-color: #cfb283 transparent transparent transparent;
+                        position: absolute;
+                        bottom: -11%;
+                        right: 0;
+                        left: 0;
+                        margin: auto;
+                    }
+                }
+                dd{
+                    width: 90%;
+                    background-color:#f7f2e7;
+                    padding:40px;
+                    position: relative;
+                    &::after{
+                        content:"";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 30px 16.5px 0 16.5px;
+                        border-color: #f7f2e7 transparent transparent transparent;
+                        position: absolute;
+                        bottom: -10%;
+                        right: 0;
+                        left: 0;
+                        margin: auto;
+                        display: none;
+                    }
+                    .aie-flow-list__item__info{
+                        width: 100%;
+                        h2{
+                            font-size: 2.4rem;
+                            font-weight: bold;
+                            margin: 0 0 20px 0;
+                        }
+                        p{
+                            line-height: 30px;
+                        }
+                        .aie-flow__tel{
+                            margin: 20px 0 0 0;
+                            letter-spacing: 3px;
+                            display: inline-block;
+                            &::before{
+                                content:"";
+                                display:inline-block;
+                                width: 30px;
+                                height: 20px;
+                                background-image: url(../img/aie-flow/aie-flow_tel@2x.png);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                transform: translate(-1px,-4px);
+                                margin: 0 15px 0 0;
+                            }
+                        }
+                    }
+                    @include sp {
+                        .aie-flow-list__item__info{
+                            h2{
+                                font-size: 2rem;
+                                margin: 0 0 20px 0;
+                            }
+                            p{
+                                line-height: 30px;
+                                font-size: 1.4rem;
+                            }
+                            .aie-flow__tel{
+                                font-size: 2rem;
+                                margin: 20px 0 0 0;
+                                letter-spacing: 3px;
+                                display: inline-block;
+                                &::before{
+                                    content:"";
+                                    display:inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    background-image: url(../img/aie-flow/aie-flow_tel@2x.png);
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    transform: translate(-1px,1px);
+                                    margin: 0 15px 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .aie-flow-w__harf{
+                        width: 55%;
+                    }
+                    .aie-flow-list__item__banner{
+                        width: 40%;
+                        display: block;
+                        margin: 0 10px 0 0;
+                    }
+                    @include tab3 {
+                        .aie-flow-w__harf{
+                            width: 100%;
+                        }
+                        .aie-flow-list__item__banner{
+                            width: 100%;
+                            display: block;
+                            margin: 40px 0 0 0;
+                        }
+                    }
+                    .syutsugan-btn{
+                        text-align: center;
+                        display: block;
+                        width: 40%;
+                        background-color: #83d1db;
+                        color: white;
+                        padding: 27px 0;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        position: relative;
+                        &::after{
+                            content:"";
+                            display:inline-block;
+                            width: 26px;
+                            height: 9px;
+                            background-image: url(../img/aie-flow/syutsugan_btn_arrow@3x.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            right: 25px;
+                        }
+                    }
+                    @include tab3 {
+                        .syutsugan-btn{
+                            width: 100%;
+                            margin: 20px 0 0;
+                        }
+                    }
+                }
+            }
+            @include tab3 {
+                dl{
+                    flex-direction: column;
+                    dt{
+                        width: 100%;
+                        height: 80px;
+                        margin: 0 auto;
+                        .aie-flow-list__item__number{
+                            margin: 0 0 0 5px;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    dd{
+                        width: 100%;
+                        margin: 0 auto;
+                        flex-direction: column;
+                        &::after{
+                            content:"";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 30px 16.5px 0 16.5px;
+                            border-color: #f7f2e7 transparent transparent transparent;
+                            position: absolute;
+                            bottom: -30px;
+                            right: 0;
+                            left: 0;
+                            margin: auto;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        @include sp {
+            .aie-flow-list{
+                padding: 50px 10px;
+                dl{
+                    dt{
+                        height: 60px;
+                    }
+                    dd{
+                        padding: 25px 20px;
+                    }
+                }
+            }
+        }
+    } 
+}

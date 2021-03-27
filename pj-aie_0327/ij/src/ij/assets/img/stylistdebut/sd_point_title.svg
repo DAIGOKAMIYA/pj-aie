@@ -1,0 +1,38 @@
+<svg id="_3つのポイント_タイトル" data-name="「3つのポイント」タイトル" xmlns="http://www.w3.org/2000/svg" width="862.561" height="70.12" viewBox="0 0 862.561 70.12">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        font-size: 30px;
+      }
+
+      .cls-1 {
+        text-anchor: middle;
+        font-family: "Noto Sans CJK JP";
+        font-weight: 800;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        fill: #c91420;
+      }
+
+      .cls-2 {
+        font-size: 50px;
+      }
+
+      .cls-4 {
+        stroke: #c91420;
+        stroke-width: 1px;
+      }
+
+      .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="最短でスタイリストデビューを叶える_つ_のポイント" data-name="最短でスタイリストデビューを叶える  ３つ  のポイント" class="cls-1" transform="translate(430.522 52.093) scale(1.08)">最短でスタイリストデビューを叶える  <tspan class="cls-2">３つ  <tspan class="cls-3">のポイント</tspan></tspan></text>
+  <path id="線_1" data-name="線 1" class="cls-4" d="M814.794,2030.46l16.194,24.83Z" transform="translate(-264.219 -2030.19)"/>
+  <path id="線_1_のコピー_2" data-name="線 1 のコピー 2" class="cls-4" d="M807.681,2042.52l16.386,14.75Z" transform="translate(-264.219 -2030.19)"/>
+  <path id="線_1_のコピー" data-name="線 1 のコピー" class="cls-4" d="M959.458,2030.46l-16.193,24.83Z" transform="translate(-264.219 -2030.19)"/>
+  <path id="線_1_のコピー_3" data-name="線 1 のコピー 3" class="cls-4" d="M966.572,2042.52l-16.386,14.75Z" transform="translate(-264.219 -2030.19)"/>
+  <path id="長方形_7" data-name="長方形 7" class="cls-5" d="M264.206,2097.32H1126.79v3H264.206v-3Z" transform="translate(-264.219 -2030.19)"/>
+</svg>

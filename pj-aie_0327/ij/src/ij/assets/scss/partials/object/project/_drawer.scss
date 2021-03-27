@@ -1,0 +1,94 @@
+.p-drawer{
+    background-color: #333;
+    z-index: 10000;
+    min-height: 100vh;
+    position: relative;
+    &__logo{
+        padding: 1rem;
+        height: 65px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .logo{
+            width: 174.87px;
+        }
+    }
+    &__list{
+        padding-bottom: 18vw;
+        overflow-y: scroll;
+        .list{
+            border-top: 1px solid #5c5c5c;
+            &-item{
+                > a{
+                    padding: 1.8rem;
+                    border-bottom: 1px solid #5c5c5c;
+                    color: #fff;
+                    display: block;
+                    position: relative;
+                    font-weight: $bold;
+                    &::after{
+                        position: absolute;
+                        top: 50%;
+                        right: 15px;
+                        transform: translateY(-50%);
+                        content: '';
+                        display: block;
+                        width: 4.5px;
+                        height: 8.02px;
+                        background: no-repeat url(../img/drawer_arrow.svg) center center / contain;
+                    }
+                }
+            }
+        }
+        .list2{
+            display: flex;
+            justify-content: flex-start;
+            li{
+                a{
+                    padding: 2rem;
+                    font-size: 1.4rem;
+                    color: #fff;
+                    display: block;
+                    &::before{
+                        // position: absolute;
+                        // top: 50%;
+                        // right: 15px;
+                        // transform: translateY(-50%);
+                        content: '';
+                        margin-right: 7px;
+                        display: inline-block;
+                        width: 4.5px;
+                        height: 8.02px;
+                        background: no-repeat url(../img/drawer_arrow.svg) center center / contain;
+                    }
+                }
+            }
+        }
+        .list3{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            li{
+                width: 50%;
+                text-align: center;
+                
+                a{
+                    display: block;
+                    img{
+                        display: inline-block;
+                        max-width: 187px;
+                    }
+                }
+                &:first-child a{
+                    background-color: #C7A877;
+                }
+                &:last-child a{
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.j-selection {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/j/selection_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    table ,td ,th {
+        border-collapse: collapse;
+        border:1px solid #000;
+    }
+    .p-app_block {
+        &__inner {
+            .center {
+                text-align: center;
+            }
+        }
+    }
+}

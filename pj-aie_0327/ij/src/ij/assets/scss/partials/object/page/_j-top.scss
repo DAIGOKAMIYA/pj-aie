@@ -1,0 +1,936 @@
+.j-top {
+    background-color: #0F0B08;
+    .mv {
+        margin: 0 0 6.2rem;
+        @include max480 {
+            margin: 0 0 12%;
+        }
+        &_wrap {
+            .slider_wrap {
+                .aie_slider {
+                    &_item {
+                        margin: 0 1.5rem;
+                        @include max480 {
+                            margin: 0;
+                            .img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .slick-dots {
+                        li.slick-active{
+                            button {
+                                &:before {
+                                    color: $red;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        li {
+                            button {
+                                &::before {
+                                    font-size: 30px;
+                                    color: #EBEBEB;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .school_concept {
+        &_wrap {
+            .concept_title {
+                margin: 0 0 2rem;
+                @include max768 {
+                    margin: 0 0 5%;
+                }
+                .concept {
+                    text-align: center;
+                    font-size: 3rem;
+                    color: #fff;
+                    @include max480 {
+                        font-size: 1.6rem;
+                        margin: 0 0 3.4rem;
+                    }
+                }
+            }
+            .concept_img {
+                max-width: 830px;
+                margin: 0 auto;
+                .sp_only {
+                    width: 14%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    @include max480 {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        &_wrap {
+            padding: 4rem 0 8rem;
+            background-color: #1A1A1A;
+            position: relative;
+            @include max768 {
+                padding: 0 0 8rem;
+            }
+            .contents {
+                display: flex;
+                max-width: 1440px;
+                margin: 0 auto;
+                @include max768 {
+                    display: block;
+                }
+                &_item {
+                    margin: 0 0 0 6%;
+                    @include max768 {
+                        margin: 0;
+                    }
+                    &_title {
+                        margin: 4rem 0 4.8rem;
+                        @include max768 {
+                            margin: 12% 0 16%;
+                        }
+                        h2 {
+                            width: 45%;
+                            @include max768 {
+                                width: 100%;
+                                max-width: 320px;
+                                margin: 0 auto;
+                            }
+                            @include max480 {
+                                max-width: 160px;
+                            }
+                        }
+                    }
+                    &_text {
+                        color: #fff;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            top: -75%;
+                            right: -130%;
+                            position: absolute;
+                            background-image: url(../../../ij/assets/img/j-top/job_and_joy@3x.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 200px;
+                            height: 260px;
+                            @include max768 {
+                                top: -140%;
+                                right: -9%;
+                                position: absolute;
+                                background-image: url(../../../ij/assets/img/j-top/job_and_joy@3x.png);
+                            }
+                            @include max480 {
+                                top: -74%;
+                                right: -16%;
+                            }
+                            @media screen and (max-width:375px) {
+                                top: -70%;
+                                right: -10%;
+                                width: 160px;
+                                height: 250px;
+                            }
+                            @media screen and (max-width:320px) {
+                                top: -56%;
+                                right: -16%;
+                                width: 150px;
+                                height: 200px;
+                            }
+                        }
+                        @include max768 {
+                            text-align: center;
+                        }
+                        p {
+                            margin: 0 0 3.6rem;
+                        }
+                    }
+                    .btn_wrap {
+                        @include max768 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .canpass {
+        padding: 0 0 6.25%;
+        @include max480 {
+            padding: 0rem 0 6.25%;
+        }
+        &_wrap {
+            padding: 5.6rem 7.2rem;
+            background-color: #1A1A1A;
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            @include max1024 {
+                width: 89.3%;
+                margin: 0 auto;
+            }
+            @include max768 {
+                padding: 5.6rem 4rem;
+            }
+            @include max480 {
+                padding: 5.6rem 2rem;
+                margin: -7rem auto 0;
+            }
+            &_title {
+                text-align: center;
+                margin: 0 0 3.4rem;
+                h2 {
+                    display: inline-block;
+                }
+            }
+            &_contents {
+                .contents {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    &_item {
+                        width: 23%;
+                        @include max768 {
+                            width: 48%;
+                        }
+                        @include max480 {
+                            width: 100%;
+                            margin: 0 0 2rem;
+                        }
+                        &:first-child {
+                            width: 100%;
+                            margin: 0 0 4rem;
+                            @include max480 {
+                                margin: 0 0 2rem;
+                            }
+                            .contents_item_wrap {
+                                align-items: center;
+                                @include max768 {
+                                    flex-direction: column;
+                                }
+                                .info {
+                                    margin: 0 0 0 2rem;
+                                    @include max768 {
+                                        margin: 0;
+                                    }
+                                    .category {
+                                        &_inner {
+                                            max-width: 320px;
+                                            @include max768 {
+                                                max-width: 100%;
+                                            }
+                                            span {
+                                                font-size: 2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                                .text {
+                                    @include max480 {
+                                        margin: 0 0 0rem;
+                                    }
+                                }
+                            }
+                        }
+                        &:not(:first-child){
+                            .contents_item_wrap {
+                                flex-direction: column;
+                                .img {
+                                    margin: 0 0 2rem;
+                                }
+                            }
+                        }
+                        &_wrap {
+                            display: flex;
+                            .img {
+                                @include max768 {
+                                    width: 100%;
+                                }
+                            }
+                            .info {
+                                .category {
+                                    margin: 0 0 2rem;
+                                    &_inner {
+                                        border-radius: 50px;
+                                        text-align: center;
+                                        padding: 1rem 0;
+                                        span {
+                                            font-size: 1.6rem;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    .-white {
+                                        border: #fff 2px solid;
+                                        span {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                .text {
+                                    @include max480 {
+                                        margin: 0 0 2rem;
+                                    }
+                                    p {
+                                        letter-spacing: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn_wrap {
+            text-align: center;
+        }
+    }
+
+    .canpass.-j {
+        // background: $blue no-repeat url(../img/home/i_home_campuslife_bg@2x.png)  top / 45%;
+        background: #0A0A0A ;
+        .canpass_mv {
+            max-width: 1120px;
+            margin: 0rem auto -30rem;
+            z-index: 0;
+            position: relative;
+            top: -7.5rem;
+            @include max768 {
+                width: 80%;
+                max-width: unset;
+                margin: 0rem auto 5rem;
+                top: -2.5rem;
+            }
+            @include max480 {
+                width: 100%;
+                top: -2.5rem;
+                left: 0;
+                margin: 0rem auto -3rem;
+            }
+        }
+    }
+
+    .column {
+        padding: 6.4rem 0 8rem;
+        background-color: #1A1A1A;
+        &_wrap {
+            @include max1024 {
+                width: 89.3%;
+                margin: 0 auto;
+            }
+            &_title {
+                text-align: center;
+                margin: 0 0 4rem;
+                h2 {
+                    display: inline-block;
+                }
+            }
+            &_contents {
+                .contents {
+                    display: flex;
+                    margin: 0 0 4rem;
+                    @media screen and (max-width:767px) {
+                        display: block;
+                    }
+                    &_item {
+                        width: 32%;
+                        margin: 0 2rem 0 0;
+                        box-shadow: 0 0 30px rgba(0,0,0,0.16);
+                        background-color: #fff;
+                        @media screen and (max-width:767px) {
+                            margin: 0 0 2rem 0;
+                            width: 100%;
+                        }
+                        &:last-child {
+                            margin: 0;
+                        }
+                        a {
+                            .visual {
+                                position: relative;
+                                margin: 0 0 3rem;
+                                .ctg {
+                                    position: absolute;
+                                    bottom: -8%;
+                                    left: 5.5%;
+                                    background-color: #262626;
+                                    border-radius: 50px;
+                                    text-align: center
+                                    ;
+                                    padding: .4rem 1.5rem .8rem;
+                                    @media screen and (max-width:767px) {
+                                        bottom: -4%;
+                                        left: 0%;
+                                    }
+                                    span {
+                                        font-size: 1.3rem;
+                                        color: #fff;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                            .material {
+                                padding: 0 2rem 2rem 2rem;
+                                .time {
+                                    font-size: 2rem;
+                                    font-family: $calvaux;
+                                }
+                                .text {
+                                    p {
+                                        margin: 0;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn_wrap {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .opnecanpass {
+        background-color: $red;
+        padding: 3rem;
+        &_wrap {
+            background: #FFFFFF url(../../../ij/assets/img/j-top/open_canpass_bg@3x.png) right top/contain;
+            background-repeat: no-repeat;
+            border-radius:60px;
+            padding: 5rem 0 0;
+            max-width: 1440px;
+                margin: 0 auto;
+            @include max768 {
+                background: #fff;
+            }
+            @include max480 {
+                border-radius: 30px;
+            }
+            &_contents {
+                margin: 0 0 5rem;
+                .heading {
+                    @include max480 {
+                        padding: 0 3rem 0;
+                    }
+                    .title {
+                        width: 31%;
+                        margin: 0 auto 4rem;
+                        @include max480 {
+                            width: 250px;
+                        }
+                    }
+                    .sub_title {
+                        text-align: center;
+                        font-weight: bold;
+                        margin: 0 0 4rem;
+                    }
+                    .flow_title {
+                        width: 31%;
+                        margin: 0 auto 4rem;
+                        @include max480 {
+                            width: 100%;
+                        }
+                    }
+                }
+                .flow {
+                    &_contents {
+                        width: 88%;
+                        margin: 0 auto 4rem;
+                        @include max480 {
+                            width: 100%;
+                            padding: 0 3rem 0;
+                        }
+                    }
+                }
+                .btn_wrap {
+                    text-align: center;
+                    @include max480 {
+                        width: 100%;
+                        padding: 0 1rem 0;
+                    }
+                    .btn {
+                        max-width: 430px;
+                    }
+                }
+            }
+            .online_explain {
+                background-color: #F5F5F5;
+                border-radius: 0 0 60px 60px;
+                position: relative;
+                @include max480 {
+                    border-radius: 0 0 30px 30px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: -10%;
+                    left: 0%;
+                    width: 13%;
+                    height: 41%;
+                    background-image: url(../../../ij/assets/img/j-top/oline_canpass_bg_item.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    z-index: 1;
+                    @include max768 {
+                        content: unset;
+                    }
+                }
+                &_wrap {
+                    padding: 4rem 0 0;
+                    .contents {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 75%;
+                        margin-left: 16rem;
+                        margin-right: auto;
+                        @include max1024 {
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                        @include max768 {
+                            display: block;
+                        }
+                        @include max480 {
+                            width: 100%;
+                            padding: 0 1rem 0;
+                        }
+                        .text {
+                            @include max1024 {
+                                margin: 0 0 4rem;
+                            }
+                            .title {
+                                .main_title {
+                                    width: 60%;
+                                    margin: 0 auto 1.6rem;
+                                    @include max480 {
+                                        width: 100%;
+                                        margin: 0 auto 3.6rem;
+                                        padding: 0 1rem 0 ;
+                                    }
+                                }
+                                .sub_title {
+                                    text-align: center;
+                                    font-weight: bold;
+                                    font-size: 2rem;
+                                    margin: 0 auto 1.6rem;
+                                    @include max480 {
+                                        line-height: 1.7;
+                                    }
+                                }
+                            }
+                            .detail {
+                                text-align: center;
+                                @include max480 {
+                                    p {
+                                        letter-spacing: -.2rem;
+                                    }
+                                }
+                                .note {
+                                    color: #54514F;
+                                    font-size: 1.4rem;
+                                    @include max480 {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .btn_wrap {
+                                text-align: center;
+                                .btn {
+                                    max-width: 430px;
+                                }
+                            }
+                        }
+                        .img {
+                            position: relative;
+                            right: -2rem;
+                            @include max768 {
+                                width: 50%;
+                                margin: 0 auto;
+                            }
+                            @include max768 {
+                                width: 90%;
+                                margin: 0 auto;
+                            }
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -10%;
+                                width: 20%;
+                                height: 27%;
+                                background-image: url(../../../ij/assets/img/j-top/online_explain_subimg@3x.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course_intro {
+        padding: 6.4rem 0;
+        background-color: #1A1A1A;
+        &_wrap {
+            .title {
+                &_wrap {
+                    text-align: center;
+                    margin: 0 0 4rem;
+                    h2 {
+                        display: inline-block;
+                    }
+                }
+            }
+            .contents {
+                @include max1024 {
+                    width: 89.3%;
+                    margin: 0 auto;
+                }
+                &_list {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 80%;
+                    margin: 0 auto;
+                    @include max768 {
+                        width: 100%;
+                    }
+                    @include max480 {
+                        display: block;
+                    }
+                    &_item {
+                        width: 48%;
+                        margin: 0 0 4rem 0;
+                        box-shadow: 0 0 30px rgba(0,0,0,0.16);
+                        background-color: #fff;
+                        @include max768 {
+                            margin: 0 0 4rem 0;
+                        }
+                        @include max480 {
+                            width: 100%;
+                        }
+                        .item_wrap {
+                            .text {
+                                padding: 2rem 2rem 3rem 2rem;
+                                font-weight: bold;
+                                .detail {
+                                    p {
+                                        letter-spacing: normal;
+                                    }
+                                }
+                                .title {
+                                    font-size: 2rem;
+                                }
+                                .title.-gold {
+                                    color: $red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn_wrap {
+                text-align: center;
+            }
+        }
+    }
+
+    .recommend {
+        background-image: url(../../../ij/assets/img/j-top/recommend@3x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &_wrap {
+            padding: 8rem 0;
+            @include max768 {
+                width: 90%;
+                margin: 0 auto;
+            }
+            &_title {
+                .title {
+                    text-align: center;
+                    margin: 0 0 4rem;
+                    h2 {
+                        display: inline-block;
+                    }
+                }
+            }
+            &_catch {
+                text-align: center;
+                color: #fff;
+                @include max480 {
+                    text-align: center;
+                }
+                p {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            &_catch.-gold {
+                color: $gold;
+            }
+            &_catch.-whites {
+                color: #fff;
+            }
+            &_text {
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                @include max480 {
+                    text-align: left;
+                }
+            }
+            .btn_wrap {
+                text-align: center;
+            }
+        }
+    }
+
+    .facility {
+        background: #FFFFFF url(../../../ij/assets/img/j-top/facility_bg@3x.png);
+        background-position: right center;
+        background-size: 35%;
+        background-repeat: no-repeat;
+        @include max768 {
+            background-size: 75%;
+            background-position: 140% 60%;
+        }
+        @include max480 {
+            background-size: 80%;
+            background-position: 140% 40%;
+        }
+        &_wrap {
+            padding: 7.4rem 0;
+            @include max1024 {
+                width: 89.3%;
+                margin: 0 auto;
+            }
+            .contents {
+                .title {
+                    &_wrap {
+                        margin: 0 0 4.8rem;
+                        @include max768 {
+                            text-align: center;
+                        }
+                        h2 {
+                            display: inline-block;
+                        }
+                    }
+                }
+                .sub_title {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    margin: 0 0 4rem;
+                    @include max1024 {
+                        line-height: 1.7;
+                    }
+                    @include max480 {
+                        max-width: 280px;
+                    }
+                }
+                .detail {
+                    margin: 0 0 4.8rem;
+                    @include max480 {
+                        max-width: 280px;
+                        margin: 0 0 12rem;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+                .img {
+                    margin: 0 0 6rem;
+                    @include max1024 {
+                        overflow-x: scroll;
+                        div {
+                            width: 1200px;
+                        }
+                    }
+                }
+            }
+            .btn_wrap {
+                .btn {
+                    @include max768 {
+                        margin: 0 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .support {
+        background-color: #F7F7F7;
+        padding: 6rem 0;
+        &_wrap {
+            @include max1024 {
+                width: 89.3%;
+                margin: 0 auto;
+            }
+            .title {
+                &_wrap {
+                    text-align: center;
+                    margin: 0 0 3rem;
+                    h2 {
+                        display: inline-block;
+                    }
+                }
+            }
+            .sub_title {
+                margin: 0 0 4rem;
+                h3 {
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 1.7;
+                    @include max480 {
+                        text-align: left;
+                    }
+                }
+            }
+            .contents {
+                &_list {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 5rem;
+                    @include max768 {
+                        flex-wrap: wrap;
+                     }
+                    &_item {
+                        @include max768 {
+                            width: 48%;
+                            margin: 0 0 2rem;
+                        }
+                        .img {
+                            margin: 0 0 1rem;
+                        }
+                        .text {
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .banner {
+                &_list {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 0 5rem;
+                    @include max480 {
+                        display: block;
+                    }
+                    &_item {
+                        margin: 0 1rem;
+                        box-shadow: 2px 2px 30px rgba(0,0,0,0.16);
+                        @include max480 {
+                            margin: 0 0 2rem;
+                        }
+                    }
+                }
+            }
+            .btn_wrap {
+                text-align: center;
+            }
+        }
+    }
+
+    .news {
+        padding: 6rem 0;
+        background-color: #fff;
+        &_wrap {
+            @include max1024 {
+                width: 89.3%;
+                margin: 0 auto;
+            }
+            &_head {
+                margin: 0 0 4rem;
+                .title {
+                    float: left;
+                    &_wrap {
+                        h2 {
+                            display: inline-block;
+                        }
+                    }
+                }
+                .btn_wrap {
+                    float: right;
+                    width: 20%;
+                    max-width: 180px;
+                }
+            }
+            &_list {
+                .news_list {
+                    @include max768 {
+                        margin: 0 0 4rem;
+                    }
+                    &_item {
+                        border-bottom: 1px solid #CDCDCD;
+                        padding: 2rem 0;
+                        &:first-child {
+                            padding: 0 0 2rem 0;
+                        }
+                        &:last-child {
+                            border: unset;
+                            @include max768 {
+                                border-bottom: 1px solid #CDCDCD;
+                            }
+                        }
+                        .list_item {
+                            display: flex;
+                            align-items: center;
+                            @include max768 {
+                                flex-wrap: wrap;
+                            }
+                            .time {
+                                margin: 0 2rem 0 0;
+                            }
+                            .info {
+                                display: flex;
+                                align-items: center;
+                                time{
+                                    font-size: 2rem;
+                                    font-family: $calvaux;
+                                }
+                                .ctg {
+                                    background-color: rgba(38,38,38,0.3);
+                                    margin: 0 2rem 0 0;
+                                    padding: .6rem 4rem;
+                                    border-radius: 50px;
+                                    span {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            .text {
+                                @include max768 {
+                                  width: 100%;
+                                  margin: 2rem 0 0;
+                                }
+                                .title {
+                                    a {
+                                        margin: 0;
+                                        font-weight: bold;
+                                        line-height: 2;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn_wrap {
+                .c-btn {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

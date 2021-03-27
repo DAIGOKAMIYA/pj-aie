@@ -1,0 +1,53 @@
+.p-title{
+    background: no-repeat center center / cover;
+    background-image: url(../img/feature/feature_title_bg_pc.png);
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    @include max768{
+        background-image: url(../img/feature/feature_title_bg_sp.png);
+    }
+
+    .title{
+        width: 100%;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: $bold;
+        text-align: center;
+        @include max768{
+            font-size: 2.4rem;
+            text-align: left;
+        }
+    }
+}
+
+.p-course_title {
+    text-align: center;
+    margin: 0 0 6rem;
+    .title {
+        display: inline-block;
+        h2 {
+            font-size: 3.6rem;
+            letter-spacing: 1rem;
+            font-weight: $noto_sans;
+            @include max480 {
+                font-size: 2.4rem;
+                letter-spacing: .5rem;
+            }
+            .red {
+                color: $red;
+            }
+            .blue {
+                color: $blue;
+            }
+            span {
+                font-size: 7rem;
+                position: relative;
+                top: 1rem;
+                @include max480 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "AIE SALON"; %>
+<% body_class = "facility_aie-about_salon"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-contents">
+
+            <div class="salon-contents__head">
+                <div class="salon-name">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="<%- dir %>assets/img/name_i_sp.png">
+                        <img src="<%- dir %>assets/img/name_i.png" alt="アイエステ">
+                    </picture>
+                </div>
+                <div class="salon-label">
+                    <div class="salon-title"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_title_01.png" alt="AIE SALON"></div>
+                    <h2 class="salon-lead">技術を実践的に磨く学内サロン</h2>
+                </div>
+            </div>
+
+            <div class="salon-contents__body">
+
+                <div class="salon-contents__body__inner">
+
+                    <p class="salon-text">AIEでは地域のお客様をお招きし、<br>
+                        学生が運営する「学内サロン」を実施しています。<br>
+                        実際のサロンを想定し、授業の一環として行うので、<br>
+                        現場で求められる力を身につけることができます。</p>
+
+                    <div class="item">
+                        <div class="item__thumb"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_image_01.png" alt=""></div>
+                        <div class="item__content">
+                            <h3>エステサロン</h3>
+                            <p>即戦力となるための技術力、<br>
+                            お客様の要望をくみ取る接客力を<br>
+                            身につけます</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__thumb"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_image_02.png" alt=""></div>
+                        <div class="item__content">
+                            <h3>リアルウエディング</h3>
+                            <p>本物の結婚式をトータルで<br>
+                            プロデュースすることで<br>
+                            現場での実践力を身につけます</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__thumb"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_image_03.png" alt=""></div>
+                        <div class="item__content">
+                            <h3>リラクゼーションサロン</h3>
+                            <p>技術力、接客力を身につけつつ、<br>
+                            世界のトリートメント技術で<br>
+                            癒しをご提供します</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__thumb"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_image_04.png" alt=""></div>
+                        <div class="item__content">
+                            <h3>ネイルサロン</h3>
+                            <p>技術力、接客力を身につけつつ、<br>
+                            世界のトリートメント技術で<br>
+                            癒しをご提供します</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__thumb"><img src="<%- dir %>assets/img/facility_aie-about_salon/salon_image_05.png" alt=""></div>
+                        <div class="item__content">
+                            <h3>ヘアメイクサロン</h3>
+                            <p>お客様のイメージをお聞きし、<br>
+                            要望に合わせた最新の<br>
+                            ヘアメイクに仕上げる力を養います</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

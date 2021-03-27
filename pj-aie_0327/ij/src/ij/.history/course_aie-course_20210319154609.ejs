@@ -1,0 +1,741 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "アイエステ専攻一覧"; %>
+<% body_class = "course_aie-course"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+        <div class="c-schoolname -i">
+            <div class="name">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                    <img src="./assets/img/name_i.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <section class="list">
+            <div class="list_inner">
+                <div class="p-course_title">
+                    <div class="title">
+                        <h2>美容を極める<span class="blue">5</span>専攻</h2>
+                    </div>
+                </div>
+                <div class="major">
+                    <div class="major-panel">
+                        <ul class="tab-group">
+                            <li class="tab tab-001 is-active">
+                                <div class="tab-inner">
+                                    <div class="tag -yellow">Esthetician</div>
+                                    <div class="img">
+                                        <img src="<%- dir %>assets/img/course/aie/hair_mv.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="heading border-none">
+                                            <h3 class="-yellow">エステティシャン<br class="u-none--768">専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab tab-002">
+                                <div class="tab-inner">
+                                    <div class="tag -green">Aroma &amp; Therapist</div>
+                                    <div class="img"><img src="<%- dir %>assets/img/course/aie/make_mv.png" alt=""></div>
+                                    <div class="title">
+                                        <div class="heading border-none">
+                                            <h3 class="-green">アロマ＆セラピスト<br class="u-none--768">専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab tab-003">
+                                <div class="tab-inner">
+                                    <div class="tag -red">Makeup artist</div>
+                                    <div class="img"><img src="<%- dir %>assets/img/course/aie/make_mv.png" alt=""></div>
+                                    <div class="title">
+                                        <div class="heading border-none">
+                                            <h3 class="-red">メイクアップ<br class="u-none--768">アーティスト専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab tab-004">
+                                <div class="tab-inner">
+                                    <div class="tag -bule">Bridal beauty</div>
+                                    <div class="img"><img src="<%- dir %>assets/img/course/aie/make_mv.png" alt=""></div>
+                                    <div class="title">
+                                        <div class="heading border-none">
+                                            <h3 class="-bule">ブライダル<br class="u-none--768">ビューティ専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab tab-005">
+                                <div class="tab-inner">
+                                    <div class="tag -purple">Nail technician</div>
+                                    <div class="img"><img src="<%- dir %>assets/img/course/aie/make_mv.png" alt=""></div>
+                                    <div class="title">
+                                        <div class="heading border-none">
+                                            <h3 class="-purple">ネイリスト専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="panel-group">
+                            <div class="panel tab-001 is-show">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/aie/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/aie/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div class="-yellow">エステティシャン専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                キレイをつくる<br>
+                                                美のスペシャリストになる
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course_aie-course/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>フェイシャルエステ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>皮膚のマッサージや、化粧品 ・エステ機器 によるお手入れを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ボディエステ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ウエストや太もも 、背中など全身のマッサージテクニックを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>サロンオペレーション</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>受付からお見送りまでのエステサロンでの流れを学び 、実践力を身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>エステティックカウンセリング</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>お客様の悩みを聞き出し、解決に導くカウンセリングのノウハウを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ダイエット検定対策</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>エステティシャンとして必要な正しいダイエットの知識を身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -yellow">
+                                                        <dt>
+                                                            <h4>
+                                                                めざす<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            《必須取得資格》
+                                                            <ul>
+                                                                <li>・ JNECネイリスト技能検定2・3級</li>
+                                                                <li>・ JNAジェルネイル技能検定初級</li>
+                                                            </ul>
+                                                            《専攻任意取得資格》
+                                                            <ul>
+                                                                <li>・ JNECネイリスト技能検定1級</li>
+                                                                <li>・ JNAジェルネイル技能検定中級・上級</li>
+                                                                <li>・ JNA認定ネイルサロン衛生管理士</li>
+                                                                <li>・ 色彩活用パーソナルカラー検定3級</li>
+                                                            </ul>
+                                                            《選択取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定3級</li>
+                                                                <li>・ アロマコーディネーターライセンス</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -gold">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel tab-002">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/aie/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/aie/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div class="-green">アロマ&セラピスト専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                心とカラダ<br>
+                                                両面から「キレイ」を引き出す
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ロミロミ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ハワイに伝わる伝統的手法で筋肉の凝りをほぐし、血行やリンパの流れを改善します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>リフレクソロジー</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>足裏にある身体の器官の反射ゾーンを指で刺激し、リラックスを促します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ホットストーン</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>石の温熱効果によって冷えを改善し、代謝を促して老廃物を取り除きます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ヨガ・ピラティス</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>精神肉体共に働きかけ、美と健康をサポート。インストラクターに必要な技術まで学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>アロマセラピー</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>精油を使用し、心身の健康や美容を増進する技術を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -green">
+                                                        <dt>
+                                                            <h4>
+                                                                めざす<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            《必須取得資格》
+                                                            <ul>
+                                                                <li>・ アロマコーディネーターライセンス</li>
+                                                            </ul>
+                                                            《専攻任意取得資格》
+                                                            <ul>
+                                                                <li>・ AEA認定エステティシャン</li>
+                                                                <li>・ JHRS認定リフレクソロジー<br>プロライセンス実技士資格</li>
+                                                            </ul>
+                                                            《選択取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定3級</li>
+                                                                <li>・ JNECネイリスト技能検定3級</li>
+                                                                <li>・ 色彩活用パーソナルカラー3級</li>
+                                                                <li>・ 色彩活用ライフケアカラー3級</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -gold">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel tab-003">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/aie/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/aie/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div class="-red">メイクアップアーティスト専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                メイクの力で<br>
+                                                「キレイ」をプロデュース
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>メイクアップ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>メイクの技術や知識を、業界の第一線で活躍するヘアメイクアップアーティストから学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ヘアアレンジメント</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ピンやゴムの使い方といった基礎から、幅広いアレンジまで身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ファッションコーディネート</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>スタイリストの基本から応用テクニックを身につけ、ファッションセンスを磨きます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>メイクカウンセリング</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>美容部員としてお客様にカウンセリングするノウハウを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>販売心理学</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>お客様の希望に適した商品を販売できる力を身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -red">
+                                                        <dt>
+                                                            <h4>
+                                                                めざす<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            《必須取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定2級</li>
+                                                            </ul>
+                                                            《専攻任意取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定1｟2級</li>
+                                                                <li>・ 日本化粧品検定2｟3級</li>
+                                                                <li>・ JNECネイリスト技能検定3級</li>
+                                                                <li>・ 色彩活用パーソナルカラー検定3級</li>
+                                                            </ul>
+                                                            《選択取得資格》
+                                                            <ul>
+                                                                <li>・ AEA認定エステティシャン</li>
+                                                                <li>・ アロマコーディネーター<br>ライセンス</li>
+                                                                <li>・ JNECネイリスト技能検定2級</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -gold">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel tab-004">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/aie/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/aie/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div class="-blue">ブライダルビューティ専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                キレイな花嫁をつくる<br>
+                                                スペシャリスト
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ドレスフィッティング &和装着付け</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>通常のウエディングドレスの他に、和装の着付けについても学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ブライダルヘアアレンジ＆メイク</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>花嫁の個性やドレスのデザイン、ブーケやティアラなどに合わせたテクニックを習得します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ブライダルエステ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ウエディングドレスがはえるボディラインやデコルテの美しさが際立つお手入れを身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ブライダルネイル</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>花嫁の要望に沿った、純白のウエディングドレスに似合うネイル技術をマスターします。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>カラーコーディネート</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>業界で必要とされるカラーの知識をブーケや和装で使われる小物制作を通して実践的な知識を身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -blue">
+                                                        <dt>
+                                                            <h4>
+                                                                めざす<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            《必須取得資格》
+                                                            <ul>
+                                                                <li>・ ブライダルコーディネート技能検定3級</li>
+                                                            </ul>
+                                                            《専攻任意取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定3級</li>
+                                                                <li>・ JNECネイリスト技能検定3級</li>
+                                                                <li>・ JNAジェルネイル技能検定初級</li>
+                                                                <li>・ AEA認定エステティシャン</li>
+                                                                <li>・ 色彩活用パーソナルカラー検定</li>
+                                                                <li>・ 色彩活用ライフケアカラー検定</li>
+                                                            </ul>
+                                                            《選択取得資格》
+                                                            <ul>
+                                                                <li>・ アロマコーディネーターライセンス</li>
+                                                                <li>・ 日本メイクアップ技術検定2級</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -gold">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel tab-005">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/aie/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/aie/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div class="-purple">ネイリスト専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                指先のおしゃれを<br>
+                                                可憐に演出するプロ
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ジェルネイル</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>爪に塗ったジェルにライトを照射して、硬化させながら仕上げていく技術を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>カラーリング＆アート</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>カラーを塗るだけではなく、その上にイラストやラメなどでアートを施す技術を身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>スカルプチュア</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>自爪に合わせて自然な仕上がりになるよう、人口爪をつくる技術を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>３Dアート</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>アクリルパウダーとアクリルリキッドを使用して、立体的に形成していく方法を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/aie/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>エアブラシ</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>アクリル絵の具を霧状にして吹きつけたり、マスキングという型で絵を描く方法を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -purple">
+                                                        <dt>
+                                                            <h4>
+                                                                めざす<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            《必須取得資格》
+                                                            <ul>
+                                                                <li>・ JNECネイリスト技能検定2・3級</li>
+                                                                <li>・ JNAジェルネイル技能検定初級</li>
+                                                            </ul>
+                                                            《専攻任意取得資格》
+                                                            <ul>
+                                                                <li>・ JNECネイリスト技能検定1級</li>
+                                                                <li>・ JNAジェルネイル技能検定中級・上級</li>
+                                                                <li>・ JNA認定ネイルサロン衛生管理士</li>
+                                                                <li>・ 色彩活用パーソナルカラー検定3級</li>
+                                                            </ul>
+                                                            《選択取得資格》
+                                                            <ul>
+                                                                <li>・ 日本メイクアップ技術検定3級</li>
+                                                                <li>・ アロマコーディネーターライセンス</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -gold">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

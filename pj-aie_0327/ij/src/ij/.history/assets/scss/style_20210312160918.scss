@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+/* foundation--------------------------------------------------------- */
+@import "partials/foundation/00_config/_breakpoint";
+@import "partials/foundation/00_config/_font";
+@import "partials/foundation/00_config/_variable";
+@import "partials/foundation/01_reset/_destyle";
+// @import "partials/foundation/02_mixin/";
+// @import "partials/foundation/03_keyframe/";
+@import "partials/foundation/04_base/_base";
+
+/* layout------------------------------------------------------------ */
+@import "partials/layout/_layout";
+
+/* object------------------------------------------------------------ */
+/* object/component ボタンなど、再利用できる小さな単位のモジュールを定義します ---------------------------- */
+@import "partials/object/component/_col";
+@import "partials/object/component/_container";
+@import "partials/object/component/_wrapper";
+@import "partials/object/component/_inner";
+@import "partials/object/component/_btn";
+@import "partials/object/component/_relative";
+@import "partials/object/component/_burger";
+@import "partials/object/component/_schoolname";
+@import "partials/object/component/_others";
+
+/* object/project 記事一覧や、ユーザープロフィール、画像ギャラリーなど、繰り返し登場するコンテンツを構成する要素 ------------------------------ */
+@import "partials/object/project/_drawer";
+@import "partials/object/project/_footer";
+@import "partials/object/project/_header";
+@import "partials/object/project/_title";
+@import "partials/object/project/_breadcrumb";
+@import "partials/object/project/_cta";
+@import "partials/object/project/_sitemap";
+@import "partials/object/project/_address";
+@import "partials/object/project/_logo-sns";
+
+/* object/page 各ページ固有のクラスなど------------------------------ */
+@import "partials/object/page/_home";
+@import "partials/object/page/_feature_j-hm-about_stylistdebut";
+@import "partials/object/page/_application_aie_flow";
+@import "partials/object/page/_aie-top";
+@import "partials/object/page/_j-top";
+@import "partials/object/page/_facility_aie-about";
+@import "partials/object/page/_feature";
+
+/* object/utility わずかなスタイルの調整のための便利クラスなど ------------------------------ */
+@import "partials/object/utility/_display";

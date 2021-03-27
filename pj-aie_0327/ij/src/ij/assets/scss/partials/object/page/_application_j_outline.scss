@@ -1,0 +1,67 @@
+.j-outline {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/j/outline_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .c-application_tableA {
+        table ,td ,th {
+            border-collapse: collapse;
+            border:1px solid #000;
+        }
+        .table.-j {
+            .head {
+                td {
+                    &:nth-child(3){
+                        width: 11.5%;
+                    }
+                    &:nth-child(4){
+                        width: 11.5%;
+                    }
+                    &:nth-child(5){
+                        width: 11.5%;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            &:first-child {
+                                background-color: #fff;
+                                width: 22%;
+                            }
+                            &:nth-child(2) {
+                                width: 11.5%;
+                            }
+                            &:nth-child(3) {
+                                div {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                    td {
+                        .major {
+                            padding: 2rem 0 2rem 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .note {
+        margin: 2rem 0 0;
+        line-height: 2;
+    }
+    .mail_img {
+        text-align: center;
+        margin: 5rem 0 0;
+        div {
+            display: inline-block;
+        }
+    }
+}

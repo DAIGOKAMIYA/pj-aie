@@ -1,0 +1,87 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "ジェイヘアメイクBLOG"; %>
+<% body_class = "blog blog_j single"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title align-l"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-name">
+            <picture>
+                <source media="(max-width: 768px)" srcset="<%- dir %>assets/img/name_j_sp.png">
+                <img src="<%- dir %>assets/img/name_j.png" alt="ジェイヘアメイク">
+            </picture>
+        </div>
+
+        <div class="c-wrapper -w1084">
+            <article class="post_single">
+                <div class="post_single__head">
+                    <div class="post_single__head__meta">
+                        <time class="post_single__head__date">2021.03.01</time>
+                        <div class="post_single__head__category"><a href="#">オープンキャンパス</a></div>
+                    </div>
+                    <h1 class="post_single__head__title">★2月27日　オープンキャンパス★</h1>
+                </div>
+                <div class="post_single__body">
+                    <p>みなさんこんにちは☆彡<br>
+                    本日は、感染症対策を実施しながら、<br>
+                    オープンキャンパスを開催しました！！<br>
+                    姉妹校アイ エステティック専門学校とコラボした<br>
+                    美容分野まるごと体験DAYでした(^O^)／<br>
+                    体験の様子をご覧ください♪</p>
+
+                    <img src="<%- dir %>assets/img/blog_j/image_single_01.jpg" alt=""><br>
+                    <br>
+                    <img src="<%- dir %>assets/img/blog_j/image_single_02.jpg" alt=""><br>
+                    <br>
+                    <img src="<%- dir %>assets/img/blog_j/image_single_03.jpg" alt=""><br>
+                    <br>
+                    <img src="<%- dir %>assets/img/blog_j/image_single_04.jpg" alt=""><br>
+                    <br>
+                    <img src="<%- dir %>assets/img/blog_j/image_single_05.jpg" alt=""><br>
+                    <br>
+                    <img src="<%- dir %>assets/img/blog_j/image_single_06.jpg" alt=""><br>
+                    <br>
+                    <p>お越し下さった皆さん、<br>
+                    ありがとうございました♪<br>
+                    次回のオープンキャンパスは、<br>
+                    3/13(土)です！<br>
+                    ご参加お待ちしております♡</p>
+                </div>
+            </article>
+            <section class="pager">
+                <div class="pager__list">
+                    <div class="btn c-btn -red">
+                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__arrow"></span><span class="btn__txt">ブログ一覧に戻る</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

@@ -1,0 +1,424 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "オープンキャンパス"; %>
+<% body_class = "jwebopnecampus"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title align-l"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-name">
+            <picture>
+                <source media="(max-width: 768px)" srcset="<%- dir %>assets/img/name_i_sp.png">
+                <img src="<%- dir %>assets/img/name_i.png" alt="アイエステ">
+            </picture>
+        </div>
+
+        <div class="c-wrapper">
+
+            <div class="contents__body">
+
+                <div class="salon-contents__body__inner">
+
+                    <div class="mainvisual">
+                        <div class="mainvisual__inner">
+                            <h2 class="mainvisual__title"><img src="<%- dir %>assets/img/jwebopnecampus/mainvisual_title_01.png" alt="Welcome to OPEN CAMPUS"></h2>
+                            <p class="mainvisual__lead">学校のことや授業だけでなく、<br>
+                            施設や在校生の雰囲気まで1日でAIEがまるっとわかる！<br>
+                            姉妹校ジェイ ヘアメイク美容専門学校との合同イベントや<br class="u-none--768">
+                            1日で美容分野がまるっと体験できるイベント<br class="u-none--768">
+                            など、きっとあなたの目指す「美容の道」が見つかります。</p>
+                            <div class="mainvisual__label">
+                                <p>ジェイ ヘアメイク美容専門学校との合同イベントあり</p>
+                            </div>
+                        </div>
+                        <div class="photo__inner">
+                            <div class="photo_01"><img src="<%- dir %>assets/img/jwebopnecampus/mainvisual_image_01.png" alt=""></div>
+                            <div class="photo_02"><img src="<%- dir %>assets/img/jwebopnecampus/mainvisual_image_02.png" alt=""></div>
+                            <div class="photo_03"><img src="<%- dir %>assets/img/jwebopnecampus/mainvisual_image_03.png" alt=""></div>
+                            <div class="photo_04"><img src="<%- dir %>assets/img/jwebopnecampus/mainvisual_image_04.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <nav class="page_navi">
+                        <ul>
+                            <li><a href="#schedule">スケジュール</a></li>
+                            <li><a href="#flow">1日の流れ</a></li>
+                            <li><a href="#faq">よくあるご質問</a></li>
+                            <li><a href="#traffic">交通案内</a></li>
+                            <li><a href="#application">参加申し込み</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="notes">
+                        <p><a href="#">※オープンキャンパスに参加される皆さまへ※</a></p>
+                    </div>
+
+                    <div class="c-wrapper -w1200">
+                        <section id="schedule" class="schedule">
+                            <h3 class="title">スケジュール</h3>
+                            <div class="tags">
+                                <ul>
+                                    <li>要予約</li>
+                                    <li>参加特典あり</li>
+                                </ul>
+                            </div>
+                            <div class="schedule__inner">
+                                <div class="schedule__item">
+                                    <div class="schedule__item__wrap">
+                                        <div class="schedule__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/thumb_schedule_01.jpg" alt=""></div>
+                                        <div class="schedule__content">
+                                            <div class="schedule__content__meta">
+                                                <div class="schedule__content__meta__date">
+                                                    <div class="date"><b><span>3/10</span>WED</b></div>
+                                                    <div class="time"><span>18:00-18:30</span></div>
+                                                </div>
+                                                <h3 class="schedule__content__meta__title">【スマホやPCなどで、どこからでも参加OK♪】<br>オンライン学校説明会</h3>
+                                            </div>
+                                            <p>オープンキャンパスや説明会に参加したい。でもなかなか参加できないという方を対象に、専用アプリ『Zoom』を使ったオンライン学校説明会を開催します！</p>
+                                            <div class="schedule__content__btn">
+                                                <div class="btn c-btn -gold">
+                                                    <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">詳細はこちら</span><span class="btn__arrow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__item">
+                                    <div class="schedule__item__wrap">
+                                        <div class="schedule__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/thumb_schedule_01.jpg" alt=""></div>
+                                        <div class="schedule__content">
+                                            <div class="schedule__content__meta">
+                                                <div class="schedule__content__meta__date">
+                                                    <div class="date"><b><span>3/10</span>WED</b></div>
+                                                    <div class="time"><span>18:00-18:30</span></div>
+                                                </div>
+                                                <h3 class="schedule__content__meta__title">【スマホやPCなどで、どこからでも参加OK♪】<br>オンライン学校説明会</h3>
+                                            </div>
+                                            <p>オープンキャンパスや説明会に参加したい。でもなかなか参加できないという方を対象に、専用アプリ『Zoom』を使ったオンライン学校説明会を開催します！</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule__content__detail">
+                                        <div class="schedule__content__detail__inner">
+                                            <div class="schedule__content__detail__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/thumb_schedule_02.jpg" alt=""></div>
+                                            <div class="schedule__content__detail__content">
+                                                <h4 class="schedule__content__detail__content__title">オンライン♥学校説明会</h4>
+                                                <p class="schedule__content__detail__content__lead">スマホやパソコンで参加できるので、気軽に参加しよう！参加者同士で名前や顔がわかることはありませんので 安心してご視聴ください。オンライン説明会に参加された方は、オープンキャンパスに来校された方と同様にAO入試の受験が可能になります。</p>
+                                                <table class="schedule__content__detail__content__table">
+                                                    <tr>
+                                                        <th>日時</th>
+                                                        <td>2021年03月10日(水)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>場所</th>
+                                                        <td>アイエステティック専門学校</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>申込方法</th>
+                                                        <td>下記フォームよりお申し込みください。</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>注意事項</th>
+                                                        <td>要予約・参加無料</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="schedule__content__btn--application">
+                                            <div class="btn c-btn -gold">
+                                                <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">オープンキャンパスの申込はこちら</span><span class="btn__arrow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="schedule__content__btn--close"><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="schedule__item">
+                                    <div class="schedule__item__wrap">
+                                        <div class="schedule__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/thumb_schedule_01.jpg" alt=""></div>
+                                        <div class="schedule__content">
+                                            <div class="schedule__content__meta">
+                                                <div class="schedule__content__meta__date">
+                                                    <div class="date"><b><span>3/10</span>WED</b></div>
+                                                    <div class="time"><span>18:00-18:30</span></div>
+                                                </div>
+                                                <h3 class="schedule__content__meta__title">【スマホやPCなどで、どこからでも参加OK♪】<br>オンライン学校説明会</h3>
+                                            </div>
+                                            <p>オープンキャンパスや説明会に参加したい。でもなかなか参加できないという方を対象に、専用アプリ『Zoom』を使ったオンライン学校説明会を開催します！</p>
+                                            <div class="schedule__content__btn">
+                                                <div class="btn c-btn -gold">
+                                                    <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">詳細はこちら</span><span class="btn__arrow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__item">
+                                    <div class="schedule__item__wrap">
+                                        <div class="schedule__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/thumb_schedule_01.jpg" alt=""></div>
+                                        <div class="schedule__content">
+                                            <div class="schedule__content__meta">
+                                                <div class="schedule__content__meta__date">
+                                                    <div class="date"><b><span>3/10</span>WED</b></div>
+                                                    <div class="time"><span>18:00-18:30</span></div>
+                                                </div>
+                                                <h3 class="schedule__content__meta__title">【スマホやPCなどで、どこからでも参加OK♪】<br>オンライン学校説明会</h3>
+                                            </div>
+                                            <p>オープンキャンパスや説明会に参加したい。でもなかなか参加できないという方を対象に、専用アプリ『Zoom』を使ったオンライン学校説明会を開催します！</p>
+                                            <div class="schedule__content__btn">
+                                                <div class="btn c-btn -gold">
+                                                    <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">詳細はこちら</span><span class="btn__arrow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //schedule -->
+
+                        <section id="information" class="information">
+                            <div class="information__inner">
+                                <div class="information__text">
+                                    <h3 class="information__title"><img src="<%- dir %>assets/img/jwebopnecampus/title_infromation_01.jpg" alt=""></h3>
+                                    <p>オンライン学校説明会はスマホやPCなどで、どこからでも参加OK♪<br>
+                                        オープンキャンパスや説明会に参加したい、でもなかなか参加できないという方を対象に、<br class="spbr_tabnone">
+                                        専用アプリ『Zoom』を使ったオンライン学校説明会を開催しています！</p>
+                                    <div class="information__btn c-btn -gold">
+                                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">申込み方法・開催日などの詳細はこちら</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="information__photo"><img src="<%- dir %>assets/img/jwebopnecampus/photo_information_01.jpg" alt=""></div>
+                            </div>
+                        </section>
+                        <!-- //information -->
+
+                        <section id="events" class="events bg_box">
+                            <div class="events__inner">
+                                <div class="icon_01"><img src="<%- dir %>assets/img/jwebopnecampus/icon_event_01.png" alt="2校同時開催!!"></div>
+                                <div class="events__head bg_box__head">
+                                    <p class="events__lead bg_box__lead border">友人、保護者 同伴歓迎!!</p>
+                                    <h2 class="events__title bg_box__title"><img src="<%- dir %>assets/img/jwebopnecampus/title_beautyevent_01.png" alt="BEAUTY EVENT"></h2>
+                                    <p>AIE とJを両方体験できる特別な日。午前と午後で、<br class="spbr_tabnone">
+                                    友だちといっしょに参加していろいろなBeautyを体験しよう!!</p>
+                                    <div class="photo_01"><img src="<%- dir %>assets/img/jwebopnecampus/photo_event_01.png" alt=""></div>
+                                </div>
+                                <div class="events__body">
+                                    <h3 class="title">体験メニュー例</h3>
+                                    <ul>
+                                        <li>
+                                            <figure>
+                                                <img src="<%- dir %>assets/img/jwebopnecampus/image_event_01.png" alt="">
+                                                <figcaption>エステ体験</figcaption>
+                                            </figure>
+                                            <p>1日で美肌・美脚に♡</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="<%- dir %>assets/img/jwebopnecampus/image_event_02.png" alt="">
+                                                <figcaption>アロマ体験</figcaption>
+                                            </figure>
+                                            <p>アロマに癒されよう！</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="<%- dir %>assets/img/jwebopnecampus/image_event_03.png" alt="">
+                                                <figcaption>メイク体験</figcaption>
+                                            </figure>
+                                            <p>プロの技を盗んじゃお♪</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="<%- dir %>assets/img/jwebopnecampus/image_event_04.png" alt="">
+                                                <figcaption>ブライダル体験</figcaption>
+                                            </figure>
+                                            <p>本格ドレスも着れちゃう！</p>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="<%- dir %>assets/img/jwebopnecampus/image_event_05.png" alt="">
+                                                <figcaption>ネイル体験</figcaption>
+                                            </figure>
+                                            <p>季節のネイルにチャレンジ！</p>
+                                        </li>
+                                    </ul>
+                                    <div class="btn c-btn -gold">
+                                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt"><b>NEXT</b> <time>3/10(WED)</time> 参加申込はこちら</span><span class="btn__arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //events -->
+
+                        <section id="tour" class="tour">
+                            <h2 class="tour__title">他にも個別の学校見学を開催</h2>
+                            <div class="tour__inner">
+                                <div class="tour__image"><img src="<%- dir %>assets/img/jwebopnecampus/image_tour_01.jpg" alt=""></div>
+                                <div class="tour__text">
+                                    <h3 class="tour__lead">学校見学・個別相談</h3>
+                                    <p>不安や疑問はここでスッキリ！<br>
+                                    通常授業の様子や学生の普段の姿が見られます☆<br>
+                                    【時間】平日 9:30～17:00<br>
+                                    【内容】学校就職説明、授業見学、施設見学、個別相談</p>
+                                    <div class="btn c-btn -gold">
+                                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">申込はこちら</span><span class="btn__arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //tour -->
+
+                        <section id="flow" class="flow bg_box">
+                            <div class="flow__inner">
+                                <div class="flow__head bg_box__head">
+                                    <h2 class="flow__title bg_box__title border"><img src="<%- dir %>assets/img/jwebopnecampus/title_flow_01.png" alt="FLOW"></h2>
+                                    <p class="flow__lead bg_box__lead">一日の流れ</p>
+                                    <div class="photo_01"><img src="<%- dir %>assets/img/jwebopnecampus/photo_flow_01.png" alt=""></div>
+                                    <div class="photo_02"><img src="<%- dir %>assets/img/jwebopnecampus/photo_flow_02.png" alt=""></div>
+                                </div>
+                                <div class="flow__body">
+                                    <ol class="flow_list">
+                                        <li class="flow_list__item">
+                                            <div class="flow_list__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/image_flow_01.jpg" alt=""></div>
+                                            <div class="flow_list__content">
+                                                <h4 class="flow_list__title">受付～施設見学</h4>
+                                                <p>先輩たちが、校内のキレイな施設を説明しながらご案内！</p>
+                                            </div>
+                                        </li>
+                                        <li class="flow_list__item">
+                                            <div class="flow_list__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/image_flow_02.jpg" alt=""></div>
+                                            <div class="flow_list__content">
+                                                <h4 class="flow_list__title">オリエンテーション</h4>
+                                                <p>美容業界のこと、学校のことなどを詳しくご説明します。</p>
+                                            </div>
+                                        </li>
+                                        <li class="flow_list__item">
+                                            <div class="flow_list__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/image_flow_03.jpg" alt=""></div>
+                                            <div class="flow_list__content">
+                                                <h4 class="flow_list__title">体験授業</h4>
+                                                <p>エステ・アロマ・メイク・ネイル・ブライダルなど様々な授業を体験してみよう☆</p>
+                                            </div>
+                                        </li>
+                                        <li class="flow_list__item">
+                                            <div class="flow_list__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/image_flow_04.jpg" alt=""></div>
+                                            <div class="flow_list__content">
+                                                <h4 class="flow_list__title">在校生とのQ&A</h4>
+                                                <p>先輩に学校・就職のことなど、気になることを何でも聞いちゃおう！</p>
+                                            </div>
+                                        </li>
+                                        <li class="flow_list__item">
+                                            <div class="flow_list__thumb"><img src="<%- dir %>assets/img/jwebopnecampus/image_flow_05.jpg" alt=""></div>
+                                            <div class="flow_list__content">
+                                                <h4 class="flow_list__title">終了～お見送り</h4>
+                                                <p>先輩たちが皆さんをお見送り。1日お疲れ様でした！</p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //flow -->
+
+                        <section id="faq" class="faq">
+                            <h2 class="title">みんなからのよくある質問に答えるよ！</h2>
+                            <div class="faq_list">
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>どんな服装で行けばいいの？</span></dt>
+                                        <dd><span>私服でも制服でもOK!</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>誰かと一緒に行ってもOK？</span></dt>
+                                        <dd><span>友達・ご家族・誰とでもOK!</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>どんな体験が受けられる？</span></dt>
+                                        <dd><span>全部の専攻から選べる♪</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>全部の専攻から選べる♪</span></dt>
+                                        <dd><span>基本的になし◎体験内容によって<br>
+                                            ご案内する場合もあるよ！</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>化粧はして行ってもいい？</span></dt>
+                                        <dd><span>大丈夫だよ！<br>
+                                            エステ体験時落とすこともあるよ。</span></dd>
+                                    </dl>
+                                </div>
+                                <div class="faq_list__item">
+                                    <dl>
+                                        <dt><span>申し込み方法は？</span></dt>
+                                        <dd><span>HPやSNSから予約してね♪</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="photo_01"><img src="<%- dir %>assets/img/jwebopnecampus/photo_faq_01.png" alt=""></div>
+                        </section>
+                        <!-- //faq -->
+
+                        <section id="traffic" class="traffic">
+                            <h2 class="title">交通案内</h2>
+                            <div class="traffic__inner">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.853250374904!2d140.11353595155273!3d35.606686341565364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602284b39d5807f5%3A0xf4af7dbc209e241d!2z44Ki44KkIOOCqOOCueODhuODhuOCo-ODg-OCr-WwgumWgOWtpuagoQ!5e0!3m2!1sja!2sjp!4v1615690816793!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                                <div class="access">
+                                    <p>〒260-0021 千葉県千葉市中央区新宿2-14-3　/　TEL0120-461-901<br>
+                                        JR千葉駅東口より徒歩10分　/　京成千葉中央駅より徒歩2分</p>
+
+                                    <div class="btn c-btn -gold">
+                                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">アクセス詳細はこちら</span><span class="btn__arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //traffic -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

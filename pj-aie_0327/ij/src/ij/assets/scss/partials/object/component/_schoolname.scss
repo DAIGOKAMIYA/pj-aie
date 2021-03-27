@@ -1,0 +1,24 @@
+.c-schoolname{
+    padding: 1.1rem 0 1.2rem;
+    @include max768{
+        padding: 2.5rem 0 2.1rem;
+    }
+    &.-i{
+        background-color: $gold;
+    }
+    &.-j{
+        background-color: $red;
+    }
+    .name{
+        height: 4.713rem;
+        text-align: center;
+        @include max768{
+            height: 2.4rem;
+        }
+        img{
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+        }
+    }
+}

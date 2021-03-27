@@ -1,0 +1,158 @@
+.feature_group {
+	.p-title{
+		background-image: url("../img/feature_group/feature_group_bg.jpg");
+		.title{
+			text-align:left;
+		}
+	}
+	.js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+
+  .highlight {
+    background: linear-gradient(transparent 50%, #f6ff5f 0%);
+    line-height: 1.3em;
+  }
+
+  .heading_b {
+    text-align: center;
+    padding: 0 0 40px 0;
+
+    @include max480 {
+      padding: 0 0 10px 0;
+    }
+
+    > span {
+      font-size: 3rem;
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: solid 1px #000;
+
+      @include max480 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .fwb {
+    font-weight: bold;
+  }
+
+  .intro_catch, .intro_ngroup, .intro_nhistory {
+    max-width: 1180px;
+    width: 80%;
+    box-shadow: (0 0 1rem #ddd);
+    padding: 40px;
+    margin: 0px auto 80px auto;
+
+    @include max480 {
+      padding: 20px;
+    }
+  }
+
+  .col2 {
+    display: flex;
+    justify-content: space-between;
+
+    @include max480 {
+      display: block;
+    }
+  }
+
+  .intro_catch {
+    margin-top: 40px;
+
+    .col2_l {
+      width: 70%;
+
+      @include max480 {
+        width: 100%;
+      }
+
+      .highlight {
+        font-size: 2.6rem;
+
+        @include max480 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .intro_ngroup {
+
+    .col2 {
+      padding: 40px 0;
+      border-bottom: solid 1px #ddd;
+
+      @include max480 {
+        padding: 20px 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .col2_l, .col2_r {
+      width: 48%;
+      font-size: 1.4rem;
+
+      @include max480 {
+        width: 100%;
+      }
+    }
+
+    .ttl {
+      font-size: 2.2rem;
+      font-weight: bold;
+
+      @include max480 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .intro_nhistory {
+
+    dl {
+      display: flex;
+      border-top: solid 1px #ddd;
+
+      @include max480 {
+        display: block;
+      }
+
+      &:last-child {
+        border-bottom: solid 1px #ddd;
+      }
+
+      dt,dd {
+        padding: 20px;
+
+        @include max480 {
+          padding: 5px;
+        }
+      }
+
+      dt {
+        width: 26%;
+
+        @include max480 {
+          width: 100%;
+        }
+      }
+
+      dd {
+        width: 80%;
+
+        @include max480 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

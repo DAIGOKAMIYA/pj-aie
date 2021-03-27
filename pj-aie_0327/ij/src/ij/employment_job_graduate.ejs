@@ -1,0 +1,147 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "活躍する卒業生"; %>
+<% body_class = "employment_job_graduate"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+        <ul class="c-col2 js-tabs graduate-tabs">
+            <li class="c-col2__item" style="background-color: #f7f7f7;">
+                <div class="c-wrapper -half -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper -half -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div class="profile -i">
+                    <div class="c-wrapper -half -left">
+                        <div class="profile__intro" data-mh="profile_intro">
+                            <p><mark>AIEで身につけた力を活かし、</mark><br><mark>美容業界で活躍している卒業生をご紹介！</mark></p>
+                        </div>
+                        <div class="profile__list">
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i01.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i02.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i03.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i04.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i05.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i06.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i07.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i08.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i09.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_i10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2" style="background-color: #1a1a1a;">
+                <div class="profile -j">
+                    <div class="c-wrapper -half -right">
+                        <div class="profile__intro" data-mh="profile_intro">
+                            <p>ジェイから羽ばたき、夢を掴んだ先輩たち。<br>ジェイで学んだコトで今も心に刻んでいるコト、大変だったコト、<br>さらに現場に出たからこそ気づけたリアルなわたしたちをお伝えします！</p>
+                        </div>
+                        <div class="profile__list">
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j01.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j02.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j03.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j04.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j05.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j06.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j07.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j08.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j09.png" alt="">
+                            </div>
+                            <div class="profile-item">
+                                <img src="./assets/img/employment_job/graduate_j10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

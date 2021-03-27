@@ -1,0 +1,40 @@
+.c-burger{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    z-index: 100000;
+    cursor: pointer;
+    background-color: #333;
+    div{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 2px;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: calc(50% - 15px);
+        transition: .3s;
+        &:first-child{
+            transform: translateY(-10px);
+        }
+        &:nth-child(2){
+            transform: translateY(0);
+        }
+        &:last-child{
+            transform: translateY(10px);
+        }
+    }
+    &.is-active{
+        div{
+            &:first-child{
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                display: none;
+            }
+            &:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

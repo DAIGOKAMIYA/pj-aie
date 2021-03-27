@@ -1,0 +1,339 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "ジェイヘアメイク専攻一覧"; %>
+<% body_class = "course_j-hm-course"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+    <div class="p-title">
+        <div class="c-inner -w1084">
+            <div class="title"><%- title; %></div>
+        </div>
+    </div>
+    <div class="p-breadcrumb">
+        <div class="c-inner -w1084">
+            <div class="breadcrumb">
+                <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="l-contents">
+    <main class="l-main">
+        <div class="c-schoolname -j">
+            <div class="name">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                    <img src="./assets/img/name_j.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <section class="list">
+            <div class="list_inner">
+                <div class="p-course_title">
+                    <div class="title">
+                        <h2>自分の道を選べる<span class="red">2</span>専攻</h2>
+                    </div>
+                </div>
+                <div class="major">
+                    <div class="major-panel">
+                        <ul class="tab-group">
+                            <li class="tab tab-001 is-active">
+                                <div class="tab-inner">
+                                    <div class="tag -black">Hair stylist</div>
+                                    <div class="img">
+                                        <img src="<%- dir %>assets/img/course/j/hair_mv.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="category">
+                                            <span class="tip -black">美容師科</span>
+                                        </div>
+                                        <div class="heading">
+                                            <h3>ヘアスタイリスト専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab tab-002">
+                                <div class="tab-inner">
+                                    <div class="tag -black">Hair make</div>
+                                    <div class="img"><img src="<%- dir %>assets/img/course/j/make_mv.png" alt=""></div>
+                                    <div class="title">
+                                        <div class="category">
+                                            <span class="tip -black">美容師科</span>
+                                        </div>
+                                        <div class="heading">
+                                            <h3>ヘアメイク専攻</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="panel-group">
+                            <div class="panel tab-001 is-show">
+                                <div class="content -hair">
+                                    <div class="content_img -hairs">
+                                        <img class="pc" src="<%- dir %>assets/img/course/j/hair_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/j/hair_mv_sp.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div>ヘアスタイリスト専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                ヘアに関わる<br>
+                                                最新技術・センスを身につけて<br>
+                                                サロンで活躍できる人材を育成
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>デザインカット</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ベーシックカットを応用し、より実践的なサロンスタイルを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/designcolor_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>デザインカラー</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>サロン現場に即した実践的なヘアカラーを学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/palm_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>パーマテクニック</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>ベーシックスタイルから応用的なワインディングまでを身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/photo_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>フォトシューティング</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>オリジナルデザインを創作して、撮影した作品を出品します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/designcut_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>スタイリング</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>様々なスタイリング剤でお客様を仕上げる似合わせの技術を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -red">
+                                                        <dt>
+                                                            <h4>
+                                                                めざせる<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            <ul>
+                                                                <li>・ 美容師国家資格</li>
+                                                                <li>・ CAAメイク検定 2級</li>
+                                                                <li>・ CAAメイク検定 3級</li>
+                                                                <li>・ JBCAビューティビジネス実務検定3級</li>
+                                                                <li>・ F.S.A.StylingMap検定 ジュニア</li>
+                                                                <li>・ JAAアロマコーディネーターライセンス</li>
+                                                                <li>・ 文部科学省後援 色彩検定3級</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -black">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel tab-002">
+                                <div class="content -make">
+                                    <div class="content_img">
+                                        <img class="pc" src="<%- dir %>assets/img/course/j/make_content_mv.png" alt="">
+                                        <img class="sp" src="<%- dir %>assets/img/course/j/make_mv.png" alt="">
+                                    </div>
+                                    <div class="content_inner">
+                                        <div class="content_inner_title">
+                                            <div>ヘアメイク専攻</div>
+                                        </div>
+                                        <div class="content_inner_subttl">
+                                            <h3>
+                                                ヘアとメイク技術を身につけ<br>トータルで活躍する人材を育成
+                                            </h3>
+                                        </div>
+                                        <div class="content_inner_detail">
+                                            <ul class="detail">
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/hairmake_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ヘアメイク</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>顔立ちや髪質を考慮し、美しく仕上げるテクニックを習得します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/butai_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>舞台メイク</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>アニマル、ピエロ、キャッツなど、舞台で行われるメイク技術です。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/specialmake_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>特殊メイク</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>傷、ヤケド、ゾンビメイクなど特殊なメイク技術を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/pro_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>専門知識講座</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>医療行為として薬剤の扱い方など基礎知識を学びます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/fashion_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>ファッションメイク</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>多彩なファッションメイクのテクニックを身につけます。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="detail_item">
+                                                    <div class="detail_item_inner">
+                                                        <div class="img"><img src="<%- dir %>assets/img/course/j/practice_future_img.png" alt=""></div>
+                                                        <div class="text">
+                                                            <div class="text_title">
+                                                                <h4>施術実習</h4>
+                                                            </div>
+                                                            <div class="text_paragraph">
+                                                                <p>エクステンションやまつ毛矯正・アイブロウの技術を習得します。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="target">
+                                                <div class="target_inner">
+                                                    <dl class="target_inner_content -red">
+                                                        <dt>
+                                                            <h4>
+                                                                めざせる<br>資格
+                                                            </h4>
+                                                        </dt>
+                                                        <dd>
+                                                            <ul>
+                                                                <li>・ 美容師国家資格</li>
+                                                                <li>・ CAAメイク検定1級</li>
+                                                                <li>・ CAAメイク検定2級</li>
+                                                                <li>・ CAAメイク検定3級</li>
+                                                                <li>・ プロフェッショナルメイクアップ<br>アーティスト資格</li>
+                                                                <li>・ JECA日本まつ毛エクステンション<br>認定機構安全技師検定</li>
+                                                                <li>・ JBCAビューティビジネス実務検定3級</li>
+                                                                <li>・ F.S.A.StylingMap検定 ジュニア</li>
+                                                                <li>・ JAAアロマコーディネーターライセンス</li>
+                                                                <li>・ 文部科学省後援 色彩検定3級</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="c-course_btn">
+                                                <div class="btn">
+                                                    <div class="btn_inner -black">
+                                                        <div class="text">詳しく見る</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

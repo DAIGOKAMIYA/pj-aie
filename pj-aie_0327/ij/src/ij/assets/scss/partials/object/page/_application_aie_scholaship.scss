@@ -1,0 +1,72 @@
+.aie-scholaship {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/aie/scholaship_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .sub_explain {
+        p {
+            margin: 0 0 4.8rem;
+        }
+    }
+    .c-application_tableA {
+        .table.-aie {
+            text-align: center;
+            .head {
+                td {
+                    padding: 1.6rem 0;
+                    width: 10%;
+                    text-align: center;
+                }
+            }
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            &:nth-child(2) {
+                                width: 45%;
+                            }
+                            &:nth-child(3), &:nth-child(4) {
+                                width: 16%;
+                            }
+                            &:last-child {
+                                text-align: center;
+                                padding: 2.4rem 0;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        td {
+                            &:first-child {
+                                text-align: left;
+                                padding: 2.4rem 0 2.4rem 3rem;
+                            }
+                        }
+                    }
+                    td {
+                        text-align: left;
+                        padding: 2.4rem 0 2.4rem 3rem;
+                        &:nth-child(1){
+                            background-color: #f7f2e7;
+                            width: 22%;
+                            text-align: center;
+                            padding: 2.4rem 0;
+                        }
+                        li {
+                            line-height: 2;
+                        }
+                    }
+                }
+                .notbeige {
+                    background-color: white!important;
+                }
+                .beige {
+                    background-color: #f7f2e7;;
+                }
+            }
+        }
+    }
+}

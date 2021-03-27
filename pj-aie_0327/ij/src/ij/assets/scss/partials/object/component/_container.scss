@@ -1,0 +1,8 @@
+.c-container{
+    margin: 0 auto;
+    width: 100%;
+    overflow: visible;
+    &.-max1366{
+        max-width: 1366px;
+    }
+}

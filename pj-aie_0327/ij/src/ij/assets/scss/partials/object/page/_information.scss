@@ -1,0 +1,21 @@
+.p-title{
+    $this: &;
+    .aieinformation &{
+        background-image: url(../img/information/aieinformation_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+    .jinformation &{
+        background-image: url(../img/information/jinformation_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}

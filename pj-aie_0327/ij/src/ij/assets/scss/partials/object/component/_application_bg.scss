@@ -1,0 +1,32 @@
+.c-application_bg {
+    padding: 50px;
+    @include max768 {
+        padding: 30px;
+    }
+    @include max480 {
+        padding: 20px;
+    }
+    @include max360 {
+        padding: 16px;
+    }
+    &_inner {
+        background-color: #fff;
+        padding: 60px 40px 80px;
+        @include max768 {
+            padding: 60px 25px 80px;
+        }
+        @include max480 {
+            padding: 60px 14px 10px;
+        }
+        @include max360 {
+            padding: 60px 10px 10px;
+        }
+    }
+    // aieとjのバックグランドカラーをつか分ける場合 class="c-application_bg -aie" class="c-application_bg -j"のどちらかをつける
+    &.-aie {
+        background-color: $blue;
+    }
+    &.-j {
+        background-color: #fff;
+    }
+}

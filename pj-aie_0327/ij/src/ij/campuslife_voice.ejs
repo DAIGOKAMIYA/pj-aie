@@ -1,0 +1,91 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "私服スナップ"; %>
+<% body_class = "campuslife_voice"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="c-wraper">
+                <div class="c-inner">
+                    <h1 class="title"><span>在校生たちの<br class="u-block--768">私服スナップ特集！</span></h1>
+                    <p>オープンキャンパスで会えちゃう先輩たちが大集合しました。先生と学生のキョリが近いのもAIEとジェイの魅力。<br>今回は服装に隠れた素のキャラを先生からのコメントで暴露しちゃいます★<br>「先生からこう見えてる！」がわかる愛しかないコメントの数々。要チェックです！</p>
+                </div>
+            </div>
+        </div>
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item">
+                <div class="c-wrapper -half -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item">
+                <div class="c-wrapper -half -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div class="voice">
+                    <div class="c-wrapper -half -left">
+                        <div class="voice__img">
+                            <img src="./assets/img/campuslife/campuslife_voice_i.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2">
+                <div class="voice">
+                    <div class="c-wrapper -half -right">
+                        <div class="voice__img">
+                            <img src="./assets/img/campuslife/campuslife_voice_j.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

@@ -1,0 +1,74 @@
+.p-cta{
+    background-color: #F1F2F6;
+    &__wrapper{
+        padding: 6.3rem 0;
+        @include max768{
+            padding: 3.2rem 0;
+        }
+    }
+    &__head{
+        .title{
+            height: 7.9rem;
+            text-align: left;
+            @include max768{
+                height: 12.4rem;
+                text-align: center;
+            }
+            img{
+                height: 100%;
+                width: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    &__head{
+        margin-bottom: 3.5rem;
+        width: 48%;
+        @include max768{
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+    }
+    &__desc{
+        margin-bottom: 2.5rem;
+        width: 48%;
+        p{
+            font-weight: $bold;
+            letter-spacing: 0;
+        }
+        @include max768{
+            width: 100%;
+        }
+    }
+    &__btn{
+        width: 43.5%;
+        @include max768{
+            width: 100%;
+        }
+        .btn{
+            width: 49%;
+            @include max768{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__img{
+        width: 47.9%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include max768{
+            margin-top: 2rem;
+            width: 100%;
+            overflow: hidden;
+            position: static;
+        }
+        img{
+            @include max768{
+                width: 108%;
+                margin-left: -8%;
+            }
+        }
+    }
+}

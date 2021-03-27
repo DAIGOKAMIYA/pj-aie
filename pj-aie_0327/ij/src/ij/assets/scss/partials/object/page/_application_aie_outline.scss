@@ -1,0 +1,59 @@
+.aie-outline {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/aie/outline_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .c-application_tableA {
+        .table.-aie {
+            .head {
+                td {
+                    &:nth-child(3){
+                        width: 11.5%;
+                    }
+                    &:nth-child(4){
+                        width: 11.5%;
+                    }
+                    &:nth-child(5){
+                        width: 11.5%;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            &:first-child {
+                                background-color: #f7f2e7;
+                                width: 22%;
+                            }
+                            &:nth-child(2) {
+                                width: 11.5%;
+                            }
+                            &:nth-child(3) {
+                                div {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                    td {
+                        .major {
+                            padding: 2rem 0 2rem 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mail_img {
+        text-align: center;
+        margin: 5rem 0 0;
+        div {
+            display: inline-block;
+        }
+    }
+}

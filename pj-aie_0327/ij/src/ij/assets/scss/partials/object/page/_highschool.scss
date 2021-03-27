@@ -1,0 +1,427 @@
+.highschool {
+	.p-title{
+		background-image: url(../img/guardian/guardian_title_bg_pc.png);
+		.title{
+			text-align:left;
+		}
+	}
+	.js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+}
+.highschool{
+	.introduction{
+		text-align:center;
+		padding-top:20px;
+		margin-bottom:54px;
+		dt{
+			display:inline-block;
+			padding:0 1rem;
+			margin-bottom:40px;
+			font-size:3.6rem;
+			line-height:4.8rem;
+			background:linear-gradient(to top,#ffff00 25%,transparent 25% 100%);
+			@include max768{
+				font-size:2rem;
+				line-height:3rem;
+			}
+		}
+		dd{
+			font-size:1.6rem;
+			line-height:3.6rem;
+			span{
+				background:#d7f0f2;
+			}
+			@include max768{
+				padding:0 20px;
+				font-size:1.2rem;
+				line-height:2.6rem;
+			}
+		}
+	}
+	#tab_content_2 {
+		background-color: #1a1a1a;
+	}
+	&-content{
+		.content_wrap{
+			margin:0 40px;
+			@include max768{
+				margin:0 20px;
+			}
+			.ban_area{
+				position:relative;
+				width:100%;
+				a{
+					display:block;
+					span{
+						display:block;
+						text-align:left;
+						font-size:1.5rem;
+						font-weight:bold;
+						color:#fff;
+						line-height:2.2rem;
+						position:absolute;
+					}
+				}
+				&.ban_no01{
+					margin-top:54px;
+					a{
+						border:1px solid #349daa;
+					}
+					span{
+						width:100%;
+						padding:10px 0 10px 26px;
+						background:#82ccd5;
+						left:0;
+						bottom:0;
+						z-index:-1;
+						@include max768{
+							position:static;
+							padding:6px 0 6px 10px;
+						}
+					}
+					
+				}
+				&.ban_no02{
+					margin-top:36px;
+					margin-bottom:45px;
+					a{
+						border:5px solid #f6c4d2;
+					}
+					span{
+						padding:8px 20px 8px 20px;
+						background:#ea819f;
+						border-radius:20px;
+						left:8%;
+						bottom:16px;
+						@include max768{
+							width:100%;
+							border-radius:0;
+							position:static;
+							padding:6px 0 6px 10px;
+						}
+					}
+				}
+				&.ban_no03{
+					margin-top:54px;
+					background:#fff;
+					a{
+						border:3px solid #c91420;
+					}
+					span{
+						padding:7px 12px 7px 12px;
+						background:#1a1a1a;
+						left:5%;
+						bottom:16px;
+						@include max768{
+							width:100%;
+							border-radius:0;
+							position:static;
+							padding:6px 0 6px 10px;
+						}
+					}
+				}
+				&.ban_no04{
+					margin-top:34px;
+					margin-bottom:45px;
+					background:#fff;
+					a{
+						border:5px solid #c91420;
+					}
+					span{
+						padding:8px 20px 8px 20px;
+						background:#c91420;
+						border-radius:20px;
+						left:8%;
+						bottom:16px;
+						@include max768{
+							width:100%;
+							border-radius:0;
+							position:static;
+							padding:6px 0 6px 10px;
+						}
+					}
+				}
+			}
+			.button_area01{
+				margin-bottom:60px;
+				li{
+					width:435px;
+					margin:0 auto;
+					@include max768{
+						width:100%;
+					}
+					a{
+						display:inline-block;
+						width:100%;
+						line-height:60px;
+						text-align:center;
+						font-weight:bold;
+						color:#fff;
+					}
+				}
+			}
+			.col3_area{
+				dl{
+					margin-bottom:45px;
+					dt{
+						border-bottom:3px solid;
+						padding:0 0 13px 13px;
+						margin-bottom:24px;
+						font-size:2.2rem;
+					}
+					dd{
+						font-size:1.4rem;
+						line-height:2.8rem;
+					}
+				}
+				ul{
+					display:flex;
+					justify-content:space-between;
+					@include max768{
+						display:block;
+					}
+					li{
+						width:30%;
+						max-width:180px;
+						span{
+							display:block;
+							padding:7px 0;
+							text-align:center;
+							color:#fff;
+							font-size:1.4rem;
+							line-height:2.2rem;
+							white-space:nowrap;
+							&.text11{font-size:1.1rem;}
+							&.text12{font-size:1.2rem;}
+						}
+						@include max768{
+							width:100%;
+							max-width:none;
+							margin-bottom:20px;
+							a{
+								display:table;
+							}
+							img{
+								width:100%;
+								display:table-cell;
+							}
+							span{
+								width:70%;
+								font-size:2rem;
+								display:table-cell;
+								vertical-align:middle;
+								&.text11{font-size:1.4rem;}
+								&.text12{font-size:1.6rem;}
+							}
+						}
+					}
+				}
+				&.area-i01{
+					margin-bottom:60px;
+					dt{
+						border-color:#f8b861;
+					}
+					ul{
+						li{
+							span{
+								background:#f8b861;
+							}
+						}
+					}
+				}
+				&.area-i02{
+					margin-bottom:60px;
+					dt{
+						border-color:#67be8d;
+					}
+					ul{
+						li{
+							span{
+								background:#67be8d;
+							}
+						}
+					}
+				}
+				&.area-i03{
+					margin-bottom:60px;
+					dt{
+						border-color:#6fc8d8;
+					}
+					ul{
+						li{
+							span{
+								background:#6fc8d8;
+							}
+						}
+					}
+				}
+				&.area-i04{
+					margin-bottom:60px;
+					dt{
+						border-color:#b194c4;
+					}
+					ul{
+						li{
+							span{
+								background:#b194c4;
+							}
+						}
+					}
+				}
+				&.area-j01{
+					margin-bottom:60px;
+					color:#fff;
+					dt{
+						border-color:#c91420;
+					}
+					ul{
+						li{
+							span{
+								background:#c91420;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.-i{
+			.button_area01{
+				li{
+					a{
+						background:url("../img/highschool/ic_arrow_right.png") no-repeat right 11px center #82ccd5;
+					}
+				}
+			}
+		}
+		&.-j{
+			.button_area01{
+				li{
+					a{
+						background:url("../img/highschool/ic_arrow_right.png") no-repeat right 11px center #c91420;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.high{
+	.introduction{
+		width:1100px;
+		margin:40px auto;
+		@include max768{
+			width:auto;
+			margin:40px 20px;
+		}
+		dl{
+			margin-bottom:64px;
+		}
+		dt{
+			border-bottom:1px solid #999999;
+			font-size:2.2rem;
+			padding-bottom:18px;
+			margin-bottom:44px;
+			@include max768{
+				margin-bottom:16px;
+			}
+		}
+		dd{
+			&.text{
+				line-height:3.2rem;
+				width:641px;
+				float:left;
+				@include max768{
+					width:100%;
+					float:none;
+					margin-bottom:20px;
+				}
+			}
+			&.img{
+				width:400px;
+				float:right;
+				text-align:center;
+				img{
+					max-width:400px;
+				}
+				@include max768{
+					width:100%;
+					float:none;
+				}
+			}
+		}
+		.button_list{
+			width:806px;
+			margin:0 auto;
+			@include max768{
+				width:100%;
+			}
+			li{
+				margin:0 20px 40px 20px;
+				float:left;
+				width:363px;
+				@include max768{
+					float:none;
+					width:100%;
+					margin:0;
+					margin-bottom:20px;
+					text-align:center;
+				}
+				a{
+					display:inline-block;
+					width:100%;
+					line-height:60px;
+					text-align:center;
+					font-weight:bold;
+					color:#fff;
+					background:url("../img/guardian/guardian_ic_arrow_right_ffffff.png") no-repeat right 11px center #999;
+				}
+				&:nth-child(3) a{background-color:#82ccd5;}
+				&:nth-child(4) a{background-color:#c91420;}
+			}
+		}
+	}
+	&-tabs{
+		@include max768{
+			margin-top: 3rem;
+		}
+		li{
+			a{
+				.c-schoolname{
+					position: relative;
+					&::after{
+						content: '';
+						width: 0;
+						height: 0;
+						border: 9px solid transparent;
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						margin-left: -9px;
+						display: none;
+					}
+					&.-i::after{
+						border-top: 8px solid $gold;
+					}
+					&.-j::after{
+						border-top: 8px solid $red;
+						z-index:1;
+					}
+				}
+				&.is-active .c-schoolname{
+					&::after{
+						@include max768{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

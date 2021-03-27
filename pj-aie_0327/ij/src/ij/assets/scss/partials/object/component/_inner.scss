@@ -1,0 +1,13 @@
+.c-inner{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 56px;
+    position: static;
+    @include max768{
+        padding: 0 5.333%;
+    }
+    &.-w1084{
+        max-width: 1196px;
+    }
+}

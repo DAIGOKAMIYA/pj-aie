@@ -1,0 +1,687 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "トップ"; %>
+<% body_class = "home"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div id="home_mvsp" class="u-block--768">
+            <section class="home-spmv -i">
+                <div class="home-spmv__txt">
+                    <div class="txt">
+                        <img src="./assets/img/home/home_spmv_txt_i.png" alt="">
+                    </div>
+                    <div class="btn c-btn -gold"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルアイを見てみる？</span></a></div>
+                </div>
+            </section>
+            <section class="home-spmv -j">
+                <div class="home-spmv__txt">
+                    <div class="txt">
+                        <img src="./assets/img/home/home_spmv_txt_j.png" alt="">
+                    </div>
+                    <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルジェイを見てみる？</span></a></div>
+                </div>
+            </section>
+        </div>
+        <div class="c-col2 u-none--768">
+            <section id="i_home_intro" class="c-col2__item">
+                <div class="home-intro -i  c-relative">
+                    <div class="c-wrapper -half -left">
+                        <div class="bgImg"><img src="<%- dir %>assets/img/home/i_schoolname_vertical@3x.png" alt=""></div>
+                    </div>
+                    <div class="home-intro__row1">
+                        <div class="c-wrapper -half -left">
+                            <div class="logo"><img src="<%- dir %>assets/img/i_logo@3x.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row2">
+                        <div class="c-wrapper -half -left">
+                            <div class="home-intro__slider">
+                                <div class="slide"><img src="<%- dir %>assets/img/home/i_home_mv1.png" alt=""></div>
+                                <div class="slide"><img src="<%- dir %>assets/img/home/i_home_mv1.png" alt=""></div>
+                                <div class="slide"><img src="<%- dir %>assets/img/home/i_home_mv1.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row3">
+                        <div class="c-wrapper -half -left">
+                            <h2 class="txt01"><img src="<%- dir %>/assets/img/home/i_home_intro_txt01@3x.png" alt="幅広いジャンルの“キレイ”を学べる"></h2>
+                            <div class="btn c-btn -gold"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルアイを見てみる？</span><span class="btn__arrow"></span></a></div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row4" style="z-index: 0;">
+                        <div class="c-wrapper -half -left">
+                            <div class="img"><img src="<%- dir %>assets/img/home/i_home_intro_img01@2x.png" alt=""></div>
+                            <div class="home-intro__txt" data-mh="row4">
+                                <div class="logo--notxt"><img src="<%- dir %>assets/img/i_logo_notxt@3x.png" alt=""></div>
+                                <h2 class="txt02">
+                                    <img src="./assets/img/home/i_home_intro_txt02@3x.png" alt="最高のキレイを自分にみんなに。">
+                                </h2>
+                                <p>AIEで学ぶ全ての学生が日々キレイになっていきます。</p>
+                                <p>それは、単にエステやメイクの勉強をしているからではなく、<br>“カラダの内側から美しくなる”『インナービューティ』を学んでいるからです。</p>
+                                <p>そしてもうひとつは、いるだけでキレイになれるAIEの施設。<br>五感を刺激する美環境で、AIEがあなたのキレイをサポートします。</p>
+                                <p>私たちは、きっともっとキレイになれる。</p>
+                                <div class="btn c-btn -blue"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルアイを見てみる？</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="j_home_intro" class="c-col2__item" style="background-color: #000; color: #fff;">
+                <div class="home-intro -j  c-relative">
+                    <div class="c-wrapper -half -left">
+                        <div class="bgImg"><img src="<%- dir %>assets/img/home/j_schoolname_vertical@3x.png" alt=""></div>
+                    </div>
+                    <div class="home-intro__row1">
+                        <div class="c-wrapper -half -right">
+                            <div class="logo"><img src="<%- dir %>assets/img/j_logo@3x.png"alt=""></div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row2">
+                        <div class="c-wrapper -half -right">
+                            <div class="home-intro__slider">
+                                <div class="slide"><img src="<%- dir %>assets/img/home/j_home_mv1.png" alt=""></div>
+                                <div class="slide"><img src="<%- dir %>assets/img/home/j_home_mv1.png" alt=""></div>
+                                <div class="slide"><img src="<%- dir %>assets/img/home/j_home_mv1.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row3">
+                        <div class="c-wrapper -half -right">
+                            <h2 class="txt01"><img src="<%- dir %>/assets/img/home/j_home_intro_txt01@3x.png" alt="美容という仕事を全力で楽しむ"></h2>
+                            <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルジェイを見てみる？</span><span class="btn__arrow"></span></a></div>
+                        </div>
+                    </div>
+                    <div class="home-intro__row4" style="z-index: 0;" style="background-color: #1A1A1A;">
+                        <div class="c-wrapper -half -right">
+                            <div class="img"><img src="<%- dir %>assets/img/home/j_01.png" alt=""></div>
+                            <div class="home-intro__txt" data-mh="row4">
+                                <div class="logo--notxt"><img src="<%- dir %>assets/img/j_logo_notxt@3x.png" alt=""></div>
+                                <h2 class="txt02">
+                                    <img src="./assets/img/home/j_home_intro_txt02@3x.png" alt="美容という仕事を全力で楽しむ。">
+                                </h2>
+                                <p>めざす美容師の姿は十人十色。</p>
+                                <p>共通するのは「ずっと輝いていたい」。</p>
+                                <p>そのために必要なことはただひとつ。</p>
+                                <p>それは「美容という仕事を楽しむ」ことです。</p>
+                                <p>お客様の「ありがとう」をエネルギーにして<br>「美容を楽しむ人生」が待っています。</p>
+                                <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">リアルアイを見てみる？</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="c-col2 u-none--768">
+            <section id="i_home_campuslife" class="c-col2__item">
+                <div class="home-life -i">
+                    <div class="home-life__wrapper c-wrapper -half -left">
+                        <div class="home-life__container">
+                            <div class="home-life__head">
+                                <div class="logo"><img src="<%- dir %>assets/img/i_logo_notxt@3x.png" alt=""></div>
+                                <h2 class="title"><img src="./assets/img/home/home_life_title_i@3x.png" alt=""></h2>
+                            </div>
+                            <ul class="home-life__list -primary">
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/i_campuslife.png" alt=""></div>
+                                    <h3 class="title">フィニッシングアップショー</h3>
+                                    <p>2年間の学びの結晶。華やかな衣装、ランウェイ。<br>湧き上がる歓声…、みんなが主役のイベントです。</p>
+                                </li>
+                            </ul>
+                            <ul class="home-life__list">
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img01.png" alt=""></div>
+                                    <h3 class="title">毎日の実習</h3>
+                                    <p>仲間同士で授業内容を教え合い、学び合っています。<br>友人から褒められる言葉も、やっぱりうれしい。</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img02.png" alt=""></div>
+                                    <h3 class="title">スポーツ大会</h3>
+                                    <p>ユニフォームを揃えおしゃれを楽しんだり、円陣を組んでクラスの団結力を強めたり、スポーツを通じて仲間との絆を深めることができる一大行事です。</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img03.png" alt=""></div>
+                                    <h3 class="title">学園祭</h3>
+                                    <p>日頃お世話になってる保護者の方々、地域のお客様に心を込めておもてなし。</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img04.png" alt=""></div>
+                                    <h3 class="title">資格取得対策授業</h3>
+                                    <p>それぞれの専攻でしっかりと丁寧に行います。就職活動に活かせる資格を取得していきます。</p>
+                                </li>
+                            </ul>
+                            <div class="home-life__btn">
+                                <div class="btn c-btn -blue"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">詳しくみる</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="j_home_campuslife" class="c-col2__item">
+                <div class="home-life -j">
+                    <div class="home-life__wrapper c-wrapper -half -right">
+                        <div class="home-life__container">
+                            <div class="home-life__head">
+                                <div class="logo"><img src="<%- dir %>assets/img/j_logo_notxt@3x.png" alt=""></div>
+                                <h2 class="title"><img src="./assets/img/home/home_life_title_j@3x.png" alt=""></h2>
+                            </div>
+                            <ul class="home-life__list -primary">
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/j_campuslife.png" alt=""></div>
+                                    <h3 class="title">ジェイヘアショー</h3>
+                                    <p>2年間の集大成のイベント。技術だけでなく、学生の個性、<br>アイディアなどすべてが注ぎ込まれたショーは圧巻！</p>
+                                </li>
+                            </ul>
+                            <ul class="home-life__list">
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img02_j.png" alt=""></div>
+                                    <h3 class="title">毎日の実習</h3>
+                                    <p>定期的に試験があるので、合格に向けてクラスメイトと真剣に取り組みます。自主的に朝練・放課後練することも！</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img03_j.png" alt=""></div>
+                                    <h3 class="title">スポーツ大会</h3>
+                                    <p>ユニフォームを揃えおしゃれを楽しんだり、円陣を組んでクラスの団結力を強めたり、スポーツを通じて仲間との絆を深めることができる一大行事です。</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img04_j.png" alt=""></div>
+                                    <h3 class="title">学園祭</h3>
+                                    <p>日頃お世話になってる保護者の方々、地域のお客様に自分たちにできる最高の施術を提供。</p>
+                                </li>
+                                <li class="home-life-item">
+                                    <div class="img"><img src="<%- dir %>assets/img/home/home_life_img05_j.png" alt=""></div>
+                                    <h3 class="title">国家資格取得</h3>
+                                    <p>少人数だからこそ手厚く指導しています。全員合格を目指して試験当日まで精一杯サポートします。</p>
+                                </li>
+                            </ul>
+                            <div class="home-life__btn">
+                                <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">詳しくみる</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="c-col2 u-none--768" id="home_column">
+            <div id="home_column_i" class="c-col2__item">
+                <section class="column">
+                    <div class="c-wrapper -half -left">
+                        <div class="column_wrap_title">
+                            <div class="logo"><img src="<%- dir %>assets/img/i_logo_notxt@3x.png" alt=""></div>
+                            <h2>
+                                <img src="<%- dir %>assets/img/aie-top/column_title@3x.png" alt="">
+                            </h2>
+                        </div>
+                        <div class="column_wrap_contents">
+                            <ul class="contents">
+                                <li class="contents_item">
+                                    <a>
+                                        <div class="visual">
+                                            <div class="img">
+                                                <img src="<%- dir %>assets/img/aie-top/column002.png" alt="">
+                                            </div>
+                                            <div class="ctg">
+                                                <span>スクールライフ</span>
+                                            </div>
+                                        </div>
+                                        <div class="material">
+                                            <div class="time">
+                                                <time>
+                                                    2021.03.01
+                                                </time>
+                                            </div>
+                                            <div class="text">
+                                                <p>★1月23日オープンキャンパス★</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="contents_item">
+                                    <a>
+                                        <div class="visual">
+                                            <div class="img">
+                                                <img src="<%- dir %>assets/img/aie-top/column003.png" alt="">
+                                            </div>
+                                            <div class="ctg">
+                                                <span>スクールライフ</span>
+                                            </div>
+                                        </div>
+                                        <div class="material">
+                                            <div class="time">
+                                                <time>
+                                                    2021.03.01
+                                                </time>
+                                            </div>
+                                            <div class="text">
+                                                <p>♥2022年度パンフレット撮影♥</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <div class="btn c-btn -blue"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">コラムをみる</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="home_column_j" class="c-col2__item">
+                <section class="column">
+                    <div class="c-wrapper -half -right column_wrap">
+                        <div class="column_wrap_title">
+                            <div class="logo"><img src="<%- dir %>assets/img/j_logo_notxt@3x.png" alt=""></div>
+                            <h2>
+                                <img src="<%- dir %>assets/img/j-top/column_title@3x.png" alt="">
+                            </h2>
+                        </div>
+                        <div class="column_wrap_contents">
+                            <ul class="contents">
+                                <li class="contents_item">
+                                    <a>
+                                        <div class="visual">
+                                            <div class="img">
+                                                <img src="<%- dir %>assets/img/aie-top/column002.png" alt="">
+                                            </div>
+                                            <div class="ctg">
+                                                <span>スクールライフ</span>
+                                            </div>
+                                        </div>
+                                        <div class="material">
+                                            <div class="time">
+                                                <time>
+                                                    2021.03.01
+                                                </time>
+                                            </div>
+                                            <div class="text">
+                                                <p>★1月23日オープンキャンパス★</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="contents_item">
+                                    <a>
+                                        <div class="visual">
+                                            <div class="img">
+                                                <img src="<%- dir %>assets/img/aie-top/column002.png" alt="">
+                                            </div>
+                                            <div class="ctg">
+                                                <span>スクールライフ</span>
+                                            </div>
+                                        </div>
+                                        <div class="material">
+                                            <div class="time">
+                                                <time>
+                                                    2021.03.01
+                                                </time>
+                                            </div>
+                                            <div class="text">
+                                                <p>★1月23日オープンキャンパス★</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">コラムをみる</span><span class="btn__arrow"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="home_opencampus" class="u-none--768">
+
+            <section class="opnecanpass">
+                <div class="opnecanpass_wrap">
+                    <div class="opnecanpass_wrap_contents">
+                        <div class="heading">
+                            <div class="title">
+                                <h2>
+                                    <img src="<%- dir %>assets/img/aie-top/opencampus_title.png" alt="">
+                                </h2>
+                            </div>
+                            <div class="sub_title">
+                                <p>
+                                    学校のことや授業だけでなく、施設や在校生の雰囲気まで1日ですべてがわかる！
+                                    <br>
+                                    姉妹校との合同イベントや1日で美容分野がまるっと体験できるイベントなど、
+                                    <br>
+                                    きっとあなたの目指す「美容の道」が見つかります。
+                                </p>
+                            </div>
+                            <div class="flow_title">
+                                <h3>
+                                    <img src="<%- dir %>assets/img/aie-top/opencampus_sub.png" alt="">
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flow">
+                            <div class="flow_contents">
+                                <img class="pc_only" src="<%- dir %>assets/img/aie-top/opencampus_content.png" alt="">
+                                <img class="sp_only" src="<%- dir %>assets/img/aie-top/sp/opencampus_content@3x.png" alt="">
+                            </div>
+                        </div>
+                        <div class="btn_wrap">
+                            <div class="btn c-btn -blue"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">AIEのオープンキャンパスに行く</span><span class="btn__arrow"></span></a></div>
+                            <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">ジェイのオープンキャンパスに行く</span><span class="btn__arrow"></span></a></div>
+                        </div>
+                    </div>
+                    <div class="online_explain">
+                        <div class="online_explain_wrap">
+                            <div class="contents">
+                                <div class="text">
+                                    <div class="title">
+                                        <div class="main_title">
+                                            <h3>
+                                                <img src="<%- dir %>assets/img/aie-top/online_explain_title@3x.png" alt="">
+                                            </h3>
+                                        </div>
+                                        <h4 class="sub_title">スマホやPCなどで、<br class="sp_only">どこからでも参加OK♪</h4>
+                                    </div>
+                                    <div class="detail">
+                                        <p>
+                                            オープンキャンパスや説明会に参加したい、<br>
+                                            でもなかなか参加できないという方を対象に、<br>
+                                            専用アプリ「Zoom」を使ったオンライン学校説明会を開催しています！
+                                        </p>
+                                        <div class="note">
+                                            <p>※参加者同士で名前や顔がわかることはありませんので、安心してご視聴ください。</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn_wrap">
+                                        <div class="btn c-btn -blue"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">AIEを詳しく見る</span><span class="btn__arrow"></span></a></div>
+                                        <div class="btn c-btn -red"><a href="" class="btn__inner c-btn__inner"><span class="btn__txt">ジェイを詳しく見る</span><span class="btn__arrow"></span></a></div>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img class="pc_only" src="<%- dir %>assets/img/aie-top/online_expalin_img@3x.png" alt="">
+                                    <img class="sp_only" src="<%- dir %>assets/img/aie-top/sp/online_expalin_img@3x.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="home_recommend" class=" u-none--768">
+            <section class="recommend">
+                <div class="recommend_wrap">
+                    <div class="recommend_wrap_title">
+                        <div class="title">
+                            <h2>
+                                <img src="<%- dir %>/assets/img/aie-top/recommend_title@3x.png" alt="">
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="recommend_wrap_catch -gold">
+                        <p>
+                            2択の質問に答えていくだけで、<br>
+                            あなたにふさわしい専攻が分かる！
+                        </p>
+                    </div>
+                    <div class="recommend_wrap_text">
+                        <p>
+                            AIE、ジェイの全専攻コースに対応していますので、美容業界に興味のある方は是非試してみて、<br class="pc_only">
+                            コース選定の参考にしてみて下さい！
+                        </p>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn c-btn -white">
+                            <a href="" class="btn__inner c-btn__inner -black"><span class="btn__txt">コースの紹介を見る</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="home_facility" class=" u-none--768">
+            <section class="facility">
+                <div class="c-wrapper -w1200 facility_wrap">
+                    <div class="contents">
+                        <div class="title">
+                            <div class="title_wrap">
+                                <h2>
+                                    <img src="<%- dir %>/assets/img/aie-top/facility_title@3x.png" alt="">
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="sub_title">
+                            <h3>
+                                しっかりとした技術を身につけ<br class="sp_only">ることができるように<br>
+                                全国トップクラスの施設と設備を用意しています。
+                            </h3>
+                        </div>
+                        <div class="detail">
+                            <p>
+                                千葉市都市文化賞にも輝いた校舎に、AIEでは、ハワイ・リラクゼーションの<br>
+                                最新スタイルを取り入れたバスルームや、本物に近いウェディングルームやチャペルが備わっています。
+                            </p>
+                            <p>
+                                ジェイでは、実際のサロンを想定したバックシャンプー台を20台、モノトーンで落ち着いたサイドシャンプー台を<br>20台が備わっており、カット、スタイリングなどのトータルのサロンワークがを学ぶことができます。
+                            </p>
+                        </div>
+                        <div class="img">
+                            <div>
+                                <img src="<%- dir %>/assets/img/aie-top/facility_content.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn c-btn -black">
+                            <a href="" class="btn__inner c-btn__inner"><span class="btn__txt">施設・設備を見る</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="btn c-btn -black">
+                            <a href="" class="btn__inner c-btn__inner"><span class="btn__txt">校内360°パノラマを見る</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="home_support" class=" u-none--768">
+            <section class="support">
+                <div class="c-wrapper -w1200 support_wrap">
+                    <div class="title">
+                        <div class="title_wrap">
+                            <h2>
+                                <img src="<%- dir %>/assets/img/aie-top/support_title@3x.png" alt="">
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="sub_title">
+                        <h3>
+                            就職のサポートが充実しています。就職サポートでアドバイスを受けて、内定まで一直線！<br>プロからの技術を学ぶ機会や、卒業生からの体験談を聞くことができるイベントなどもあります。
+                        </h3>
+                    </div>
+                    <div class="contents">
+                        <ul class="contents_list">
+                            <li class="contents_list_item">
+                                <div class="img">
+                                    <img src="<%- dir %>/assets/img/aie-top/support001.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>大企業が続々来校！</h4>
+                                </div>
+                            </li>
+                            <li class="contents_list_item">
+                                <div class="img">
+                                    <img src="<%- dir %>/assets/img/aie-top/support002.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>面接練習</h4>
+                                </div>
+                            </li>
+                            <li class="contents_list_item">
+                                <div class="img">
+                                    <img src="<%- dir %>/assets/img/aie-top/support003.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>メイク講義</h4>
+                                </div>
+                            </li>
+                            <li class="contents_list_item">
+                                <div class="img">
+                                    <img src="<%- dir %>/assets/img/aie-top/support004.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4>卒業生トークイベント</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="banner">
+                        <ul class="banner_list">
+                            <li class="banner_list_item">
+                                <a class="banner_wrap">
+                                    <img src="<%- dir %>/assets/img/aie-top/support_banner01.png" alt="">
+                                </a>
+                            </li>
+                            <li class="banner_list_item">
+                                <a class="banner_wrap">
+                                    <img src="<%- dir %>/assets/img/aie-top/support_banner02.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="btn c-btn -black">
+                            <a href="" class="btn__inner c-btn__inner"><span class="btn__txt">就職・資格を見る</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="home_news" class=" u-none--768">
+            <section class="news">
+                <div class="c-wrapper -w1084  news_wrap">
+                    <div class="news_wrap_head clearfix">
+                        <div class="title">
+                            <div class="title_wrap">
+                                <h2>
+                                    <img src="<%- dir %>/assets/img/aie-top/news_title@3x.png" alt="">
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="btn_wrap pc_only">
+                            <div class="btn c-btn -black">
+                                <a href="" class="btn__inner c-btn__inner"><span class="btn__txt">一覧を見る</span><span class="btn__arrow"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_wrap_list">
+                        <ul class="news_list">
+                            <li class="news_list_item">
+                                <div class="list_item">
+                                    <div class="info">
+                                        <time class="time">
+                                            2020.20.20
+                                        </time>
+                                        <div class="ctg -black">
+                                            <span>カテゴリー</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <a>新型コロナウイルス感染症の拡大に伴う一部業務縮小について</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_list_item">
+                                <div class="list_item">
+                                    <div class="info">
+                                        <time class="time">
+                                            2020.20.20
+                                        </time>
+                                        <div class="ctg -red">
+                                            <span>カテゴリー</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <a>AOエントリーが締切間近となっております</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_list_item">
+                                <div class="list_item">
+                                    <div class="info">
+                                        <time class="time">
+                                            2020.20.20
+                                        </time>
+                                        <div class="ctg -blue">
+                                            <span>カテゴリー</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <a>受験生の皆様へ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_list_item">
+                                <div class="list_item">
+                                    <div class="info">
+                                        <time class="time">
+                                            2020.20.20
+                                        </time>
+                                        <div class="ctg">
+                                            <span>カテゴリー</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <a>テキストが入りますテキストが入りますテキストが入ります</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_list_item">
+                                <div class="list_item">
+                                    <div class="info">
+                                        <time class="time">
+                                            <img src="<%- dir %>/assets/img/aie-top/news_time@3x.png" alt="">
+                                        </time>
+                                        <div class="ctg">
+                                            <span>カテゴリー</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <a>テキストが入りますテキストが入りますテキストが入ります</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_wrap sp_only">
+                        <div class="btn c-btn -black">
+                            <a href="" class="btn__inner c-btn__inner"><span class="btn__txt">一覧を見る</span><span class="btn__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

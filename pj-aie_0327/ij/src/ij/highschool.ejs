@@ -1,0 +1,222 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "高1・2年生の方へ"; %>
+<% body_class = "highschool"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+	<main class="l-main">
+		<div class="p-title">
+			<div class="c-inner -w1084">
+				<div class="title"><%- title; %></div>
+			</div>
+		</div>
+		<div class="p-breadcrumb">
+			<div class="c-inner -w1084">
+				<div class="breadcrumb">
+					<a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="introduction">
+			<dl>
+				<dt>高校1・2年生から始める学校選び</dt>
+				<dd>
+					進入学した後に、<span>「選んでよかった！」</span>と思える学校選びをするためには、<br class="pc_only">
+					実際に学校の雰囲気や学ぶ内容、将来の道などを知っておくことが大切です。<br>
+					アイでは、様々な体験ができ、在校生や学校の雰囲気を感じていただける<span>来校型のオープンキャンパス</span>と<br class="pc_only">
+					学費や入試のことなどが聞ける<span>オンライン学校説明会</span>を実施しています。<br>
+					 高校1・2年生の今参加して、ぜひアイを体感してください！
+				</dd>
+			</dl>
+		</div>
+
+		<ul class="c-col2 js-tabs highschool-tabs">
+			<li class="c-col2__item">
+				<div class="c-wrapper -half -left">
+					<a href="#tab_content_1" class="is-active">
+						<div class="c-schoolname -i">
+							<div class="name">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+									<img src="./assets/img/name_i.png" alt="アイエステ">
+								</picture>
+							</div>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="c-col2__item" style="background-color: #1a1a1a;">
+				<div class="c-wrapper -half -right">
+					<a href="#tab_content_2" class="">
+						<div class="c-schoolname -j">
+							<div class="name">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+									<img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<div class="c-col2 -min769">
+			<div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+				<section class="highschool-content -i">
+					<div class="c-wrapper -half -left">
+						<div class="content_wrap">
+							<div class="ban_area ban_no01">
+								<a href=""><img src="./assets/img/highschool/highschool-i_img01.png" alt=""><span>ジェイ ヘアメイク美容専門学校との<br class="sp_only">合同イベントあり</span></a>
+							</div>
+							<div class="ban_area ban_no02">
+								<a href=""><img src="./assets/img/highschool/highschool-i_img02.png" alt=""><span>申込み方法・開催日などの詳細はこちら</span></a>
+							</div>
+							<div class="button_area01">
+								<ul>
+									<li><a href="">資料請求はこちら</a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-i01">
+								<dl>
+									<dt>知る！</dt>
+									<dd>まずは、AIEがどんな学校か知って下さい！<br>ひとりひとりが輝けるような制度やコースをご用意しています。学生生活も充実しています！</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img03.png" alt=""><span>からきめ制度</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img04.png" alt=""><span>学科専攻</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img05.png" alt=""><span>REAL SCHOOL LIFE</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-i02">
+								<dl>
+									<dt>見る！</dt>
+									<dd>AIEは施設やイベントなど見どころたくさん！<br>これから進路を決めようと思っている方へぜひ魅力が伝わると嬉しいです。</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img06.png" alt=""><span>施設・設備</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img07.png" alt=""><span class="text11">フィニッシィングアップショー</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img08.png" alt=""><span>学内サロン</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-i03">
+								<dl>
+									<dt>将来の自分を見つける！</dt>
+									<dd>AIEは施設やイベントなど見どころたくさん！<br>これから進路を決めようと思っている方へぜひ魅力が伝わると嬉しいです</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img09.png" alt=""><span>就職サポート</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img10.png" alt=""><span>卒業生の声</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img11.png" alt=""><span>資格取得</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-i04">
+								<dl>
+									<dt>入学を検討する！</dt>
+									<dd>高校３年生になる前に将来の自分が決まっていれば、一度入学を考えてみましょう。<br>アイならではの入学をするための様々なサポートも充実しています。</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img12.png" alt=""><span>学費サポート</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img13.png" alt=""><span>入学までの流れ</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-i_img14.png" alt=""><span>AIE's ONEDAY</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="c-col2__item js-tab-content" id="tab_content_2">
+				<section class="highschool-content -j">
+					<div class="c-wrapper -half -right">
+						<div class="content_wrap">
+							<div class="ban_area ban_no03">
+								<a href="">
+									<img src="./assets/img/highschool/highschool-j_img01.png" alt="">
+									<span> アイ エステティック専門学校との<br class="sp_only">合同イベントあり</span>
+								</a>
+							</div>
+							<div class="ban_area ban_no04">
+								<a href="">
+									<img src="./assets/img/highschool/highschool-j_img02.png" alt="">
+									<span>申込み方法・開催日などの詳細はこちら</span>
+								</a>
+							</div>
+							<div class="button_area01">
+								<ul>
+									<li><a href="">資料請求はこちら</a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-j01">
+								<dl>
+									<dt>知る！</dt>
+									<dd>まずは、ジェイがどんな学校か知って下さい！<br>ひとりひとりが輝けるような制度やコースをご用意しています。学生生活も充実しています！</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img03.png" alt=""><span class="text12">最短スタイリストデビュー</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img04.png" alt=""><span>学科・専攻</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img05.png" alt=""><span>REAL SCHOOL LIFE</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-j01">
+								<dl>
+									<dt>見る！</dt>
+									<dd>ジェイは施設やイベントなど見どころたくさん！<br>これから進路を決めようと思っている方へぜひ魅力が伝わると嬉しいです。</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img06.png" alt=""><span>施設・設備</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img07.png" alt=""><span>ヘアメイクコレクション</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img08.png" alt=""><span>学内サロン</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-j01">
+								<dl>
+									<dt>将来の自分を見つける！</dt>
+									<dd>ジェイは施設やイベントなど見どころたくさん！<br>これから進路を決めようと思っている方へぜひ魅力が伝わると嬉しいです。</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img09.png" alt=""><span>就職サポート</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img10.png" alt=""><span>卒業生の声</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img11.png" alt=""><span>資格取得</span></a></li>
+								</ul>
+							</div>
+
+							<div class="col3_area area-j01">
+								<dl>
+									<dt>入学を検討する！</dt>
+									<dd>高校３年生になる前に将来の自分が決まっていれば、一度入学を考えてみましょう。<br>ジェイならではの入学をするための様々なサポートも充実しています。</dd>
+								</dl>
+								<ul>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img12.png" alt=""><span>学費サポート</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img13.png" alt=""><span>入学までの流れ</span></a></li>
+									<li><a href=""><img src="./assets/img/highschool/highschool-j_img14.png" alt=""><span>J's ONEDAY</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

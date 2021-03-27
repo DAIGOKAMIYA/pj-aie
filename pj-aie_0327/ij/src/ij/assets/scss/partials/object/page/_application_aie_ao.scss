@@ -1,0 +1,53 @@
+.aie-ao {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/aie/ao_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .p-app_block {
+        &__inner {
+            .center {
+                text-align: center;
+            }
+        }
+        .ao-flow {
+            background-color: #f7f2e7;
+            padding: 5rem 4rem;
+            @include max480 {
+                padding: 2.5rem 1.5rem;
+            }
+            &_title {
+                text-align: center;
+                margin: 0 0 5rem;
+                @include max480 {
+                    margin: 0 0 2.5rem;
+                }
+                .title {
+                    display: inline-block;
+                    h2 {
+                        font-size: 3rem;
+                        @include max480 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            &_content {
+                overflow-x: scroll;
+                &_wrap {
+                    .img {
+                        @include max1024 {
+                            width: 900px;
+                        }
+                        @include max480 {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+.feature_j-hm-about_stylistdebut,.aie-flow-page,.facility_aie-about,.course_aie-course_esthe{
+    * {
+        box-sizing: border-box;
+        font-family:"Noto Sans CJK JP", sans-serif, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', "游ゴシック", "Yu Gothic", "游ゴシック体";
+        font-weight: normal;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    p{
+        line-height: 36px;
+    }
+    h3{
+        line-height: 48px;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        transition: all .3s;
+    }
+    a:hover {
+        opacity: .5;
+    }
+
+    .site-width {
+        width: 100%;
+    }
+
+    .contents-width {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding:0 20px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+
+    section{
+        transition: all .5s;
+    }
+
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+
+    /*flex系*/
+    .flex-start-center {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-center-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-between-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex-end-center {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .flex-between-start {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    .flex-start-start {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .flex-start-str {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .flex-between-str {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+
+    /*font-size系*/
+    .txt10 {
+        font-size: 1rem;
+    }
+    .txt12 {
+        font-size: 1.2rem;
+    }
+    .txt16 {
+        font-size: 1.6rem;
+    }
+    .txt20 {
+        font-size: 2rem;
+    }
+    .txt22 {
+        font-size: 2.2rem;
+    }
+    .txt26 {
+        font-size: 2.6rem;
+    }
+    .txt28 {
+        font-size: 2.8rem;
+    }
+    .txt30 {
+        font-size: 3rem;
+    }
+    .txt40 {
+        font-size: 4rem;
+    }
+    .txt50 {
+        font-size: 5rem;
+    }
+    .txt54 {
+        font-size: 5.4rem;
+    }
+    .txt72 {
+        font-size: 7.2rem;
+    }
+    
+    .ls-title {
+        letter-spacing: 10px;
+    }
+    .ls-txt {
+        letter-spacing: 5px;
+    }
+    .lh-title {
+        line-height: 190%;
+    }
+    .lh-txt {
+        line-height: 160%;
+    }
+    .red{
+        color: #c91420;
+    }
+    .white{
+        color: white;
+    }
+    .marker-skyblue{
+        background:rgba(0, 0, 0, 0) linear-gradient(transparent 75%, #c8eaf0 0%) repeat scroll 0 0;
+    }
+    .medium{
+        font-weight: 600;
+    }
+
+
+    $tab1: 1200px;
+    $tab2: 900px;
+    $tab3: 770px;
+    $over-tab3:771px;
+    $over-sp: 501px;
+    $sp: 500px;
+    
+
+    @mixin tab1 {
+        @media (max-width: ($tab1)) {
+            @content;
+        }
+    }
+    @mixin tab2{
+        @media (max-width:($tab2)){
+            @content;
+        }
+    }
+    @mixin tab3 {
+        @media (max-width: ($tab3)) {
+            @content;
+        }
+    }
+    @mixin over-tab3 {
+        @media (min-width: ($over-tab3)) {
+            @content;
+        }
+    }
+    @mixin over-sp {
+        @media (min-width: ($over-sp)) {
+            @content;
+        }
+    }
+    @mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+        }
+    }
+    @include sp {
+        .spbr{display: block;}
+        .pcbr{display: none;}
+        .spimg{display: block;}
+        .pcimg{display: none;}
+        .faiab-pc-pic{display: none;}
+        .faiab-sp-pic{display: block;}
+    }
+    @include tab3 {
+        .spbr_tabnone{display: none;}
+    }
+    @include over-tab3 {
+        .spbr_tabnone{display: block;}
+    }
+    @include over-sp {
+        .spbr{display: none;}
+        .pcbr{display: block;}
+        .spimg{display: none;}
+        .pcimg{display: block;}
+    }
+    @include over-tab3 {
+        .tabbr{display: none;}
+    }
+
+
+    .faiab-fv-banner{
+        width: 90%;
+        margin:4% auto;
+    }
+    @include sp {
+        .faiab-fv-banner{
+            width: 100%;
+        }
+    }
+}

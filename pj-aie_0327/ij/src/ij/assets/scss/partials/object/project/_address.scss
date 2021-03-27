@@ -1,0 +1,46 @@
+.p-address{
+    background: #F0F1F5;
+    &__wrapper{
+        padding: 4rem 0;
+        background: #F0F1F5 no-repeat url(../img/address_img.png) bottom right / contain;
+        @include max768{
+            padding-bottom: 50vw;
+            background: #F0F1F5 no-repeat url(../img/address_img.png) bottom center / contain;
+        }
+    }
+    &__list{
+        ul{
+            display: flex;
+            @include max768{
+                display: block;
+            }
+            li{
+                margin-right: 3rem;
+                width: 400px;
+                box-shadow: 0 10px 30px rgba(0,0,0,.1);
+                @include max768{
+                    margin: 0 auto 2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-item{
+        padding: 3rem;
+        background-color: #fff;
+        text-align: center;
+        .logo{
+            margin-bottom: 2rem;
+        }
+        p{
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            letter-spacing: 0;
+            line-height: 1.7;
+        }
+        .tel{
+            font-size: 2.4rem;
+            font-weight: $bold;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.u-none{
+    &--768{
+        @media (max-width:768px){
+            display: none;
+        }
+    }
+}
+.u-block{
+    &--768{
+        display: none;
+        @media (max-width:768px){
+            display: block;
+        }
+    }
+    &--480{
+        display: none;
+        @media (max-width:480px){
+            display: block;
+        }
+    }
+}
+
+.js-tab-content{
+    display: block;
+    @include max768{
+        display: none;
+    }
+    &.is-active{
+        display: block!important;
+    }
+}

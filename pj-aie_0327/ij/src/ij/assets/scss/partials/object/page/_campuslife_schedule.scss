@@ -1,0 +1,179 @@
+.p-title{
+    $this: &;
+    .campuslife_schedule &{
+        background-image: url(../img/campuslife/campuslife_schedule_title_bg.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+
+.event{
+    $this: &;
+    .campuslife_schedule &{
+        &__list{
+            padding: 60px 40px 30px;
+            @include max768{
+                padding: 30px 5.333%;
+            }
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+        &__list2{
+            padding: 30px 40px 60px;
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+        &.-j{
+            background-color: #1a1a1a;
+        }
+    }
+    &-item{
+        $this: &;
+        .campuslife_schedule &{
+            display: flex;
+            @include max768{
+                display: block;
+            }
+            .img{
+                margin-bottom: 1.8rem;
+                width: 31.6%;
+                @include max768{
+                    width: 100%;
+                }
+            }
+            .title{
+                margin-bottom: .8rem;
+                padding: .6rem 2.3rem;
+                display: inline-block;
+                font-weight: $bold;
+                border: 2px solid $gold;
+                border-radius: 30px;
+                color: $gold;
+                font-size: 1.6rem;
+            }
+            p{
+                line-height: 1.8;
+                font-size: 1.4rem;
+            }
+            &.-j{
+                .title{
+                    color: #fff;
+                    border: 2px solid #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+            &__txt{
+                padding-left: 40px;
+                width: 68.4%;
+                @include max768{
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &-item2{
+        $this: &;
+        .campuslife_schedule &{
+            .img{
+                margin-bottom: 2.5rem;
+            }
+            .title{
+                margin-bottom: 2rem;
+                font-size: 1.8rem;
+                font-weight: $bold;
+                text-align: center;
+            }
+            p{
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            &.-j{
+                .title{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.common-event{
+    $this: &;
+    .campuslife_schedule &{
+        padding: 6rem 0;
+        // margin-bottom: 50rem;
+        background-color: #f4f4f4;
+        @include max768{
+            // margin-bottom: 15rem;
+        }
+        &__head{
+            margin-bottom: 5rem;
+            .title{
+                max-width: 430px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        &__list{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                @include max768{
+                    display: block;
+                }
+                li{
+                    width: 29%;
+                    @include max768{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// body class
+.campuslife_schedule{
+    &-head{
+        padding: 1rem 0 3rem;
+        @include max768{
+            padding: 3rem 0 1rem;
+        }
+        &__head{
+            .title{
+                &__line1{
+                    margin-bottom: 2rem;
+                    font-size: 2.6rem;
+                    text-align: center;
+                    font-weight: $bold;
+                    line-height: 1.5;
+                    @include max768{
+                        font-size: 1.8rem;
+                    }
+                }
+                &__line2{
+                    margin: 0 auto;
+                    max-width: 937px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

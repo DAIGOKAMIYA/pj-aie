@@ -1,0 +1,164 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "企業・サロンの方へ"; %>
+<% body_class = "company"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                  <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item">
+                <div class="c-wrapper -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div >
+                  <ul class="company_list content">
+                    <li>
+                      <h3>ご挨拶</h3>
+                      <p>
+                        貴社におかれましては、ますますご清栄のこととお慶び申し上げます。<br>
+                        平素は、本校学生の就職につきまして、格別のご高配にあずかり、厚くお礼申し上げます。本校ではホスピタリティ豊かな、世界に通用する技術をもった人材を育成します。<br>
+                        本校の卒業予定者につきまして、求人のご計画がございましたら、是非受験の機会を与えていただけますようお願い申し上げます。
+                      </p>
+                    </li>
+                    <li>
+                      <h3>求人票登録からエントリーまでの流れ</h3>
+                      <p>本校へ求人をご依頼の際は、下記「求人票の登録」ボタンよりお手続きください。</p>
+                      <ul>
+                        <li>
+                          <p class="fwb">はじめてCareerMap をご利用になる場合</p>
+                          <img src="<%- dir %>assets/img/company/flow01.png" alt="flow">
+                        </li>
+                        <li>
+                          <p class="fwb">すでにCareerMapをご利用の場合</p>
+                          <img src="<%- dir %>assets/img/company/flow02.png" alt="flow">
+                        </li>
+                      </ul>
+                      <p>ご利用についてのご相談・ご質問はキャリアマップ法人事務局までお問い合わせ下さい。</p>
+                      <div class="contact_link_wrap">
+                        <div class="scholaship">
+                          <p>キャリアマップ法人事務局</p>
+                          <p>0120-975-314（平日10:00 ～ 18:00）</p>
+                        </div>
+                      </div>
+                      <div class="btn c-btn -blue">
+                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">求人票の登録</span><span class="btn__arrow"></span></a>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>求人票ダウンロード</h3>
+                      <p>下記ボタンより求人票をダウンロードしご記入の後、FAX、郵送、メール添付【 aie@nakamura.ac.jp 】にてお申し込み下さい。</p>
+                      <div class="btn c-btn -blue">
+                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">求人票ダウンロードはコチラから</span><span class="btn__arrow"></span></a>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>お問い合わせ先</h3>
+                      <div class="contact_link_wrap">
+                        <div class="scholaship yellow">
+                          <p>学校法人 中村学園 アイ エステティック専門学校 就職室</p>
+                          <p>
+                            千葉県千葉市中央区新宿2-14-3
+                            TEL：043-242-0071／FAX：043-242-0470
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div> 
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2">
+                <div class="event -j">
+                    <div class="c-wrapper -right">
+                        <ul class="company_list employ_list content">
+                          <li>
+                            <h3>ご挨拶</h3>
+                            <p>
+                              この度は、本校のホームページをご覧いただきありがとうございます。<br>
+                              貴社におかれましては、ますますご清栄のこととお喜び申し上げます。<br>
+                              平素は、本校美容学生の就職につきまして、格別のご高配にあずかり、厚く御礼申し上げます。<br>
+                              本校は、国が定める厚生労働大臣指定の美容師養成施設です。また、千葉県知事認可の専門学校グループ、学校法人中村学園の中で「技術を身につけ、社会に貢献し、相手の立場が理解できるホスピタリティ精神を熟成する」という教育の基本精神で社会人の育成に取り組んでおります。<br>
+                              本校の卒業予定者につきまして、求人のご計画がございましたら、是非受験の機会を与えていただけますようお願い申し上げます。
+                            </p>
+                            <div class="btn c-btn -red">
+                              <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">美容師科TOP</span><span class="btn__arrow"></span></a>
+                            </div>
+                          </li>
+                          <li>
+                            <h3>求人票ダウンロード</h3>
+                            <p>下記ボタンより求人票をダウンロードしご記入の後、FAX、郵送、メール添付にてお申し込み下さい。</p>
+                            <div class="btn c-btn -red">
+                              <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">求人票ダウンロードはコチラから</span><span class="btn__arrow"></span></a>
+                            </div>
+                          </li>
+                          <li>
+                            <h3>お申し込み先</h3>
+                            <div class="contact_link_wrap">
+                              <div class="scholaship gray">
+                                <p>
+                                  学校法人 中村学園 厚生労働大臣指定<br>
+                                  ジェイ ヘアメイク美容専門学校<br>
+                                  〒260-0021 千葉市中央区新宿2-14-3
+                                  就職室（電話）043-306-8890
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

@@ -1,0 +1,53 @@
+.course_aie-course_esthe{
+
+
+
+}
+
+
+.esthe_bg{
+    background-color: #f8b861;
+}
+.esthe_bg_d{
+    background-color: #f9a534;
+}
+.esthe_bg_p{
+    background-color: #afd8e4;
+}
+
+
+
+.aie-c-fv{
+    width: 92%;
+    margin-left:auto ;
+    position: relative;
+    .aie-c-title{
+        width: 700px;
+        padding: 40px 20px 20px;
+        position: absolute;
+        top: 36%;
+        left: -134px;
+        color: white;
+        &>div{
+            width: 55%;
+            margin-left:auto ;
+        }
+        h2{
+            font-size: 3.6rem;
+            font-weight: bold;
+            margin: 0 0 30px 0;
+        }
+        img{
+            position: absolute;
+            width: 200px;
+            top: -23px;
+            left: 80px;
+        }
+    }
+    .aie-c-course{
+        border: 2px solid white;
+        padding: 10px;
+        width: 200px;
+    }
+    
+}

@@ -1,0 +1,210 @@
+.facility_aie-about{
+
+    $tab1: 1200px;
+    $tab2: 900px;
+    $tab3: 770px;
+    $over-tab3:771px;
+    $over-sp: 501px;
+    $sp: 500px;
+    
+    @mixin tab1 {
+        @media (max-width: ($tab1)) {
+          @content;
+        }
+      }
+    @mixin tab2{
+        @media (max-width:($tab2)){
+            @content;
+        }
+    }
+    @mixin tab3 {
+        @media (max-width: ($tab3)) {
+          @content;
+        }
+    }
+    @mixin over-tab3 {
+        @media (min-width: ($over-tab3)) {
+          @content;
+        }
+    }
+    @mixin over-sp {
+        @media (min-width: ($over-sp)) {
+          @content;
+        }
+    }
+    @mixin sp {
+      @media (max-width: ($sp)) {
+        @content;
+      }
+    }
+    @include sp {
+        .spbr{display: block;}
+        .pcbr{display: none;}
+        .spimg{display: block;}
+        .pcimg{display: none;}
+        .faiab-pc-pic{display: none;}
+        .faiab-sp-pic{display: block;}
+    }
+    @include tab3 {
+        .spbr_tabnone{display: none;}
+    }
+    @include over-tab3 {
+        .spbr_tabnone{display: block;}
+    }
+    @include over-sp {
+        .spbr{display: none;}
+        .pcbr{display: block;}
+        .spimg{display: none;}
+        .pcimg{display: block;}
+    }
+    @include over-tab3 {
+        .tabbr{display: none;}
+    }
+
+
+    .faiab-fv-banner{
+        width: 90%;
+        margin:4% auto;
+    }
+    @include sp {
+        .faiab-fv-banner{
+            width: 100%;
+        }
+    }
+
+    .faiab-sp-pic{display: none;}
+
+    .faiab-ai{
+        width: 50%;
+        text-align: center;
+        padding:70px 50px;
+        h2{
+            margin: 0 auto;
+            letter-spacing: 2px;
+            line-height: 43px;
+            margin: 0 0 5rem 0;
+        }
+        .faiab-ai__list{
+            flex-wrap: wrap;
+            .faiab-ai__list__item{
+                width: 47%;
+                margin: 0 0 30px 0;
+                .faiab-ai__list__item__pic{
+                    margin: 0 0 20px 0;
+                    position: relative;
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        background-color: #82ccd5;
+                        color: white;
+                        padding:10px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                h3{
+                    font-size: 1.8rem;
+                    color: #cfb283;
+                    font-weight: bold;
+                    line-height: 24px;
+                    margin: 0 0 20px 0;
+                }
+                p{
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .faiab-j{
+        width: 50%;
+        text-align: center;
+        padding:40px 50px 70px 50px;
+        background-color: #1a1a1a;
+        color: white;
+        h2{
+            text-align: left;
+            letter-spacing: -2px;
+            line-height: 50px;
+            font-weight: 900;
+            margin: 0 0 40px 0;
+        }
+        h3{
+            font-size: 22px;
+            line-height: 35px;
+            letter-spacing: 1px;
+            font-weight: 900;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 14px;
+            line-height: 30px;
+            text-align: left;
+        }
+        .backshampoo-box{
+            margin: 0 0 60px 0;
+        }
+    }
+    @include sp {
+        .faiab-ai,.faiab-j{
+            width: 100%;
+        }
+    }
+    .faiab-common{
+        padding: 60px;
+        background-color: #f4f4f4;
+        h2{
+            margin: 0 0 60px 0;
+            text-align: center;
+            img{
+                width: 35%;
+            }    
+        }
+        .faiab-common__list{
+            width: 100%;
+            .faiab-common__list__item{
+                width: 28%;
+            }
+            h3{
+                font-weight: bold;
+                font-size:1.8rem ;
+                margin:20px 0 8px 0;
+                text-align: center;
+            }
+            p{
+                font-size: 1.4rem;
+                margin: 0 0 40px 0;
+                line-height: 28px;
+            }
+        }
+        @include tab3 {
+            padding:40px 0px;
+            h2{
+                img{
+                    width: 100%;
+                    max-width:400px;
+                }    
+            }
+            .faiab-common__list{
+                flex-direction: column;
+                .faiab-common__list__item{
+                    width: 100%;
+                }
+                h3{
+                    font-weight: bold;
+                    font-size:1.8rem ;
+                    margin:20px 0 8px 0;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.4rem;
+                    margin: 0 0 40px 0;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

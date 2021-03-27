@@ -1,0 +1,197 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "REAL SCHOOL LIFE"; %>
+<% body_class = "campuslife_schedule"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span>REAL SCHOOL LIFE</span>
+                </div>
+            </div>
+        </div>
+        <div class="campuslife_schedule-head">
+            <div class="c-wrapper">
+                <div class="c-inner">
+                    <div class="campuslife_schedule-head__head">
+                        <h1 class="title">
+                            <div class="title__line1">AIE MATE &amp; J MATEの<br class="u-block--768">日々を大解剖！！</div>
+                            <div class="title__line2"><img src="./assets/img/campuslife/campuslife_schedule_title.png" alt=""></div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item">
+                <div class="c-wrapper -half -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper -half -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div class="event">
+                    <div class="c-wrapper -half -left">
+                        <ul class="event__list">
+                            <li class="event-item">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_i_img01.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">毎日の実習</h3>
+                                    <p>仲間同士で授業内容を教え合い、学び合っています。友人から褒められる言葉も、やっぱりうれしい。</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_i_img02.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">学内サロン</h3>
+                                    <p>日頃培った技術をお客様に提供できる、実践の場！プロになったようで緊張しますが、成長を感じます。</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_i_img03.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">資格取得対策授業</h3>
+                                    <p>それぞれの専攻でしっかりと対策を行います。<br>就職活動に活かせる資格を取得していきます。</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_i_img04.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">卒業式</h3>
+                                    <p>笑顔と涙の卒業式。<br>学んだホスピタリティを胸にそれぞれの道に進んで行きます。<br>卒業してもずっとかけがえのない友達！</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="event__list2">
+                            <li class="event-item2">
+                                <div class="img"><img src="<%- dir %>assets/img/home/i_campuslife.png" alt=""></div>
+                                <h3 class="title">フィニッシングアップショー</h3>
+                                <p>2年間の学びの結晶。華やかな衣装、ランウェイ、湧き上がる歓声…、<br>みんなが主役のイベントです。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2">
+                <div class="event -j">
+                    <div class="c-wrapper -half -right">
+                        <ul class="event__list">
+                            <li class="event-item -j">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_j_img01.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">毎日の実習</h3>
+                                    <p>定期的に試験があるので、合格に向けてクラスメイトと真剣に取り組みます。自主的に朝練・放課後練することも！</p>
+                                </div>
+                            </li>
+                            <li class="event-item -j">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_j_img02.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">学内サロン</h3>
+                                    <p>クラスメイトと教え合う授業とは異なり、「お客様」に技術を提供するという緊張感が成長につながります。</p>
+                                </div>
+                            </li>
+                            <li class="event-item -j">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_j_img03.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">資格取得対策授業</h3>
+                                    <p>少人数だからこそ手厚く指導しています。<br>全員合格を目指して試験当日まで精一杯サポートします。</p>
+                                </div>
+                            </li>
+                            <li class="event-item -j">
+                                <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_j_img04.png" alt=""></div>
+                                <div class="event-item__txt">
+                                    <h3 class="title">卒業式</h3>
+                                    <p>笑顔と涙の卒業式。<br>学んだホスピタリティを胸にそれぞれの道に進んで行きます。<br>卒業してもずっとかけがえのない友達！</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="event__list2">
+                            <li class="event-item2 -j">
+                                <div class="img"><img src="<%- dir %>assets/img/home/j_campuslife.png" alt=""></div>
+                                <h3 class="title">ジェイヘアショー</h3>
+                                <p>2年間の集大成のイベント。技術だけでなく、学生の個性、アイディアなどすべてが注ぎ込まれたショーは圧巻！</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div id="common_event">
+            <section class="common-event">
+                <div class="c-wrapper">
+                    <div class="c-inner">
+                        <div class="common-event__head">
+                            <h2 class="title">
+                                <picture>
+                                    <img src="./assets/img/campuslife/campuslife_event_common_title.png" alt="中村学園ビューティコラボレーション">
+                                </picture>
+                            </h2>
+                        </div>
+                        <div class="common-event__list">
+                            <ul>
+                                <li class="event-item2">
+                                    <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_common_img01.png" alt=""></div>
+                                    <h3 class="title">スポーツ大会</h3>
+                                    <p>ユニフォームを揃えおしゃれを楽しんだり、円陣を組んでクラスの団結力を強めたり、スポーツを通じて仲間との絆を深めることができる一大行事です。</p>
+                                </li>
+                                <li class="event-item2">
+                                    <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_common_img02.png" alt=""></div>
+                                    <h3 class="title">学園祭</h3>
+                                    <p>日頃お世話になってる保護者の方々、先生方、地域のお客様に自分たちにできる最高の施術を提供。</p>
+                                </li>
+                                <li class="event-item2">
+                                    <div class="img"><img src="<%- dir %>assets/img/campuslife/campuslife_event_common_img03.png" alt=""></div>
+                                    <h3 class="title">S A M 活動</h3>
+                                    <p>SAMとは『中村学園グループ5校合同』のクラブ活動です。参加するメンバーも様々だから、沢山の子と仲良くなれるチャンス☆</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

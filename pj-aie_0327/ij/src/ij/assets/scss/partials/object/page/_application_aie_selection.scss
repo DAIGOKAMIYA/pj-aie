@@ -1,0 +1,17 @@
+.aie-selection {
+    .l-header {
+        .p-title {
+            background-image: url(../img/application/aie/selection_mv.jpg);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .p-app_block {
+        &__inner {
+            .center {
+                text-align: center;
+            }
+        }
+    }
+}

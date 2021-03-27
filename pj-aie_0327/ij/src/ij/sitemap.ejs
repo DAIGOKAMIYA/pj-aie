@@ -1,0 +1,250 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "サイトマップ"; %>
+<% body_class = "sitemap"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                  <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item">
+                <div class="c-wrapper -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper  -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div>
+                  <div class="sitemap__list">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="">トップ</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">学校の特色</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">選ばれる理由</a></li>
+                                <li class="list-child__item"><a href="">適性診断</a></li>
+                                <li class="list-child__item"><a href="">学生座談会</a></li>
+                                <li class="list-child__item"><a href="">中村学園</a></li>
+                                <li class="list-child__item"><a href="">からきめ制度</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">施設・設備</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">施設紹介</a></li>
+                                <li class="list-child__item"><a href="">アイサロン</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">就職・資格</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">活躍する卒業生</a></li>
+                                <li class="list-child__item"><a href="">よくあるご質問</a></li>
+                                <li class="list-child__item"><a href="">資格取得</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">専攻</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">エステティシャン専攻</a></li>
+                                <li class="list-child__item"><a href="">アロマ&セラピスト専攻</a></li>
+                                <li class="list-child__item"><a href="">メイクアップアーティスト専攻</a></li>
+                                <li class="list-child__item"><a href="">ブライダルビューティ専攻</a></li>
+                                <li class="list-child__item"><a href="">ネイリスト専攻</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="">入試・学費</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">指定校推薦・学校推薦</a></li>
+                                <li class="list-child__item"><a href="">AO入学専攻・一般入学専攻</a></li>
+                                <li class="list-child__item"><a href="">特待生制度</a></li>
+                                <li class="list-child__item"><a href="">学費</a></li>
+                                <li class="list-child__item"><a href="">入学までの流れ</a></li>
+                                <li class="list-child__item"><a href="">入試概要</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">キャンパスライフ</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">Real School Life</a></li>
+                                <li class="list-child__item"><a href="">クラブサークル</a></li>
+                                <li class="list-child__item"><a href="">私服スナップ</a></li>
+                                <li class="list-child__item"><a href="">AIE’s One day</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">オープンキャンパス</a>
+                            <ul class="list-child">
+                                <li class="list-child__item"><a href="">来校OPEN CUMPUS</a></li>
+                                <li class="list-child__item"><a href="">WEBでOPEN CAMPUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="">情報公開</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">高校1・2年生の方へ</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">保護者の方へ</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">一人暮らしの方へ</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">資料請求</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+                </div> 
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2">
+                <div class="event -j">
+                    <div class="c-wrapper -right">
+                      <div class="sitemap__list">
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="">トップ</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">学校の特色</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">選ばれる理由</a></li>
+                                    <li class="list-child__item"><a href="">適性診断</a></li>
+                                    <li class="list-child__item"><a href="">学生座談会</a></li>
+                                    <li class="list-child__item"><a href="">中村学園</a></li>
+                                    <li class="list-child__item"><a href="">最短スタイリストデビュー</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">施設・設備</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">施設紹介</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">就職・資格</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">活躍する卒業生</a></li>
+                                    <li class="list-child__item"><a href="">よくあるご質問</a></li>
+                                    <li class="list-child__item"><a href="">資格取得</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">専攻</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">ヘアスタイリスト専攻</a></li>
+                                    <li class="list-child__item"><a href="">ヘアメイク専攻</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="">入試・学費</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">指定校推薦・学校推薦</a></li>
+                                    <li class="list-child__item"><a href="">AO入学専攻・一般入学専攻</a></li>
+                                    <li class="list-child__item"><a href="">特待生制度</a></li>
+                                    <li class="list-child__item"><a href="">学費</a></li>
+                                    <li class="list-child__item"><a href="">入学までの流れ</a></li>
+                                    <li class="list-child__item"><a href="">入試概要</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">キャンパスライフ</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">Real School Life</a></li>
+                                    <li class="list-child__item"><a href="">クラブサークル</a></li>
+                                    <li class="list-child__item"><a href="">私服スナップ</a></li>
+                                    <li class="list-child__item"><a href="">J’s One day</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">オープンキャンパス</a>
+                                <ul class="list-child">
+                                    <li class="list-child__item"><a href="">来校OPEN CUMPUS</a></li>
+                                    <li class="list-child__item"><a href="">WEBでOPEN CAMPUS</a></li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <a href="">情報公開</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">高校1・2年生の方へ</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">保護者の方へ</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">一人暮らしの方へ</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">資料請求</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

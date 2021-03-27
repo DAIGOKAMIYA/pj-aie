@@ -1,0 +1,385 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "WEB OPEN CAMPUS"; %>
+<% body_class = "aiewebopnecampus"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title align-l"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-name">
+            <picture>
+                <source media="(max-width: 768px)" srcset="<%- dir %>assets/img/name_i_sp.png">
+                <img src="<%- dir %>assets/img/name_i.png" alt="アイエステ">
+            </picture>
+        </div>
+
+        <div class="c-wrapper -w1200">
+            <div class="mainvisual">
+                <div class="mainvisual__inner">
+                    <h2><img src="<%- dir %>assets/img/aiewebopnecampus/mainvisual_01.jpg" alt="WEB OPEN CAMPUS 2021"></h2>
+                    <div class="c-wrapper__inner">
+                        <p class="mainvisual__lead">高校1・2年生の今から動画を視聴してAO入試エントリー資格を得ましょう！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-wrapper__inner">
+                <section id="merit" class="merit">
+                    <h3 class="merit__title"><span>高校1・2年生の今からAOエントリーを考える3つのメリット</span></h3>
+                    <ul class="merit__list">
+                        <li class="merit__item">
+                            <figure>
+                                <img src="<%- dir %>assets/img/aiewebopnecampus/image_merit_01.jpg" alt="">
+                                <figcaption>進路が早く決まる！</figcaption>
+                            </figure>
+                        </li>
+                        <li class="merit__item">
+                            <figure>
+                                <img src="<%- dir %>assets/img/aiewebopnecampus/image_merit_02.jpg" alt="">
+                                <figcaption>プレスクールに参加できる！</figcaption>
+                            </figure>
+                        </li>
+                        <li class="merit__item">
+                            <figure>
+                                <img src="<%- dir %>assets/img/aiewebopnecampus/image_merit_03.jpg" alt="">
+                                <figcaption>選考料(20,000円)が免除！</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <!-- //merit -->
+            </div>
+
+            <div class="belt">
+                <h3 class="belt__title">WEBオープンキャンパス動画を見て<br>AOエントリーを考えよう！</h3>
+            </div>
+
+            <div class="c-wrapper__inner">
+                <section id="videos" class="videos">
+                    <h3 class="videos__title title"><span>WEB上でオープンキャンパスに参加しよう！</span></h3>
+                    <p>実際に来校していただかなくても、スマホ、PCがあれば、自宅にいてもWEBでオープンキャンパスに参加できます。<br>
+                    「WEBオープンキャンパス動画」のメインコンテンツです。<br>
+                    学校紹介・希望する専攻・施設紹介・キャンパスライフの動画コンテンツを視聴していただくことで、当校のオープンキャンパスに参加したと認定し、オープンキャンパス参加証明書が発行できます。<br>
+                    発行を希望される方は、以下の<a href="#">《AO入試エントリー資格を得るためのOC参加証明書》</a>をクリックしてください。​​</p>
+
+                    <ul class="videos__list">
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_01">アイエステティック専門学校学校紹介</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/wYXZWRdXAOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_02">エステティシャン専攻</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/DV3NKplP6QM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_03">アロマ＆セラピスト専攻</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/lenbW1NYdqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_04">メイクアップアーティスト専攻</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/0RPnHqHY4UU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_05">ブライダルビューティ専攻</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/cW4h9a5RrT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_06">ネイリスト専攻</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/oAfKMHkbAH4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_07">施設紹介</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/-2fGZ6x6T7s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                        <li class="videos__item">
+                            <dl>
+                                <dt class="title_08">キャンパスライフ</dt>
+                                <dd><iframe width="560" height="315" src="https://www.youtube.com/embed/qNQC35eUKKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="cta belt mb0">
+                <p>AO入試エントリー資格を得るための<br>
+                OC参加証明書発行はこちら！</p>
+                <div class="btn c-btn -blue">
+                    <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">OC参加証明書発行はこちら</span><span class="btn__arrow"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="c-wrapper__inner bg_features">
+                <section id="features" class="features">
+                    <h3 class="features__title title"><span>アイの特色をご紹介！</span></h3>
+
+                    <div class="features__column">
+                        <div class="features__list">
+                            <div class="features__item">
+                                <dl>
+                                    <dt><span>“ ホスピタリティ”<br>
+                                        美しい心を学ぶ</span></dt>
+                                    <dd>「ホスピタリティ＝おもてなしの心」<br>
+                                        相手を思いやり、考え、<br>
+                                        行動できる美しい心を学びます。</dd>
+                                </dl>
+                            </div>
+                            <div class="features__item">
+                                <dl>
+                                    <dt><span>からきめ制度で<br>
+                                        キレイを<br>
+                                        まるごと学ぶ</span></dt>
+                                    <dd>入学から半年間<br>
+                                        インナービューティプログラムで<br>
+                                        キレイをすべて学びます。</dd>
+                                </dl>
+                            </div>
+                            <div class="features__item">
+                                <dl>
+                                    <dt><span>最新設備を<br>
+                                        揃えた<br>
+                                        サロン実習室</span></dt>
+                                    <dd>本物のサロン仕様の教室と、<br>
+                                        いるだけでキレイになれる<br>
+                                        五感環境。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="features__image">
+                            <img src="<%- dir %>assets/img/aiewebopnecampus/image_features_01.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="program">
+                        <h3 class="program__title">からきめ制度 ～ インナービューティプログラム</h3>
+                        <p class="program__lead">入学から半年間、インナービューティプログラムでキレイを全て学びます。<br>
+                        半年間で、やりたいこと・進みたい道がハッキリ見つかります。</p>
+                        <ul class="program__list">
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_01.png" alt=""></dt>
+                                    <dd class="label_01">エステ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_02.png" alt=""></dt>
+                                    <dd class="label_02">マナー</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_03.png" alt=""></dt>
+                                    <dd class="label_03">ブライダルビューティ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_04.png" alt=""></dt>
+                                    <dd class="label_04">ホスピタリティ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_05.png" alt=""></dt>
+                                    <dd class="label_05">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="program__list">
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_06.png" alt=""></dt>
+                                    <dd class="label_06">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_07.png" alt=""></dt>
+                                    <dd class="label_07">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_08.png" alt=""></dt>
+                                    <dd class="label_08">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_09.png" alt=""></dt>
+                                    <dd class="label_09">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_10.png" alt=""></dt>
+                                    <dd class="label_10">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                            <li class="program__item">
+                                <dl>
+                                    <dt><img src="<%- dir %>assets/img/aiewebopnecampus/image_program_11.png" alt=""></dt>
+                                    <dd class="label_11">ヘアアレンジ</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <section id="introduction" class="introduction">
+                <div class="c-wrapper__inner">
+                <h3 class="title"><span>アイの学科をご紹介！</span></h3>
+                <div class="introduction__slider">
+                    <div class="introduction__slider__item">
+                        <h3 class="introduction__slider__item__title">エステティシャン専攻</h3>
+                        <h4 class="introduction__slider__item__lead">キレイをつくる美のスペシャリストになる</h4>
+                        <div class="introduction__slider__item__inner">
+                            <div class="introduction__slider__item__text">
+                                <h5 class="introduction__slider__item__text__title">授業内容</h5>
+                                <div class="introduction__slider__item__text__lead">
+                                    <div class="col-2">
+                                        <ul>
+                                            <li>エステティックボディ実技</li>
+                                            <li>応用実技(エステサロン運営)</li>
+                                            <li>ダイエット実習</li>
+                                        </ul>
+                                        <ul>
+                                            <li>エステティックフェイシャル実技</li>
+                                            <li>皮膚科学</li>
+                                            <li>サロンマネジメント</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5 class="introduction__slider__item__text__title">目指せる資格</h5>
+                                <div class="introduction__slider__item__text__lead">
+                                    <ul>
+                                        <li>AEA上級認定エステティシャン</li>
+                                        <li>AEA認定エステティシャン</li>
+                                        <li>アロマコーディネーターライセンス</li>
+                                        <li>ダイエット検定1〜2級</li>
+                                        <li>日本メイクアップ技術検定3級</li>
+                                        <li>JNECネイリスト技能検定3級</li>
+                                        <li>色彩活用パーソナルカラー検定</li>
+                                        <li>色彩活用ライフケアカラー検定</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="introduction__slider__item__image">
+                                <img src="<%- dir %>assets/img/aiewebopnecampus/image_introduction_01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="introduction__slider__item">
+                        <h3 class="introduction__slider__item__title">エステティシャン専攻</h3>
+                        <h4 class="introduction__slider__item__lead">キレイをつくる美のスペシャリストになる</h4>
+                        <div class="introduction__slider__item__inner">
+                            <div class="introduction__slider__item__text">
+                                <h5 class="introduction__slider__item__text__title">授業内容</h5>
+                                <div class="introduction__slider__item__text__lead">
+                                    <div class="col-2">
+                                        <ul>
+                                            <li>エステティックボディ実技</li>
+                                            <li>応用実技(エステサロン運営)</li>
+                                            <li>ダイエット実習</li>
+                                        </ul>
+                                        <ul>
+                                            <li>エステティックフェイシャル実技</li>
+                                            <li>皮膚科学</li>
+                                            <li>サロンマネジメント</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5 class="introduction__slider__item__text__title">目指せる資格</h5>
+                                <div class="introduction__slider__item__text__lead">
+                                    <ul>
+                                        <li>AEA上級認定エステティシャン</li>
+                                        <li>AEA認定エステティシャン</li>
+                                        <li>アロマコーディネーターライセンス</li>
+                                        <li>ダイエット検定1〜2級</li>
+                                        <li>日本メイクアップ技術検定3級</li>
+                                        <li>JNECネイリスト技能検定3級</li>
+                                        <li>色彩活用パーソナルカラー検定</li>
+                                        <li>色彩活用ライフケアカラー検定</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="introduction__slider__item__image">
+                                <img src="<%- dir %>assets/img/aiewebopnecampus/image_introduction_01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <div class="cta belt">
+                <p>AO入試エントリー資格を得るための<br>
+                OC参加証明書発行はこちら！</p>
+                <div class="btn c-btn -blue">
+                    <a href="#" class="btn__inner c-btn__inner"><span class="btn__txt">OC参加証明書発行はこちら</span><span class="btn__arrow"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="logo_tel">
+                <ul>
+                    <li><img src="<%- dir %>assets/img/aiewebopnecampus/logo_01.png" alt=""></li>
+                    <li><img src="<%- dir %>assets/img/aiewebopnecampus/tel_01.png" alt="0120-461-901 〒260-0021 千葉県千葉市中央区新宿2-14-3"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>
+
+<script>
+    $(function(){
+        $('.introduction__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots:false,
+            prevArrow: '<div class="slide-arrow prev-arrow"><img src="<%- dir %>assets/img/aieopnecampus/icon_arrow_l_01.png"></div>',
+            nextArrow: '<div class="slide-arrow next-arrow"><img src="<%- dir %>assets/img/aieopnecampus/icon_arrow_r_01.png"></div>'
+        });
+    });
+    </script>

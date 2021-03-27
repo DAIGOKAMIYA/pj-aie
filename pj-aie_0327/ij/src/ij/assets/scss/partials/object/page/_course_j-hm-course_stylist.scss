@@ -1,0 +1,674 @@
+.course_j-hm-course_stylist{
+
+    .p-title{
+		background-image: url("../img/course/j/stylist/course_j_stylist_bg.jpg");
+		.title{
+			text-align:left;
+		}
+	}
+
+    .esthe_bg{
+        background-color: #000;
+    }
+    .esthe_bg_d{
+        background-color: #c91420;
+    }
+    .esthe_bg_dd{
+        background-color: #ff9608;
+    }
+    .esthe_bg_r{
+        background-color: #ec6941;
+    }
+    .esthe_bg_b{
+        background-color: #91c8d8;
+    }
+    .esthe_bg_db{
+        background-color: #5abad6;
+    }
+
+    .esthe-schedule span{
+        color: #fbd4a2!important;
+    }
+
+    .j-c-section{
+        width: 70%;
+        margin: 70px auto;
+        @include max768 {
+            width: 90%;
+
+        }
+    }
+    .j-c-section2{
+        width: 90%;
+        margin: 10% auto;
+    }
+
+
+    .j-c-fv{
+        width: 85%;
+        margin-left:auto ;
+        position: relative;
+        .j-c-title{
+            width: 740px;
+            padding: 40px 35px 30px 0;
+            position: absolute;
+            top: 40%;
+            left: -250px;
+            color: white;
+            @include max1024 {
+                width: 600px;
+            }
+            &>div{
+                width: 55%;
+                margin-left:auto ;
+                @include max1024 {
+                    width: 70%;
+                }
+            }
+            h2{
+                font-size: 3.6rem;
+                font-weight: bold;
+                margin: 0 0 25px 0;
+            }
+            img{
+                position: absolute;
+                width: 200px;
+                top: -25px;
+                left: 200px;
+            }
+        }
+        .j-c-course{
+            border: 2px solid white;
+            padding: 10px;
+            width: 90px;
+        }
+    }
+    @include tab3{
+        .j-c-fv{
+            width: 100%;
+            margin:0 auto ;
+            .j-c-title{
+                position: static;
+                padding:30px;
+                width: 100%;
+                &>div{
+                    width: 100%;
+                    margin: 0 auto ;
+                }
+                h2{
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+
+    .j-c-info{
+        display: flex;
+        .j-c-info__txt,.j-c-info__pic{
+            width: 50%;
+        }
+        .j-c-info__pic{
+            text-align: center;
+            img{
+                width: 85%;
+                transform: translate(3%,-42%);
+                z-index: -1;
+                position: relative;
+            }
+        }
+        .j-c-info__txt{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            li{margin: 0 20px  15px 0;}
+            .j-c-wp-list,dl{
+                display: flex;
+                margin: 20px 0;
+            }
+            .j-c-info__wp{
+                border-radius : 1px;
+                margin: 0 0 70px 0;
+                .j-c-wp-list{
+                    width: 600px;
+                    display: block;
+                    @include max480 {
+                        width: 94%;
+                        margin: 0 auto;
+                    }
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    @include tab3{
+        .j-c-info{
+            margin: 50px 0 0 0;
+            .j-c-info__pic{
+                display: none;
+            }
+            .j-c-info__txt{
+                width: 90%;
+                margin:0 auto;
+            }
+        }
+    }
+
+    .j-c-h3{
+        width: 100%;
+        font-size: 2.4rem;
+        font-weight: bold;
+        position: relative;
+        margin: 0 0 50px 0;
+        span{
+            display: inline-block;
+            width: 100%;
+            font-size: 7rem;
+            font-weight: bold;
+            color: #e5e5e5;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: -1;
+            letter-spacing: 0.1em;
+            @include max480 {
+                font-size: 3rem;
+            }
+        }
+    }
+    @include tab3{
+        .j-c-h3{
+            margin: 0 0 20px 0;
+            font-size: 2rem;
+            span{
+                font-size: 4rem;
+                top: -15px;
+            }
+        }
+    }
+
+    .j-c-qualified{
+        color: white;
+        width: 70%;
+        min-width: 980px;
+        margin: -180px auto 10% auto;
+        padding: 20px 70px;
+        @include max1024 {
+            margin: -100px auto 10% auto;
+        }
+        @include max768 {
+            margin: 0px auto 10% auto;
+        }
+        &_wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include max768 {
+                flex-direction: column-reverse;
+            }
+        }
+        .j-c-qualified__txt{
+            padding: 30px 0;
+            width: 55%;
+            img{width: 100%;}
+            h4,p{margin: 0 0 40px 0;}
+            h4{
+                font-size: 2.8rem;
+                font-weight: bold;
+            }
+            p {
+                @include max768 {
+                    text-align: left;
+                }
+            }
+            &.-second {
+                width: 100%;
+                p {
+                    @include max768 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .j-c-qualified__pic{
+            width: 345px;
+            img{width: 90%;}
+        }
+    }
+
+    @include tab3{
+        .j-c-qualified{
+            color: white;
+            width: 100%;
+            min-width:auto;
+            padding: 20px;
+            flex-direction:column-reverse;
+            .j-c-qualified__txt{
+                text-align: center;
+                padding: 30px 0;
+                width: 90%;
+                margin:0 auto;
+                img{width: 100%;}
+                h4,p{margin: 0 0 20px 0;}
+                h4{font-size: 1.8rem;}
+            }
+            .j-c-qualified__pic{
+                width: 100%;
+                text-align: center;
+                img{width: 20%;}
+            }
+        }
+    }
+    .j-c-schedule{
+        background-image: url(../img/esthe/j-c-schedule-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        padding: 1% 0;
+        z-index: -3;
+        img{margin: 30px 0;}
+        .j-c-schedule__curriculum{
+            background-color: white;
+            border: 2px solid #ec6941;
+            padding: 50px;
+            position: relative;
+            border-radius:10px;
+            margin: 50px 0 0 0;
+            span{
+                text-align: center;
+                display: inline-block;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+                top: -25px;
+                padding:15px 0;
+                border-radius:50px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    font-weight: bold;
+                    width: 258px;
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+        @include tab3{
+            .j-c-schedule__table{
+                overflow-x:scroll;
+                img{
+                    width: 157%;
+                    overflow: auto;
+                    white-space: nowrap;
+                }
+            }
+            .j-c-schedule__curriculum{
+                padding: 20px;
+                ul{
+                    li{
+                        display: inline-block;
+                        font-weight: bold;
+                        width: 190px;
+                        margin: 0 0 15px 0;
+                    }
+                }
+            }
+        }
+    }
+    .j-c-voice{
+        display: flex;
+        width: 90%;
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 12%;
+
+        @include max768 {
+            display: block;
+        }
+        .j-c-voice__info,.j-c-voice__pic{
+            width: 50%;
+
+            @include max768 {
+                width: 100%;
+                padding: 0;
+            }
+            img{
+                transform: translate(30px,0);
+            }
+        }
+        .j-c-voice__info{
+            padding:30px;
+            .j-c-voice__name{
+                width: 160px;
+                margin-left:auto;
+
+                @include max768 {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    margin: 0;
+                    span{
+                        font-size: 2.4rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .j-c-voice__qa{
+                margin:80px 0;
+                @include max768 {
+                    margin: 20px 10px 20px 0;
+                }
+                dl{
+                    margin:0 0 50px 0;
+                    dt{
+                        margin:0 0 30px 0;
+                        letter-spacing: 0.1em;
+                        position: relative;
+                        &::before{
+                            content:"";
+                            position: absolute;
+                            left: -110px;
+                            top: 50%;
+                            display: inline-block;
+                            width: 100px;
+                            height: 1px;
+                            background-color: black;
+                        }
+                    }
+                    dd{
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        letter-spacing: 0.2em;
+                    }
+                }
+            }
+        }
+    }
+    .j-c-curriculum {
+        background: linear-gradient(90deg, #f50102, #910810);
+        padding: 10rem 0 30rem;
+        margin: 0 0 25%;
+        @include max1024 {
+            margin: 0 0 16%;
+        }
+        @include max768 {
+            padding: 10rem 0;
+        }
+        &_inner {
+            position: relative;
+            .j-c-h3 {
+                text-align: center;
+                z-index: 2;
+                color: #fff;
+                margin: 0 0 80px 0;
+
+                @include max768 {
+                    margin: 0 0 20px 0;
+                }
+                span {
+                    top: 40px;
+                    color: rgba($color: #fff, $alpha: .4);
+                    font-size: 10rem;
+                    @include max1024 {
+                        font-size: 7rem;
+                    }
+                    @include max480 {
+                        font-size: 3.5rem;
+                    }
+                    @include max360 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+            &_content {
+                position: relative;
+                .shape {
+                    width: 55%;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: -30rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include max1024 {
+                        top: -25rem;
+                    }
+                    @include max768 {
+                        z-index: 0;
+                        display: none;
+                    }
+                }
+                .curriculum {
+                    &_inner {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: flex;
+                        justify-content: space-between;
+                        width: 90%;
+                        margin: 0 auto;
+                        @include max1024 {
+                            top: -2rem;
+                        }
+                        @include max768 {
+                            display: block;
+                            position: unset;
+                            top: 0;
+                            left: unset;
+                            transform: unset;
+                            z-index: 3;
+                            li {
+                                width: 75%;
+                                margin: 0 auto 4rem;
+                                &:last-child {
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .j-c-features{
+        margin-top: 150px;
+        background-image: url(../img/course/j/stylist/curriculum_mv.png);
+        background-size: 638px;
+        background-repeat: no-repeat;
+        background-position: 0px 190px;
+        z-index: -100;
+        position: relative;
+        padding-bottom:20px;
+        @include max768 {
+            background-image: none;
+        }
+        h3{
+            text-align: left;
+            margin-top:-30px;
+        }
+        h4{
+            text-align: center;
+            margin: 100px 0 40px 0;
+            span{
+                color: white;
+                font-weight: bold;
+                line-height: 2.3;
+                padding:3px;
+                font-size: 30px;
+            }
+        }
+        .j-c-features__list{
+            margin: 10rem 0 0;
+            @include max768 {
+                margin: 2rem 0 0;
+            }
+            .j-c-features-right{
+                transform: translateX(70px);
+                @include max768 {
+                    transform: translateX(0);
+                }
+            }
+            div{
+                display: flex;
+                color: white;
+                width: 600px;
+                margin: 0 24px 24px auto;
+
+                @include max768 {
+                    width: 90%;
+                    margin: 0 auto 20px auto;
+                    display: block;
+                }
+                img{
+                    width: 40%;
+                    transform: translateX(-1px);
+
+                    @include max768 {
+                        width: 100%;
+                        transform: translateX(0px);
+                    }
+                }
+                dl{
+                    padding: 8px 1.5em;
+                    font-weight: bold;
+                    line-height: 1.2;
+                        @include max768 {
+                            padding: 15px 1.5em;
+                        }
+
+                    dt{
+                        font-size: 2.4rem;
+                        padding: 10px 0 10px 0;
+                        margin: 0 0 10px 0;
+                        border-bottom: 4px dotted white;
+                        letter-spacing: 0.2em;
+
+                        @include max768 {
+                            font-size: 1.4rem;
+                            padding: 0 0 10px 0;
+                        }
+                    }
+                    dd{
+                        letter-spacing: 0.1em;
+
+                        @include max768 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .j-c-collaboration {
+        margin: 0 0 8rem;
+        &_inner {
+            .title {
+                text-align: center;
+                margin: 0 0 8rem;
+            }
+            .content {
+                &_inner {
+                    background-color: #000;
+                    position: relative;
+                    .img {
+                        max-width: 1000px;
+                        margin: 0 auto;
+                        width: 90%;
+                        position: relative;
+                        top: -50px;
+                    }
+                    .text {
+                        position: absolute;
+                        top: -6%;
+                        right: 0;
+                        background-color: #c91420;
+                        @include max768 {
+                            position: unset;
+                        }
+                        p {
+                            color: #fff;
+                            margin: 0;
+                            padding: 4rem;
+                            max-width: 780px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .j-c-supplement__contents{
+        background-color: #f7f7d8;
+        text-align: center;
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .j-c-supplement__contents__pic{
+            width: 30%;
+            img{
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+        .j-c-supplement__contents__txt{
+            width: 60%;
+            padding: 0 40px;
+            h3{
+                font-size: 3rem;
+                font-weight: bold;
+                margin: 0 0 40px 0;
+                letter-spacing:.2rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    .j-c-message-all{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto 10rem;
+        @include max768 {
+            display: block;
+        }
+        .j-c-message{
+            width: 48%;
+            color: white;
+            @include max768 {
+                width: 100%;
+                margin: 0 0 6rem;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        .j-c-message__lower{
+            padding:15px 40px;
+            height: calc(70vw * 0.35);
+            min-height: 260px;
+            @include max1024 {
+                height: 480px;
+            }
+            @include max768 {
+                padding:15px;
+                height: auto;
+            }
+            .j-c-message__lowtitle{
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0 0 15px 0;
+                line-height: 1.5;
+                @include max768 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

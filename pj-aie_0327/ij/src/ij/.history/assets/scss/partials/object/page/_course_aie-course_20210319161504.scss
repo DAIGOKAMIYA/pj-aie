@@ -1,0 +1,294 @@
+.course_aie-course{
+    .l-header {
+        .p-title {
+            background-image: url(../img/course/j/course_j-hm-course_mv.png);
+            .title {
+                text-align: left;
+            }
+        }
+    }
+    .list {
+        &_inner {
+            margin: 10rem auto;
+            max-width: 1340px;
+            .major {
+                &-panel {
+                    .panel-group {
+                        .panel {
+                            .content {
+                                position: relative;
+                                &_img {
+                                    position: relative;
+                                    padding: 0 12rem 0 0;
+                                    background-color: #fff;
+                                    @include max768 {
+                                        padding: 0;
+                                    }
+                                    &.-bridal {
+                                        &::before {
+                                            background-image: url(../img/course_aie-course/hair_make.png);
+                                            width: 40%;
+                                        }
+                                    }
+                                    &.-nail {
+                                        &::before {
+                                            background-image: url(../img/course_aie-course/hair_make.png);
+                                            width: 40%;
+                                        }
+                                    }
+                                    &.-make {
+                                        &::before {
+                                            background-image: url(../img/course_aie-course/Makeupartist.png);
+                                            width: 40%;
+                                        }
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: -1%;
+                                        left: 8%;
+                                        width: 42%;
+                                        height: 15%;
+                                        background-image: url(../img/course_aie-course/esthetician.png);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        @include max768 {
+                                            width: 48%;
+                                            height: 45%;
+                                        }
+                                    }
+                                    &.-aroma {
+                                        &::before {
+                                            background-image: url(../img/course_aie-course/AromaTherapist.png);
+                                        }
+                                    }
+                                    .pc {
+                                        display: block;
+                                        @include max768 {
+                                            display: none;
+                                        }
+                                    }
+                                    .sp {
+                                        display: none;
+                                        @include max768 {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                &_inner {
+                                    position: absolute;
+                                    top: -2%;
+                                    right: 0;
+                                    width: 45%;
+                                    background-color: #fff;
+                                    padding: 2% 5% 4%;
+                                    box-shadow: 0px 13px 13px 0px rgba(33, 26, 7, 0.16);
+                                    @include max1280 {
+                                        padding: 5% 3%;
+                                    }
+                                    @include max480 {
+                                        padding: 5% 3% 10%;
+                                    }
+                                    @include max768 {
+                                        position: relative;
+                                        top: -5rem;
+                                        width: 92.1%;
+                                        margin: 0 auto;
+                                    }
+                                    &_title {
+                                        text-align: center;
+                                        div {
+                                            background-color: #000;
+                                            display: inline-block;
+                                            color: #fff;
+                                            padding: 1rem 1.2rem;
+                                            border-radius: 50px;
+                                            font-size: 2.4rem;
+                                            @include max1280 {
+                                                font-size: 2rem;
+                                            }
+                                            @include max480 {
+                                                font-size: 1.8rem;
+                                            }
+
+                                            &.-black {
+                                                background-color: #000;
+                                            }
+                                            &.-green {
+                                                background-color: #67be8d;
+                                            }
+                                            &.-yellow {
+                                                background-color: #f8b861;
+                                            }
+                                            &.-red {
+                                                background-color: #ed7980;
+                                            }
+                                            &.-blue {
+                                                background-color: #6fc8d8;
+                                            }
+                                            &.-purple {
+                                                background-color: #aa89bd;
+                                            }
+                                        }
+                                    }
+                                    &_subttl {
+                                        text-align: center;
+                                        margin: 5rem 0;
+                                        font-family: $noto_serif;
+                                        @include max1280 {
+                                            margin: 6% 0;
+                                        }
+                                        h3 {
+                                            font-size: 3rem;
+                                            line-height: 1.6;
+                                            @include max1280 {
+                                                font-size: 1.8rem;
+                                            }
+                                        }
+                                    }
+                                    &_detail {
+                                        .detail {
+                                            margin: 0 15px 4rem;
+                                            &_item {
+                                                border-bottom: solid 1px #dcdcdc;
+                                                &_inner {
+                                                    display: flex;
+                                                    padding:1.6rem 0;
+                                                    .img {
+                                                        width: 30%;
+                                                        margin: 0 2rem 0 0;
+                                                    }
+                                                    .text {
+                                                        width: 70%;
+                                                        &_title {
+                                                            font-size: 1.8rem;
+                                                            font-weight: bold;
+                                                            margin: 0 0 1.8rem;
+                                                            font-family: $noto_serif;
+                                                            font-weight: 500;
+                                                            @include max480 {
+                                                                font-size: 1.6rem;
+                                                                margin: 0 0 1rem;
+                                                            }
+                                                        }
+                                                        &_paragraph {
+                                                            p {
+                                                                line-height: 1.2;
+                                                                font-size: 1.2rem;
+                                                                margin: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .target {
+                                        margin: 0 0 4rem;
+                                        &_inner {
+                                            &_content {
+                                                display: flex;
+                                                align-items: center;
+                                                &.-yellow {
+                                                    border: solid 1px #f8b861;
+                                                    background-color: #f8b861;
+                                                    dd {
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                                &.-green {
+                                                    border: solid 1px #67be8d;
+                                                    background-color: #67be8d;
+                                                    dd {
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                                &.-red {
+                                                    border: solid 1px #ed7980;
+                                                    background-color: #ed7980;
+                                                    dd {
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                                &.-blue {
+                                                    border: solid 1px #6fc8d8;
+                                                    background-color: #6fc8d8;
+                                                    dd {
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                                &.-purple {
+                                                    border: solid 1px #aa89bd;
+                                                    background-color: #aa89bd;
+                                                    dd {
+                                                        background-color: #fff;
+                                                    }
+                                                }
+                                            }
+                                            dt {
+                                                width: 28%;
+                                                @include max1280 {
+                                                    width: 24%;
+                                                }
+                                                h4 {
+                                                    text-align: center;
+                                                    color: #fff;
+                                                    @include max480 {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                }
+                                            }
+                                            dd {
+                                                padding: 2.4rem;
+                                                width: 72%;
+                                                @include max1280 {
+                                                    width: 76%;
+                                                    padding: 1.2rem;
+                                                }
+                                                @include max480 {
+                                                    padding: 1.2rem .8rem;
+                                                }
+                                                ul {
+                                                    margin-top: 5px;
+                                                    margin-bottom: 15px;
+
+                                                    &:last-of-type {
+                                                        margin-bottom: 0;
+                                                    }
+                                                    li {
+                                                        font-size: 1.4rem;
+                                                        line-height: 1.7;
+                                                        @include max480 {
+                                                            font-size: 1.2rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.-make {
+                                    .content_inner {
+                                        .content_inner_subttl {
+                                            text-align: center;
+                                            margin: 2rem 0;
+                                            @include max1280 {
+                                                margin: 4% 0;
+                                            }
+                                            h3 {
+                                                font-size: 3rem;
+                                                @include max1280 {
+                                                    font-size: 1.8rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

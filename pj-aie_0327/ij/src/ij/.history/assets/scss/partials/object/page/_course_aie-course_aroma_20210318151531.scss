@@ -1,0 +1,37 @@
+.course_aie-course_aroma{
+
+    .esthe_bg{
+        background-color: #f8b861;
+    }
+    .esthe_bg_d{
+        background-color: #f9a534;
+    }
+    .esthe_bg_dd{
+        background-color: #ff9608;
+    }
+    .esthe_bg_r{
+        background-color: #ec6941;
+    }
+    .esthe_bg_b{
+        background-color: #91c8d8;
+    }
+    .esthe_bg_db{
+        background-color: #5abad6;
+    }
+    .esthe-schedule span{
+        color: #fbd4a2!important;
+    }
+    .p-title{background-image: url(../img/course_aie-course_aroma/esthe_bg@3x.jpg);}
+
+    .aie-c-features{
+        background-image: url(../img/course_aie-course_aroma/aie-c-features@3x.png);
+    }
+    .aie-c-fv{
+        .aie-c-title{
+            &>div{
+                width: 57%!important;
+                margin-left:auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,665 @@
+.aiewebopnecampus {
+    .p-title{
+        background-image: url(../img/aiewebopnecampus/bg_kv_01.jpg);
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    & {
+
+        .l-main {
+            background-color: #d8f2f5;
+            padding-bottom: 50px;
+
+            @include max768{
+                padding-bottom: 30px;
+            }
+        }
+
+        .c-wrapper {
+            background-color: #fff;
+
+            &__inner {
+                padding: 0 65px;
+
+                @include max768{
+                    padding: 0;
+                }
+            }
+        }
+
+        .salon {
+            &-name {
+                background-color: $gold;
+                text-align: center;
+                padding: 10px 0;
+
+                img {
+                    width: 176px;
+                }
+            }
+        }
+
+        .title {
+            font-size: 3.0rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 60px;
+
+            @include max768{
+                font-size: 2.0rem;
+                margin-bottom: 30px;
+            }
+
+            span {
+                border-bottom: 1px solid #000;
+                padding-bottom: 5px;
+            }
+        }
+
+        .bg {
+            background-color: #eee;
+            padding: 30px 0 45px;
+            background-image: url(../img/aieopnecampus/bg_01.png);
+            background-size: 100% auto;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .mainvisual {
+            margin-top: 40px;
+
+            @include max768{
+                margin-top: 20px;
+            }
+            &__lead {
+                background-color: #f09cb4;
+                color: #fff;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 100px;
+                margin-top: 25px;
+                font-size: 2.6rem;
+                padding: 15px 0;
+                display: block;
+                margin-bottom: 40px;
+
+                @include max768{
+                    font-size: 1.5rem;
+                    padding: 15px 20px;
+                    margin: 20px;
+                }
+            }
+        }
+
+        .belt {
+            background-color: $gold;
+            color: #fff;
+            font-size: 3.0rem;
+            padding: 55px 0;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.8;
+            margin-bottom: 75px;
+
+            @include max768{
+                padding: 30px 20px;
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                span {
+                    border-bottom: 1px solid #000;
+                }
+            }
+
+            .btn {
+                min-width: 520px;
+
+                @include max768{
+                    min-width: 100%;
+                }
+
+                a {
+                    border-radius: 0;
+                    font-size: 2.0rem;
+                    border: #fff 2px solid;
+
+                    @include max768{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            &.mb0 {
+                margin-bottom: 0;
+            }
+        }
+
+        .merit {
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 60px;
+            background-color: #eaf8fa;
+
+            @include max768{
+                padding: 30px;
+                margin: 0 20px 30px;
+            }
+            &__title {
+                font-size: 2.6rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 50px;
+
+                @include max768{
+                    font-size: 1.8rem;
+                    line-height: 1.8;
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    border-bottom: 1px solid #000;
+                    display: inline-block;
+                    padding-bottom: 10px;
+                }
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                @include max768{
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                width: 30%;
+                @include max768{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                &:last-of-type {
+                    @include max768{
+                        margin-bottom: 0;
+                    }
+                }
+                img {
+                    display: block;
+                    margin-bottom: 20px;
+
+                    @include max768{
+                        margin-bottom: 15px;
+                    }
+
+                }
+                figcaption {
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: center;
+
+                    @include max768{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        .videos {
+            margin-bottom: 60px;
+            @include max768{
+                margin: 0 20px 30px;
+            }
+            &__title {
+                + p {
+                    margin-bottom: 60px;
+                    @include max768{
+                        margin-bottom: 30px;
+                    }
+                    a {
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+                @include max768{
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                width: 48%;
+                margin-bottom: 50px;
+
+                @include max768{
+                    width: 100%;
+                    margin-bottom: 35px;
+                }
+
+                dt {
+                    background-color: $red;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    padding: 15px;
+
+                    @include max768{
+                        font-size: 1.5rem;
+                    }
+
+                    &.title_01 {
+                        background-color: #cfb283;
+                    }
+
+                    &.title_02 {
+                        background-color: #ffb756;
+                    }
+
+                    &.title_03 {
+                        background-color: #67be8d;
+                    }
+
+                    &.title_04 {
+                        background-color: #ed7980;
+                    }
+
+                    &.title_05 {
+                        background-color: #6fc8d8;
+                    }
+
+                    &.title_06 {
+                        background-color: #b194c4;
+                    }
+
+                    &.title_07 {
+                        background-color: #30c4b3;
+                    }
+
+                    &.title_08 {
+                        background-color: #f09cb4;
+                    }
+                }
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }//videos
+
+        .bg_features {
+            background-image: url(../img/aiewebopnecampus/bg_features_01.jpg);
+            background-size: 100% auto;
+            background-position: center top;
+            background-repeat: no-repeat;
+            padding-top: 60px;
+
+            @include max768{
+                padding-top: 30px;
+            }
+        }
+
+        .features {
+            &__title {
+                margin-bottom: 45px;
+
+                @include max768{
+                    margin-bottom: 20px;
+                }
+            }
+            &__column {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 0 auto 50px;
+
+                @include max768{
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            &__list {
+                width: 58%;
+
+                @include max768{
+                    width: 100%;
+                }
+            }
+            &__image {
+                width: 52%;
+
+                @include max768{
+                    width: 100%;
+                }
+            }
+
+            &__item {
+                margin-bottom: 25px;
+
+                dl {
+                    display: flex;
+                    align-items: center;
+
+                    @include max768{
+                        flex-direction: column;
+                    }
+
+                    dt {
+                        width: 160px;
+                        height: 160px;
+                        display: table;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin-right: 30px;
+                        line-height: 1.6;
+
+                        @include max768{
+                            margin-right: 0;
+                            margin-bottom: 15px;
+                        }
+
+                        span {
+                            display: table-cell;
+                            vertical-align: middle;
+                            color: #fff;
+                        }
+                    }
+
+                    dd {
+                        font-size: 1.8rem;
+                        line-height: 1.8;
+
+                        @include max768{
+                            font-size: 1.4rem;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    dl {
+                        dt {
+                            background-color: #6fc8d8;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    dl {
+                        dt {
+                            background-color: #f09cb4;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    dl {
+                        dt {
+                            background-color: #cfb283;
+                        }
+                    }
+                }
+            }
+
+            .program {
+                &__title {
+                    background-color: #83d1db;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: bold;
+                    padding: 10px 0;
+                    margin-bottom: 40px;
+                    font-size: 2.2rem;
+
+                    @include max768{
+                        font-size: 1.8rem;
+                    }
+                }
+
+                &__lead {
+                    margin-bottom: 40px;
+                    text-align: center;
+                }
+
+                &__list {
+                    display: flex;
+                    justify-content: center;
+
+                    @include max768{
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                }
+
+                &__item {
+                    width: 16%;
+                    display: inline-block;
+                    margin: 0 13px 40px;
+                    text-align: center;
+
+                    @include max768{
+                        width: 42%;
+                        margin: 0 auto 20px;
+                    }
+
+                    dt {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    dd {
+                        transform: translateY(-50%);
+                        position: relative;
+                        z-index: 2;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        padding: 7px 15px;
+                        display: inline-block;
+                        color: #fff;
+                        border-radius: 5px;
+
+                        &.label_01 {
+                            background-color: #ffb756;
+                        }
+                        &.label_02 {
+                            background-color: #cfb283;
+                        }
+                        &.label_03 {
+                            background-color: #6fc8d8;
+                        }
+                        &.label_04 {
+                            background-color: #cfb283;
+                        }
+                        &.label_05 {
+                            background-color: #ed7980;
+                        }
+                        &.label_06 {
+                            background-color: #ed7980;
+                        }
+                        &.label_07 {
+                            background-color: #b194c4;
+                        }
+                        &.label_08 {
+                            background-color: #67be8d;
+                        }
+                        &.label_09 {
+                            background-color: #ffb756;
+                        }
+                        &.label_10 {
+                            background-color: #67be8d;
+                        }
+                        &.label_11 {
+                            background-color: #67be8d;
+                        }
+                    }
+                }
+            }
+        }//features
+
+        .introduction {
+            padding: 60px 0;
+            background-color: #f5f4ea;
+            position: relative;
+
+            @include max768{
+                padding: 25px 0;
+            }
+
+            .prev-arrow,
+            .next-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 36px;
+                cursor: pointer;
+            }
+
+            .prev-arrow {
+                left: -55px;
+            }
+
+            .next-arrow {
+                right: -55px;
+            }
+
+            &__slider {
+                &__item {
+                    padding: 30px 45px;
+                    background-color: #fff;
+                    border-radius: 20px;
+
+                    @include max768{
+                        padding: 20px;
+                    }
+
+                    &__inner {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        @include max768{
+                            flex-direction: column-reverse;
+                        }
+                    }
+
+                    &__title {
+                        margin-bottom: 30px;
+                        background-color: #83d1db;
+                        color: #fff;
+                        text-align: center;
+                        padding: 15px;
+                        font-size: 2.0rem;
+                        font-weight: bold;
+
+                        @include max768{
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &__lead {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        margin-bottom: 40px;
+                        line-height: 1.8;
+                        color: #83d1db;
+                        @include max768{
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &__text {
+                        width: 44%;
+
+                        @include max768{
+                            width: 100%;
+                        }
+
+                        &__title {
+                            border-bottom: 1px solid #d0d0d0;
+                            padding-bottom: 15px;
+                            margin-bottom: 20px;
+                            font-weight: bold;
+
+                            @include max768{
+                                padding-bottom: 10px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &__lead {
+                            font-size: 1.3rem;
+                            margin-bottom: 30px;
+
+                            li {
+                                line-height: 2;
+                                &::before {
+                                    content: "●";
+                                    margin-right: 5px;
+                                    color: #6fc8d8;
+                                }
+                            }
+                            .col-2 {
+                                display: flex;
+                                > * {
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                    &__image {
+                        width: 51%;
+
+                        @include max768{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+
+        }//introduction
+
+        .logo_tel {
+            width: 890px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+
+            @include max768{
+                width: 90%;
+                padding-bottom: 30px;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                @include max768{
+                    flex-direction: column;
+                }
+
+                li {
+                    @include max768{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

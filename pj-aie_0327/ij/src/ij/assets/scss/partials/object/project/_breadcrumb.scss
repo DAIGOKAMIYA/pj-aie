@@ -1,0 +1,16 @@
+.p-breadcrumb{
+    padding: 3.3rem 0;
+    background-color: #fff;
+    @include max768{
+        display: none;
+    }
+    .breadcrumb{
+        span,a{
+            margin-right: 1.5rem;
+            font-size: 1.6rem;
+        }
+        a{
+            color: #36A4B3;
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.facility_aie-about_salon {
+    .p-title{
+        background-image: url(../img/facility_aie-about_salon/salon_kv_01.jpg);
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    & {
+        .salon-contents {
+            text-align: center;
+
+            &__head {
+                background-image: url(../img/facility_aie-about_salon/salon_bg_01.jpg);
+                background-position: center;
+                background-size: cover;
+                min-height: 680px;
+                position: relative;
+
+                @include max768{
+                    min-height: 450px;
+                }
+
+                .salon {
+                    &-name {
+                        background-color: #cfb283;
+                        text-align: center;
+                        padding: 10px 0;
+
+                        img {
+                            width: 176px;
+                        }
+                    }
+                    &-label {
+                        background-color: #7fd4e3;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        padding: 50px 30px;
+                        margin-top: 40px;
+
+                        @include max1280{
+                            width: 70%;
+                        }
+                    }
+                    &-title {
+                        margin-bottom: 46px;
+
+                        @include max1280{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    &-lead {
+                        color: #fff;
+                        font-size: 2.6rem;
+
+                        @include max1280{
+                            font-size: 1.8rem;
+                        }
+
+                        @include max480{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+
+            &__body {
+                background-color: #d8f2f5;
+                padding: 50px;
+
+                &__inner {
+                    background-color: #fff;
+                    position: relative;
+                    min-height: 71vw;
+                    background-image: url(../img/facility_aie-about_salon/salon_bg_02.jpg);
+                    background-size: 80% auto;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    @include max1280{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 20px;
+                    }
+
+                    @include max480{
+                        flex-direction: column;
+                    }
+
+                    .salon-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        line-height: 2.4;
+                        z-index: 10;
+                        text-shadow: 1px 1px 0 #fff;
+
+                        @include max1280{
+                            position: static;
+                            transform: translate(0);
+                            text-align: center;
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+
+                    .item {
+                        width: 24%;
+                        //min-width: 300px;
+                        position: absolute;
+
+                        @include max1280{
+                            position: static;
+                            width: 48%;
+                            margin-bottom: 20px;
+                        }
+
+                        @include max480{
+                            width: 100%;
+                        }
+
+                        &:nth-of-type(1) {
+                            left: 50%;
+                            top: -20px;
+                            transform: translateX(-50%);
+
+                            @include max1280{
+                                transform: translateX(0);
+                            }
+
+                            .item__content {
+                                border-color: #ffb756;
+                                h3 {
+                                    background-color: #ffb756;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            left: 4%;
+                            top: 10%;
+
+                            .item__content {
+                                border-color: #6fc8d8;
+                                h3 {
+                                    background-color: #6fc8d8;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            right: 4%;
+                            top: 10%;
+
+                            .item__content {
+                                border-color: #67be8d;
+                                h3 {
+                                    background-color: #67be8d;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(4) {
+                            left: 16%;
+                            bottom: 4%;
+
+                            .item__content {
+                                border-color: #b194c4;
+                                h3 {
+                                    background-color: #b194c4;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(5) {
+                            right: 16%;
+                            bottom: 4%;
+
+                            .item__content {
+                                border-color: #ed7980;
+                                h3 {
+                                    background-color: #ed7980;
+                                }
+                            }
+                        }
+
+                        &__thumb {
+                            position: relative;
+                            z-index: 1;
+                        }
+
+                        &__content {
+                            margin-top: -76px;
+                            background-color: #fff;
+                            position: relative;
+                            z-index: 2;
+                            border-radius: 8px;
+                            border: #000 2px solid;
+                            overflow: hidden;
+
+                            h3 {
+                                background-color: #000;
+                                color: #fff;
+                                padding: 10px 0;
+                                font-weight: bold;
+                                font-size: 1.8rem;
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                                padding: 20px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

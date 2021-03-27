@@ -1,0 +1,153 @@
+.p-title{
+    $this: &;
+    .employment_job_faq &{
+        background-image: url(../img/employment_job/employment_job_faq_mv.png);
+        @include max768{
+            // background-image: url(../img/feature/feature_title_bg_sp.png);
+        }
+        .title{
+            text-align: left;
+        }
+    }
+}
+
+.faq-item{
+    $this: &;
+    .employment_job_faq &{
+        margin-bottom: 3rem;
+        background-color: #fff;
+        dl{
+            padding: 0 3rem;
+            border: 8px solid #82ccd5;
+            @include max768{
+                border-width: 4px;
+            }
+        }
+        dt{
+            height: 8.2rem;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 2rem 0;
+            padding-left: 5rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: $bold;
+            line-height: 1.666;
+            position: relative;
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 3rem;
+                height: 100%;
+                background: no-repeat url(../img/q_blue.png) center center / contain;
+                position: absolute;
+                left: 0;
+            }
+        }
+        dd{
+            padding: 2.5rem 0;
+            font-size: 1.4rem;
+            font-weight: $regular;
+            line-height: 2.1428;
+        }
+        &.-common{
+            dl{
+                border: none;
+                padding: 0 5.5rem;
+                @include max768{
+                    padding: 0 3rem;
+                }
+            }
+            dt{
+                height: 9rem;
+                padding-left: 5rem;
+                padding-right: 0;
+                background-color: transparent;
+                @include max768{
+    
+                }
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 3rem;
+                    height: 100%;
+                    background: no-repeat url(../img/q_gray.png) center center / contain;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            dd{
+                border-bottom: 8px solid #fff;
+            }
+        }
+    }
+}
+
+.faq-contents{
+    $this: &;
+    .employment_job_faq &{
+        @include max768{
+            margin-top: -2rem;
+        }
+        &__list{
+            padding: 5rem 4rem 28rem;
+            background: no-repeat url(../img/employment_job/employment_job_faq_bg_i.png) center bottom / contain;
+            @include max768{
+                padding: 3rem 5.333% 34vw;
+            }
+        }
+        &.-j{
+            #{$this}__list{
+                background: no-repeat url(../img/employment_job/employment_job_faq_bg_j.png) center bottom / contain;
+            }
+            .faq-item{
+                $this: &;
+                dl{
+                    border: none;
+                    padding: 0;
+                }
+                dt{
+                    height: 9rem;
+                    border: none;
+                    padding-left: calc(5rem + 3rem);
+                    padding-right: 3rem;
+                    background-color: #ececec;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 3rem;
+                        height: 100%;
+                        background: no-repeat url(../img/q_red.png) center center / contain;
+                        position: absolute;
+                        left: 3rem;
+                    }
+                }
+                dd{
+                    padding: 2.5rem 3rem;
+                    border-bottom: 8px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.common-faq{
+    $this: &;
+    .employment_job_faq &{
+        padding: 6rem 0;
+        background-color: #f4f4f4;
+        &__head{
+            margin-bottom: 5rem;
+            .title{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 340px;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

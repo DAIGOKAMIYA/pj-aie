@@ -1,0 +1,173 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "入学までの流れ"; %>
+<% body_class = "aie-flow-page"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+        <div class="c-schoolname -i">
+            <div class="name">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                </picture>
+            </div>
+        </div>
+        <section class="aie-flow-contents site-width">
+            <div class="aie-flow-list contents-width">
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">01</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info aie-flow-w__harf">
+                            <h2>資料請求</h2>
+                            <p>まずは学校案内パンフレットをご覧ください。<br class="spbr_tabnone">
+                                パンフレットはお電話でも簡単にご請求いただけます。</p>
+                            <a class="txt24 bold aie-flow__tel" href="tel">0120-461-901</a>
+                        </div>
+                        <a class="aie-flow-list__item__banner" href=""><img src="<%- dir %>assets/img/aie-flow/aie-flow-list__item__banner1.png" alt="資料請求"></a>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">02</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info aie-flow-w__harf">
+                            <h2>オープンキャンパスに参加</h2>
+                            <p>2年間楽しく通えるかってとても大事ですよね？学校の雰囲気を知るにはやっぱり実際に学校へ行ってみること。<br class="spbr">
+                                <br class="spbr">
+                                もちろんどのような授業を行っているのか、どんな先生がいるのか等、パンフレットではわからないこともすべて解決！</p>
+                        </div>
+                        <a class="aie-flow-list__item__banner" href=""><img src="<%- dir %>assets/img/aie-flow/aie-flow-list__item__banner2.png" alt="オープンキャンパスはこちら"></a>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">03</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>提出書類を準備</h2>
+                            <p>入学に必要な各種書類をそろえてください。<br>
+                                入学願書・写真・受験票・卒業証明書や成績証明書等の証明書類・推薦書（必要な方）・郵送で提出する方は入学選考料（郵便為替又は定額小為替）</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">04</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info aie-flow-w__harf">
+                            <h2>入学願書を提出</h2>
+                            <p>本校へ願書・受験票などの必要書類を提出してください。<br class="spbr_tabnone">
+                                郵送、又は本校入学相談窓口へ持参してください。</p>
+                        </div>
+                        <a class="syutsugan-btn" href="">出願方法はこちら</a>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">05</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>受験票を受け取る</h2>
+                            <p>郵送の場合は受験票と受験案内書をお送りします。<br>
+                            <span class="red">※ この受験票が無いと入学選考試験が受けられません。</span></p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">06</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>入学選考試験</h2>
+                            <p>書類選考・面接にて選考を行います。あわてず慎重にのぞみましょう。</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">07</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>合格発表</h2>
+                            <p>直接ご本人へ郵送にて通知します。</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">08</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>入学手続き</h2>
+                            <p>合格後、本校より手続きに必要な事項についてご案内します。</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="flex-start-str">
+                    <dt class="aie-flow-list__item">
+                        <span class="aie-flow-list__item__step">STEP<br class="spbr_tabnone">
+                            <span class="aie-flow-list__item__number">09</span>
+                        </span>
+                    </dt>
+                    <dd class="flex-between-center">
+                        <div class="aie-flow-list__item__info">
+                            <h2>入学</h2>
+                            <p>おめでとうございます。夢に向かって一緒にがんばりましょう。</p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section> 
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

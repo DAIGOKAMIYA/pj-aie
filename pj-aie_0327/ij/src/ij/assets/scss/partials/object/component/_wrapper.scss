@@ -1,0 +1,30 @@
+.c-wrapper{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1366px;
+    padding: 0;
+    position: static;
+    &.-full{
+        max-width: auto;
+        max-width: initial;
+        max-width: none;
+    }
+    &.-w1200{
+        max-width: 1200px;
+    }
+    &.-w1084{
+        max-width: 1084px;
+    }
+    &.-half{
+        max-width: 683px;
+    }
+    &.-left{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &.-right{
+        margin-left: 0;
+        margin-right: auto;
+    }
+}

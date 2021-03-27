@@ -1,0 +1,38 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "エステティシャン専攻"; %>
+<% body_class = "course_aie-course_esthe"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+    <div class="p-title">
+        <div class="c-inner">
+            <div class="title"><%- title; %></div>
+        </div>
+    </div>
+    <div class="p-breadcrumb">
+        <div class="c-inner -w1084">
+            <div class="breadcrumb">
+                <a href="">トップ</a><span>&gt;</span><a href="">アイエステ専攻一覧</a><span>&gt;</span><span><%- title; %></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="l-contents">
+    <main class="l-main">
+        <section>
+            <img src="./assets/img/name_i.png" alt="">
+            <div></div>
+        </section>
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

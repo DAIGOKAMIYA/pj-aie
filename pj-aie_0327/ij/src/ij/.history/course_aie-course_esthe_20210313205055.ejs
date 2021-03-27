@@ -1,0 +1,47 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "エステティシャン専攻"; %>
+<% body_class = "course_aie-course_esthe"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+    <div class="p-title">
+        <div class="c-inner">
+            <div class="title"><%- title; %></div>
+        </div>
+    </div>
+    <div class="p-breadcrumb">
+        <div class="c-inner -w1084">
+            <div class="breadcrumb">
+                <a href="">トップ</a><span>&gt;</span><a href="">アイエステ専攻一覧</a><span>&gt;</span><span><%- title; %></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="l-contents">
+    <main class="l-main">
+        <section>
+            <div class="aie-c-fv">
+                <img src="<%- dir %>assets/img/esthe/esthe_fv@3x.png" alt="エステティシャン専攻">
+                <div class="aie-c-title esthe_bg">
+                    <h2>エステティシャン専攻</h2>
+                    <div class="aie-c-course">
+                        <p>インナービューティ科<br>
+                            2年　昼間部</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</div>
+
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

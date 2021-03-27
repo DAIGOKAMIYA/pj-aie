@@ -1,0 +1,65 @@
+.employ {
+  .p-title{
+		background-image: url(../img/employ/employ_bg.jpg);
+		.title{
+			text-align:left;
+		}
+	}
+
+  .js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+
+  .c-col2__item  .content {
+    padding: 50px 30px;
+  }
+
+  .noemploy {
+    position: relative;
+
+    > p {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%) translateY(0%);
+
+      @include max1024 {
+        width: 90%;
+        text-align: center;
+        top: 0%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  
+  .employ_list {
+    color: #fff;
+    background-color: #000;
+
+    > li {
+      padding: 0 0 40px 0;
+
+      ul {
+
+        li {
+          font-size: 1.4rem;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      padding: 0 0 20px 0;
+      margin: 0 0 30px 0;
+      border-bottom: solid 1px #ddd;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

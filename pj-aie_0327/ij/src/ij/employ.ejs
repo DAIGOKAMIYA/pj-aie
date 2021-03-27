@@ -1,0 +1,130 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "教員募集"; %>
+<% body_class = "employ"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span>教員募集</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="c-col2 js-tabs feature-tabs">
+            <li class="c-col2__item">
+                <div class="c-wrapper -left">
+                    <a href="#tab_content_1" class="is-active">
+                        <div class="c-schoolname -i">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_i_sp.png">
+                                    <img src="./assets/img/name_i.png" alt="アイエステ">
+                                </picture>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="c-col2__item" style="background-color: #1a1a1a;">
+                <div class="c-wrapper -right">
+                    <a href="#tab_content_2" class="">
+                        <div class="c-schoolname -j">
+                            <div class="name">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="./assets/img/name_j_sp.png">
+                                    <img src="./assets/img/name_j.png" alt="ジェイヘアメイク">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="c-col2 -min769">
+            <div class="c-col2__item js-tab-content is-active" id="tab_content_1">
+                <div class="content noemploy">
+                  <p>現在募集している求人はございません。</p>
+                </div> 
+            </div>
+            <div class="c-col2__item js-tab-content" id="tab_content_2">
+                <div class="event -j">
+                    <div class="c-wrapper -right">
+                        <ul class="employ_list content">
+                          <li>
+                            <h3>募集職種</h3>
+                            <p>美容教員（正社員・契約社員）</p>
+                          </li>
+                          <li>
+                            <h3>業務内容</h3>
+                            <ul>
+                              <li>・美容実習の授業</li>
+                              <li>・クラス担任業務</li>
+                              <li>・その他学生指導</li>
+                              <li>・学生募集に関わる諸業務など</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h3>応募資格</h3>
+                            <p>美容師免許取得後、実務経験4年以上の方</p>
+                          </li>
+                          <li>
+                            <h3>給与</h3>
+                            <p>
+                              月給制（本学園規定による）<br>
+                              ※経験、資格、能力を考慮します。
+                            </p>
+                          </li>
+                          <li>
+                            <h3>勤務地</h3>
+                            <p>
+                              千葉市中央区新宿2-14-3　N-TOWER<br>
+                              最寄駅：ＪＲ千葉駅徒歩10分、京成千葉中央駅徒歩2分
+                            </p>
+                          </li>
+                          <li>
+                            <h3>勤務時間</h3>
+                            <p>9：00～17：30</p>
+                          </li>
+                          <li>
+                            <h3>休日休暇</h3>
+                            <p>
+                              週休2日制、祝祭日、夏季、年末年始<br>
+                              ※学校行事等で土日出勤あり
+                            </p>
+                          </li>
+                          <li>
+                            <h3>応募方法</h3>
+                            <p>
+                              下記宛てに履歴書をご郵送ください。<br>
+                              千葉市中央区新宿2-14-3<br>
+                              ジェイ　ヘアメイク美容専門学校　採用担当宛<br>
+                              043-307-8898
+                            </p>
+                          </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

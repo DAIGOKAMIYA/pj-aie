@@ -1,0 +1,131 @@
+.sitemap {
+  .p-title{
+    background-image: url("../img/sitemap/com_bg.jpg");
+		.title{
+			text-align:left;
+		}
+	}
+
+  .js-tab-content{
+		display: block;
+		@include max768{
+			display: none;
+		}
+	}
+
+  #tab_content_2 {
+    background-color: #000;
+  }
+
+  .sitemap__list {
+    padding: 40px;
+
+    @include max480 {
+      padding: 20px;
+    }
+
+    .list {
+      // 見出しリンク
+      > li {
+
+        > a {
+          width: 100%;
+          display: block;
+          background-color: #f7f2e7;
+          padding: 20px;
+          margin: 40px 0;
+          font-weight: 500;
+          position: relative;
+
+          @include max480 {
+            font-size: 1.4rem;
+            margin: 0 0 40px 0;
+          }
+
+          &::after {
+            content: ("");
+            display: inline-block;
+            background-image: url("../img/sitemap/arrow_g.png");
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 10px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            right: 3%;
+            transform: translateY(-50%);
+          }
+        }
+
+        > ul {
+          // ネストされたリスト
+          > li {
+
+            > a {
+              display: block;
+              margin-bottom: 30px;
+
+              @include max480 {
+                font-size: 1.3rem;
+              }
+
+              &::before {
+                content: ("");
+                display: inline-block;
+                background-image: url("../img/sitemap/arrow_y.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 10px;
+                height: 15px;
+                margin: 0 25px 0 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  #tab_content_2 {
+    .list {
+      // 見出しリンク
+      > li {
+
+        > a {
+          color: #fff;
+          background-color: #666666;
+
+          &::after {
+            background-image: url("../img/sitemap/arrow_wh.png");
+          }
+        }
+
+        > ul {
+          // ネストされたリスト
+          > li {
+
+            > a {
+              color: #fff;
+
+              &::before {
+                content: ("");
+                display: inline-block;
+                background-image: url("../img/sitemap/arrow_r.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 10px;
+                height: 15px;
+                margin: 0 25px 0 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<%- include('./_config.ejs'); %>
+
+<% title = "NEWS"; %>
+<% body_class = "news single j"; %>
+
+<%- include('./header.ejs'); %>
+
+<header class="l-header">
+    <%- include('./Block/block-header.ejs'); %>
+</header>
+
+<div class="l-contents <%- body_class; %>">
+    <main class="l-main">
+        <div class="p-title">
+            <div class="c-inner -w1084">
+                <div class="title"><%- title; %></div>
+            </div>
+        </div>
+        <div class="p-breadcrumb">
+            <div class="c-inner -w1084">
+                <div class="breadcrumb">
+                    <a href="">トップ</a><span>&gt;</span><span><%- title; %></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-wrapper -w1084">
+
+            <article class="news_single">
+                <div class="news_single__head">
+                    <div class="news_single__head__meta">
+                        <time class="news_single__head__date">2021.03.01</time>
+                        <div class="news_single__head__category j"><a href="#">オープンキャンパス</a></div>
+                    </div>
+                    <h1 class="news_single__head__title">★2月27日　オープンキャンパス★</h1>
+                </div>
+                <div class="news_single__body">
+                    <div class="eyecatch"><img src="<%- dir %>assets/img/news/image_news_j_01.jpg" alt="" class=""></div>
+                    <br>
+                    <p>ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。<br>
+                    <br>
+                    ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。ダミーテキストです。</p>
+
+                </div>
+            </article>
+            <section class="pager">
+                <div class="pager__list">
+                    <div class="btn c-btn -red">
+                        <a href="#" class="btn__inner c-btn__inner"><span class="btn__arrow"></span><span class="btn__txt">ブログ一覧に戻る</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="l-footer">
+    <%- include('./Block/block-footer.ejs'); %>
+</footer>
+
+<%- include('./footer.ejs'); %>

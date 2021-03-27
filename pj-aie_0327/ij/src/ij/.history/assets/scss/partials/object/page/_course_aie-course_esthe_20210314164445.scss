@@ -1,0 +1,103 @@
+.course_aie-course_esthe{
+
+
+
+}
+
+
+.esthe_bg{
+    background-color: #f8b861;
+}
+.esthe_bg_d{
+    background-color: #f9a534;
+}
+.esthe_bg_p{
+    background-color: #afd8e4;
+}
+
+
+
+.aie-c-fv{
+    width: 90%;
+    margin-left:auto ;
+    position: relative;
+    .aie-c-title{
+        width: 690px;
+        padding: 40px 35px 30px 0;
+        position: absolute;
+        top: 40%;
+        left: -170px;
+        color: white;
+        &>div{
+            width: 55%;
+            margin-left:auto ;
+        }
+        h2{
+            font-size: 3.6rem;
+            font-weight: bold;
+            margin: 0 0 25px 0;
+        }
+        img{
+            position: absolute;
+            width: 200px;
+            top: -25px;
+            left: 200px;
+        }
+    }
+    .aie-c-course{
+        border: 2px solid white;
+        padding: 10px;
+        width: 200px;
+    }
+}
+.aie-c-info{
+    display: flex;
+    .aie-c-info__txt,.aie-c-info__pic{
+        width: 50%;
+    }
+    .aie-c-info__pic{
+        text-align: center;
+        img{
+            width: 85%;
+            transform: translate(-3%,-54%);
+            z-index: -1;
+            position: relative;
+        }
+    }
+    .aie-c-info__txt{
+        transform: translate(0, -40px);
+        li{margin: 0 20px  15px 0;}
+        .aie-c-wp-list,dl{
+            display: flex;
+            margin: 40px 0;
+        }
+        .aie-c-info__wp{
+            border-bottom : 7px dotted #f8b861;
+            border-radius : 1px; 
+            margin: 0 0 70px 0;
+            .aie-c-wp-list{
+                flex-wrap: wrap;
+                width: 600px;
+            }
+        }
+    }
+}
+
+h3{
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: bold;
+    position: relative;
+    span{
+        display: inline-block;
+        width: 100%;
+        font-size: 7rem;
+        font-weight: bold;
+        color: #e5e5e5;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        z-index: -1;
+        letter-spacing: 0.1em;
+    }
+}

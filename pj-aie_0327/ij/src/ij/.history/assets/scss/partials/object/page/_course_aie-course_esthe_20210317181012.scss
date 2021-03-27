@@ -1,0 +1,452 @@
+.course_aie-course_esthe{
+
+    .esthe_bg{
+        background-color: #f8b861;
+    }
+    .esthe_bg_d{
+        background-color: #f9a534;
+    }
+    .esthe_bg_dd{
+        background-color: #ff9608;
+    }
+    .esthe_bg_r{
+        background-color: #ec6941;
+    }
+    .esthe_bg_b{
+        background-color: #91c8d8;
+    }
+    .esthe_bg_db{
+        background-color: #5abad6;
+    }
+
+    .esthe-schedule span{
+        color: #fbd4a2!important;
+    }
+    
+
+
+    .aie-c-section{
+        width: 70%;
+        margin: 70px auto;
+    }
+    .aie-c-section2{
+        width: 90%;
+        margin: 10% auto;
+    }
+
+
+    .p-title{background-image: url(../img/esthe/esthe_bg@3x.jpg);}
+
+    .aie-c-fv{
+        width: 85%;
+        margin-left:auto ;
+        position: relative;
+        .aie-c-title{
+            width: 740px;
+            padding: 40px 35px 30px 0;
+            position: absolute;
+            top: 40%;
+            left: -250px;
+            color: white;
+            &>div{
+                width: 55%;
+                margin-left:auto ;
+            }
+            h2{
+                font-size: 3.6rem;
+                font-weight: bold;
+                margin: 0 0 25px 0;
+            }
+            img{
+                position: absolute;
+                width: 200px;
+                top: -25px;
+                left: 200px;
+            }
+        }
+        .aie-c-course{
+            border: 2px solid white;
+            padding: 10px;
+            width: 200px;
+        }
+    }
+    @include tab3{
+        .aie-c-fv{
+            width: 100%;
+            margin:0 auto ;
+            .aie-c-title{
+                position: static;
+                padding:30px;
+                width: 80%;
+                &>div{
+                    width: 100%;
+                    margin: 0 auto ;
+                }
+            }
+        }
+    }
+
+    .aie-c-info{
+        display: flex;
+        .aie-c-info__txt,.aie-c-info__pic{
+            width: 50%;
+        }
+        .aie-c-info__pic{
+            text-align: center;
+            img{
+                width: 85%;
+                transform: translate(3%,-42%);
+                z-index: -1;
+                position: relative;
+            }
+        }
+        .aie-c-info__txt{
+            margin-bottom: 60px;
+            li{margin: 0 20px  15px 0;}
+            .aie-c-wp-list,dl{
+                display: flex;
+                margin: 20px 0;
+            }
+            .aie-c-info__wp{
+                border-bottom : 7px dotted #f8b861;
+                border-radius : 1px; 
+                margin: 0 0 70px 0;
+                .aie-c-wp-list{
+                    flex-wrap: wrap;
+                    width: 600px;
+                }
+            }
+        }
+    }
+    @include tab3{
+        .aie-c-info{
+            margin: 50px 0 0 0;
+            .aie-c-info__pic{
+                display: none;
+            }
+            .aie-c-info__txt{
+                width: 90%;
+                margin:0 auto;
+            }
+        }
+    }   
+
+    .aie-c-h3{
+        width: 100%;
+        font-size: 2.4rem;
+        font-weight: bold;
+        position: relative;
+        margin: 0 0 50px 0;
+        span{
+            display: inline-block;
+            width: 100%;
+            font-size: 7rem;
+            font-weight: bold;
+            color: #e5e5e5;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: -1;
+            letter-spacing: 0.1em;
+        }
+    }
+    @include tab3{
+        .aie-c-h3{
+            span{
+                font-size: 4rem;
+                top: -15px;
+            }
+        }
+    }
+
+    .aie-c-qualified{
+        color: white;
+        width: 70%;
+        min-width: 980px;
+        margin: -10px auto 10% auto;
+        padding: 20px 70px;
+        display: flex;
+        justify-content: space-between;
+        .aie-c-qualified__txt{
+            padding: 30px 0;
+            width: 60%;
+            img{width: 100%;}
+            h4,p{margin: 0 0 40px 0;}
+            h4{
+                font-size: 2.8rem;
+                font-weight: bold;
+            }
+        }
+        .aie-c-qualified__pic{
+            width: 30%;
+            img{width: 90%;}
+        }
+    }
+
+    @include tab3{
+        .aie-c-qualified{
+            color: white;
+            width: 100%;
+            min-width:auto;
+            padding: 20px;
+            flex-direction:column-reverse;
+            .aie-c-qualified__txt{
+                text-align: center;
+                padding: 30px 0;
+                width: 90%;
+                margin:0 auto;
+                img{width: 100%;}
+                h4,p{margin: 0 0 20px 0;}
+                h4{font-size: 2rem;}
+            }
+            .aie-c-qualified__pic{
+                width: 100%;
+                text-align: center;
+                img{width: 20%;}
+            }
+        }
+    }
+    
+    .aie-c-schedule{
+        background-image: url(../img/esthe/aie-c-schedule-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        padding: 1% 0;
+        z-index: -3;
+        img{margin: 30px 0;}
+        .aie-c-schedule__curriculum{
+            background-color: white;
+            border: 2px solid #ec6941;
+            padding: 50px;
+            position: relative;
+            border-radius:10px;
+            margin: 50px 0 0 0;
+            span{
+                text-align: center;
+                display: inline-block;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+                top: -25px;
+                padding:15px 0; 
+                border-radius:50px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    font-weight: bold;
+                    width: 258px;
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+        @include tab3{
+            .aie-c-schedule__table{
+                overflow-x:scroll;
+                img{
+                    width: 157%;
+                    overflow: auto;
+                    white-space: nowrap;  
+                }
+            }
+            .aie-c-schedule__curriculum{
+                padding: 20px;
+                ul{
+                    li{
+                        display: inline-block;
+                        font-weight: bold;
+                        width: 190px;
+                        margin: 0 0 15px 0;
+                    }
+                }
+            }
+        }
+    }
+    .aie-c-voice{
+        display: flex;
+        .aie-c-voice__info,.aie-c-voice__pic{
+            width: 50%;
+            img{transform: translate(30px,0);}
+        }
+        .aie-c-voice__info{
+            padding:30px;
+            .aie-c-voice__name{
+                width: 160px;
+                margin-left:auto;
+                p{
+                    font-size: 1.2rem;
+                    margin: 0;
+                    span{
+                        font-size: 2.4rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .aie-c-voice__qa{
+                margin:80px 0;
+                dl{
+                    margin:0 0 50px 0;
+                    dt{
+                        margin:0 0 30px 0;
+                        letter-spacing: 0.1em;
+                        position: relative;
+                        font-weight: bold;
+                        &::before{
+                            content:"";
+                            position: absolute;
+                            left: -110px;
+                            top: 50%;
+                            display: inline-block;
+                            width: 100px;
+                            height: 1px;
+                            background-color: black;
+                        }
+                    }
+                    dd{
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        letter-spacing: 0.2em;
+                    }
+                }
+            }
+        }
+    }
+    @include tab3{
+        .aie-c-voice{
+            flex-direction: column;
+            .aie-c-voice__info,.aie-c-voice__pic{
+                width: 100%;
+            }
+            .aie-c-voice__info{
+                padding:0 0 0 30px;
+                .aie-c-voice__qa{
+                    margin:20px 0;
+                }
+            }
+        }
+    }
+
+    .aie-c-features{
+        margin-top: 150px;
+        background-image: url(../img/esthe/aie-c-features@3x.png);
+        background-size: 638px;
+        background-repeat: no-repeat;
+        background-position: 220px 90px;
+        z-index: -100;
+        position: relative;
+        padding-bottom:20px;
+        h3{
+            text-align: center;
+            margin-top:-30px;
+        }
+        h4{
+            text-align: center;
+            margin: 100px 0 40px 0;
+            span{
+                color: white;
+                font-weight: bold;
+                line-height: 2.3;
+                padding:3px;
+                font-size: 30px;
+            }
+        }
+        .aie-c-features__list{
+            .aie-c-features-right{
+                transform: translateX(70px);
+            }
+            div{
+                display: flex;
+                color: white;
+                width: 600px;
+                margin: 0 0 30px auto;
+                img{
+                    width: 40%;
+                    transform: translateX(-1px);
+                }
+                dl{
+                    padding: 8px 1.5em;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    dt{
+                        font-size: 2.4rem;
+                        padding: 10px;
+                        margin: 0 0 10px 0;
+                        border-bottom: 4px dotted white;
+                        letter-spacing: 0.2em;
+                        
+                    }
+                    dd{
+                        letter-spacing: 0.1em;
+                    }
+                }   
+            }
+        }
+    }
+    @include tab1{
+        .aie-c-features{
+            background-image:none;
+            .aie-c-features__list{
+                .aie-c-features-right{
+                    transform: translateX(0);
+                }
+                div{
+                    display: flex;
+                    color: white;
+                    width: 700px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+        }
+    }
+
+    .aie-c-supplement__contents{
+        background-color: #f7f7d8;
+        text-align: center;
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .aie-c-supplement__contents__pic{
+            width: 30%;
+            img{
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+        .aie-c-supplement__contents__txt{
+            width: 60%;
+            padding: 0 40px;
+            h3{
+                font-size: 3rem;
+                font-weight: bold;
+                margin: 0 0 40px 0;
+                letter-spacing:.2rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    .aie-c-message-all{
+        display: flex;
+        .aie-c-message{
+            width: 50%;
+            color: white;
+        }
+        .aie-c-message__lower{
+            padding:15px 40px;
+            height: calc(50vw * 0.35);
+            min-height: 260px;
+            .aie-c-message__lowtitle{
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0 0 15px 0;
+                line-height: 1.5;
+            }
+        }
+    }
+}
